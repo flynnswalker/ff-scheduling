@@ -20,8 +20,7 @@ with open('all_leagues_data.json') as f:
 MONTE_CARLO_RESULTS = {}
 if os.path.exists('monte_carlo_results.json'):
     with open('monte_carlo_results.json') as f:
-        # Currently just for WFFL
-        MONTE_CARLO_RESULTS['WFFL'] = json.load(f)
+        MONTE_CARLO_RESULTS = json.load(f)
 
 
 def get_team_division(team, divisions):
@@ -735,21 +734,37 @@ def team_summary(league_name):
     
     # Use Monte Carlo results if available for this league
     if league_name in MONTE_CARLO_RESULTS:
-        mc_results = MONTE_CARLO_RESULTS[league_name]['team_results']
+        mc_data = MONTE_CARLO_RESULTS[league_name]
+        mc_results = mc_data['team_results']
         result = []
         for team in teams:
             mc = mc_results.get(team, {})
+            playoff_pct = mc.get('playoff_pct', 0)
+            relegation_pct = mc.get('relegation_pct', 0) if has_relegation else 0
+            
+            # Determine status
+            if playoff_pct >= 99.9:
+                status = 'clinched_playoffs'
+            elif playoff_pct > 0:
+                status = 'playoff_contender'
+            elif relegation_pct >= 99.9:
+                status = 'clinched_relegation'
+            elif relegation_pct > 0:
+                status = 'relegation_danger'
+            else:
+                status = 'safe'
+            
             result.append({
                 'team': team,
                 'current_record': f"{stats[team]['wins']}-{stats[team]['losses']}",
                 'division': get_team_division(team, divisions),
-                'championship_pct': mc.get('playoff_pct', 0),
+                'championship_pct': playoff_pct,
                 'bye_pct': mc.get('bye_pct', 0),
-                'relegation_pct': 0,  # No relegation in WFFL/DFFL
-                'safe_pct': 100 - mc.get('playoff_pct', 0),
+                'relegation_pct': relegation_pct,
+                'safe_pct': 100 - playoff_pct - relegation_pct,
                 'seed_pcts': mc.get('seed_pcts', {}),
-                'status': 'clinched_playoffs' if mc.get('playoff_pct', 0) >= 99.9 else 
-                          'playoff_contender' if mc.get('playoff_pct', 0) > 0 else 'safe',
+                'relegation_seed_pcts': mc.get('relegation_seed_pcts', {}),
+                'status': status,
                 'use_monte_carlo': True,
             })
         
@@ -758,7 +773,7 @@ def team_summary(league_name):
             'teams': result,
             'has_relegation': has_relegation,
             'monte_carlo': True,
-            'n_simulations': MONTE_CARLO_RESULTS[league_name].get('n_simulations', 0),
+            'n_simulations': mc_data.get('n_simulations', 0),
         })
     
     # Fall back to weighted probability calculation

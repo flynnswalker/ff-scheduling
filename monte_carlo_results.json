@@ -1,208 +1,713 @@
 {
-  "team_results": {
-    "Karma Chameleons": {
-      "playoff_pct": 100.0,
-      "bye_pct": 100.0,
-      "seed_pcts": {
-        "1": 73.7,
-        "2": 26.4,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0
+  "WFFL": {
+    "team_results": {
+      "Karma Chameleons": {
+        "playoff_pct": 100.0,
+        "bye_pct": 100.0,
+        "seed_pcts": {
+          "1": 73.7,
+          "2": 26.4,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Taco Bills": {
+        "playoff_pct": 100.0,
+        "bye_pct": 100.0,
+        "seed_pcts": {
+          "1": 26.4,
+          "2": 73.7,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Royal Flush": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 55.3,
+          "4": 0.0,
+          "5": 44.7,
+          "6": 0.0
+        }
+      },
+      "MindHunter": {
+        "playoff_pct": 74.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 74.0
+        }
+      },
+      "Ghost Legion": {
+        "playoff_pct": 11.6,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 11.6
+        }
+      },
+      "The Hack Attack": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 44.7,
+          "4": 27.1,
+          "5": 28.2,
+          "6": 0.0
+        }
+      },
+      "Junkyard Dogs": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 72.9,
+          "5": 27.1,
+          "6": 0.0
+        }
+      },
+      "Goldenberg's Peanut Chews": {
+        "playoff_pct": 14.4,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 14.4
+        }
+      },
+      "Ellis Islanders": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Olympus Mons": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "THE Washington (university) FT": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Plundering Herd": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
       }
     },
-    "Taco Bills": {
-      "playoff_pct": 100.0,
-      "bye_pct": 100.0,
-      "seed_pcts": {
-        "1": 26.4,
-        "2": 73.7,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0
+    "adjustments": {
+      "home_avg": 31.833333333333332,
+      "away_avg": 31.192307692307693,
+      "neutral_avg": 31.51282051282051,
+      "home_to_neutral": 0.9899315344341522,
+      "away_to_neutral": 1.010275380189067,
+      "neutral_to_home": 1.0101708706265258,
+      "neutral_to_away": 0.9898291293734744
+    },
+    "distributions": {
+      "Karma Chameleons": {
+        "mean": 40.72390355527327,
+        "sigma": 11.88119897674398
+      },
+      "Taco Bills": {
+        "mean": 36.99835073128785,
+        "sigma": 8.672928810230415
+      },
+      "Royal Flush": {
+        "mean": 35.79405765904537,
+        "sigma": 12.756638921335865
+      },
+      "MindHunter": {
+        "mean": 32.58955767217968,
+        "sigma": 11.276381822329967
+      },
+      "Ghost Legion": {
+        "mean": 33.20081199155426,
+        "sigma": 12.39204783493223
+      },
+      "The Hack Attack": {
+        "mean": 33.88824618872495,
+        "sigma": 15.207999061764717
+      },
+      "Junkyard Dogs": {
+        "mean": 30.406788215574274,
+        "sigma": 11.769312787803408
+      },
+      "Goldenberg's Peanut Chews": {
+        "mean": 29.608276620581748,
+        "sigma": 12.512561628412973
+      },
+      "Ellis Islanders": {
+        "mean": 29.496667152947865,
+        "sigma": 12.333583186532563
+      },
+      "Olympus Mons": {
+        "mean": 27.508979528019974,
+        "sigma": 14.226946233827855
+      },
+      "THE Washington (university) FT": {
+        "mean": 25.567707169637533,
+        "sigma": 11.261837007543434
+      },
+      "Plundering Herd": {
+        "mean": 22.370499669019367,
+        "sigma": 10.40078773265728
       }
     },
-    "Royal Flush": {
-      "playoff_pct": 100.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 55.3,
-        "4": 0.0,
-        "5": 44.7,
-        "6": 0.0
-      }
-    },
-    "MindHunter": {
-      "playoff_pct": 74.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 74.0
-      }
-    },
-    "Ghost Legion": {
-      "playoff_pct": 11.6,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 11.6
-      }
-    },
-    "The Hack Attack": {
-      "playoff_pct": 100.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 44.7,
-        "4": 27.1,
-        "5": 28.2,
-        "6": 0.0
-      }
-    },
-    "Junkyard Dogs": {
-      "playoff_pct": 100.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 72.9,
-        "5": 27.1,
-        "6": 0.0
-      }
-    },
-    "Goldenberg's Peanut Chews": {
-      "playoff_pct": 14.4,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 14.4
-      }
-    },
-    "Ellis Islanders": {
-      "playoff_pct": 0.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0
-      }
-    },
-    "Olympus Mons": {
-      "playoff_pct": 0.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0
-      }
-    },
-    "THE Washington (university) FT": {
-      "playoff_pct": 0.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0
-      }
-    },
-    "Plundering Herd": {
-      "playoff_pct": 0.0,
-      "bye_pct": 0.0,
-      "seed_pcts": {
-        "1": 0.0,
-        "2": 0.0,
-        "3": 0.0,
-        "4": 0.0,
-        "5": 0.0,
-        "6": 0.0
-      }
-    }
+    "n_simulations": 10000,
+    "has_relegation": false
   },
-  "adjustments": {
-    "home_avg": 31.833333333333332,
-    "away_avg": 31.192307692307693,
-    "neutral_avg": 31.51282051282051,
-    "home_to_neutral": 0.9899315344341522,
-    "away_to_neutral": 1.010275380189067,
-    "neutral_to_home": 1.0101708706265258,
-    "neutral_to_away": 0.9898291293734744
+  "DFFL": {
+    "team_results": {
+      "Boston Stranglers": {
+        "playoff_pct": 100.0,
+        "bye_pct": 100.0,
+        "seed_pcts": {
+          "1": 100.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Hopewell Hitters": {
+        "playoff_pct": 100.0,
+        "bye_pct": 43.6,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 43.6,
+          "3": 0.0,
+          "4": 56.4,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Air Nomad": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 100.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Sac-Busters": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 100.0,
+          "6": 0.0
+        }
+      },
+      "Vanilla Thunder": {
+        "playoff_pct": 100.0,
+        "bye_pct": 56.4,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 56.4,
+          "3": 0.0,
+          "4": 43.6,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Kona Heads": {
+        "playoff_pct": 7.6,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 7.6
+        }
+      },
+      "Al's Offenders": {
+        "playoff_pct": 9.2,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 9.2
+        }
+      },
+      "St. Paul Soaks": {
+        "playoff_pct": 83.2,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 83.2
+        }
+      },
+      "Novato Dawgs": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "The Next Generation": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Pat's Lads": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      },
+      "Rockville Reavers": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        }
+      }
+    },
+    "adjustments": {
+      "home_avg": 35.47435897435897,
+      "away_avg": 31.243589743589745,
+      "neutral_avg": 33.35897435897436,
+      "home_to_neutral": 0.9403686302855079,
+      "away_to_neutral": 1.0677061961427985,
+      "neutral_to_home": 1.0634127594158338,
+      "neutral_to_away": 0.9365872405841661
+    },
+    "distributions": {
+      "Boston Stranglers": {
+        "mean": 49.73998258091622,
+        "sigma": 7.063667220477766
+      },
+      "Hopewell Hitters": {
+        "mean": 39.00714735929106,
+        "sigma": 10.169703900945837
+      },
+      "Air Nomad": {
+        "mean": 36.586902500346596,
+        "sigma": 7.5828842965204055
+      },
+      "Sac-Busters": {
+        "mean": 35.45891131673149,
+        "sigma": 8.125280618619009
+      },
+      "Vanilla Thunder": {
+        "mean": 32.36128403577555,
+        "sigma": 8.072472034296956
+      },
+      "Kona Heads": {
+        "mean": 32.0568611743694,
+        "sigma": 8.11464655318977
+      },
+      "Al's Offenders": {
+        "mean": 31.04567029883086,
+        "sigma": 9.67060504136633
+      },
+      "St. Paul Soaks": {
+        "mean": 30.480546775204534,
+        "sigma": 10.650263367575805
+      },
+      "Novato Dawgs": {
+        "mean": 30.518213761468612,
+        "sigma": 8.051211693753244
+      },
+      "The Next Generation": {
+        "mean": 29.51681808330371,
+        "sigma": 7.124544364686285
+      },
+      "Pat's Lads": {
+        "mean": 26.16374392780981,
+        "sigma": 6.231537385759186
+      },
+      "Rockville Reavers": {
+        "mean": 27.37161049364448,
+        "sigma": 7.899710612267943
+      }
+    },
+    "n_simulations": 10000,
+    "has_relegation": false
   },
-  "distributions": {
-    "Karma Chameleons": {
-      "mean": 40.72390355527327,
-      "sigma": 11.88119897674398
+  "FFPL": {
+    "team_results": {
+      "Boomie's Boys": {
+        "playoff_pct": 100.0,
+        "bye_pct": 100.0,
+        "seed_pcts": {
+          "1": 100.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "Mobius Strippers": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 43.6,
+          "5": 56.4,
+          "6": 0.0
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "Los Pollos Hermanos": {
+        "playoff_pct": 100.0,
+        "bye_pct": 100.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 100.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "The ReBiggulators": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 56.4,
+          "5": 43.6,
+          "6": 0.0
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "The Original Series": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 52.1,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 47.9
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "Hampden Has-Beens": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 54.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 9.1,
+          "4": 44.9
+        }
+      },
+      "Free The Nip": {
+        "playoff_pct": 100.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 47.9,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 52.1
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "One Direction Two": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 100.0,
+        "relegation_seed_pcts": {
+          "1": 27.7,
+          "2": 40.9,
+          "3": 31.4,
+          "4": 0.0
+        }
+      },
+      "Lester Pearls": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 59.1,
+        "relegation_seed_pcts": {
+          "1": 31.4,
+          "2": 27.7,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "Gashouse Gorillas": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 0.0,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      },
+      "East Shore Boys": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 100.0,
+        "relegation_seed_pcts": {
+          "1": 40.9,
+          "2": 31.4,
+          "3": 27.7,
+          "4": 0.0
+        }
+      },
+      "Ytterby Yetis": {
+        "playoff_pct": 0.0,
+        "bye_pct": 0.0,
+        "seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0,
+          "5": 0.0,
+          "6": 0.0
+        },
+        "relegation_pct": 86.9,
+        "relegation_seed_pcts": {
+          "1": 0.0,
+          "2": 0.0,
+          "3": 31.8,
+          "4": 55.1
+        }
+      }
     },
-    "Taco Bills": {
-      "mean": 36.99835073128785,
-      "sigma": 8.672928810230415
+    "adjustments": {
+      "home_avg": 29.256410256410255,
+      "away_avg": 25.794871794871796,
+      "neutral_avg": 27.525641025641026,
+      "home_to_neutral": 0.9408413672217354,
+      "away_to_neutral": 1.0670974155069581,
+      "neutral_to_home": 1.062878435025617,
+      "neutral_to_away": 0.9371215649743829
     },
-    "Royal Flush": {
-      "mean": 35.79405765904537,
-      "sigma": 12.756638921335865
+    "distributions": {
+      "Boomie's Boys": {
+        "mean": 35.11184299850462,
+        "sigma": 6.836843099185081
+      },
+      "Mobius Strippers": {
+        "mean": 33.25332519143885,
+        "sigma": 7.76357875833051
+      },
+      "Los Pollos Hermanos": {
+        "mean": 31.389196004449275,
+        "sigma": 6.583972365092103
+      },
+      "The ReBiggulators": {
+        "mean": 29.746572442912807,
+        "sigma": 5.947743153923122
+      },
+      "The Original Series": {
+        "mean": 29.113709504585113,
+        "sigma": 4.5965152753599545
+      },
+      "Hampden Has-Beens": {
+        "mean": 27.695397258463643,
+        "sigma": 8.448567064760327
+      },
+      "Free The Nip": {
+        "mean": 25.272648005984188,
+        "sigma": 7.193942687678251
+      },
+      "One Direction Two": {
+        "mean": 25.204663979984446,
+        "sigma": 9.540475553379785
+      },
+      "Lester Pearls": {
+        "mean": 24.7121574805197,
+        "sigma": 5.976865384535158
+      },
+      "Gashouse Gorillas": {
+        "mean": 25.12257956340699,
+        "sigma": 6.6564333529507405
+      },
+      "East Shore Boys": {
+        "mean": 23.747503719005998,
+        "sigma": 6.794234884304062
+      },
+      "Ytterby Yetis": {
+        "mean": 19.938096158436693,
+        "sigma": 7.7584265864376905
+      }
     },
-    "MindHunter": {
-      "mean": 32.58955767217968,
-      "sigma": 11.276381822329967
-    },
-    "Ghost Legion": {
-      "mean": 33.20081199155426,
-      "sigma": 12.39204783493223
-    },
-    "The Hack Attack": {
-      "mean": 33.88824618872495,
-      "sigma": 15.207999061764717
-    },
-    "Junkyard Dogs": {
-      "mean": 30.406788215574274,
-      "sigma": 11.769312787803408
-    },
-    "Goldenberg's Peanut Chews": {
-      "mean": 29.608276620581748,
-      "sigma": 12.512561628412973
-    },
-    "Ellis Islanders": {
-      "mean": 29.496667152947865,
-      "sigma": 12.333583186532563
-    },
-    "Olympus Mons": {
-      "mean": 27.508979528019974,
-      "sigma": 14.226946233827855
-    },
-    "THE Washington (university) FT": {
-      "mean": 25.567707169637533,
-      "sigma": 11.261837007543434
-    },
-    "Plundering Herd": {
-      "mean": 22.370499669019367,
-      "sigma": 10.40078773265728
-    }
-  },
-  "n_simulations": 10000
+    "n_simulations": 10000,
+    "has_relegation": true
+  }
 }

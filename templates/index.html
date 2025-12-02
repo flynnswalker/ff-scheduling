@@ -548,6 +548,20 @@
             font-weight: 500;
         }
 
+        .releg-header {
+            background: rgba(239, 68, 68, 0.1) !important;
+            color: var(--accent-red);
+        }
+
+        .releg-cell {
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .releg-cell.has-chance {
+            color: var(--accent-red);
+            font-weight: 500;
+        }
+
         .loading {
             text-align: center;
             padding: 1.5rem;
@@ -849,36 +863,66 @@
                 // Update method indicator
                 const methodEl = document.getElementById(`summary-method-${leagueName}`);
                 if (methodEl) {
-                    if (isMonteCarlo) {
-                        methodEl.innerHTML = `🎲 Monte Carlo (${data.n_simulations?.toLocaleString() || '10,000'} sims)`;
-                    } else {
-                        methodEl.innerHTML = `📊 Weighted by Win %`;
-                    }
+                    methodEl.innerHTML = `🎲 Monte Carlo (${data.n_simulations?.toLocaleString() || '10,000'} sims)`;
                 }
                 
                 // Update table header for Monte Carlo (add seed columns)
                 const headEl = document.getElementById(`summary-head-${leagueName}`);
-                if (headEl && isMonteCarlo) {
-                    headEl.innerHTML = `
-                        <tr>
-                            <th>Team</th>
-                            <th>Record</th>
-                            <th>Playoffs</th>
-                            <th>#1</th>
-                            <th>#2</th>
-                            <th>#3</th>
-                            <th>#4</th>
-                            <th>#5</th>
-                            <th>#6</th>
-                        </tr>
-                    `;
-                }
                 
                 let html;
                 if (isMonteCarlo) {
+                    // Update table header for Monte Carlo (add seed columns, and relegation for FFPL)
+                    if (hasReleg) {
+                        headEl.innerHTML = `
+                            <tr>
+                                <th>Team</th>
+                                <th>Record</th>
+                                <th>Playoffs</th>
+                                <th>#1</th>
+                                <th>#2</th>
+                                <th>#3</th>
+                                <th>#4</th>
+                                <th>#5</th>
+                                <th>#6</th>
+                                <th class="releg-header">Releg</th>
+                                <th class="releg-header">R1</th>
+                                <th class="releg-header">R2</th>
+                                <th class="releg-header">R3</th>
+                                <th class="releg-header">R4</th>
+                            </tr>
+                        `;
+                    } else {
+                        headEl.innerHTML = `
+                            <tr>
+                                <th>Team</th>
+                                <th>Record</th>
+                                <th>Playoffs</th>
+                                <th>#1</th>
+                                <th>#2</th>
+                                <th>#3</th>
+                                <th>#4</th>
+                                <th>#5</th>
+                                <th>#6</th>
+                            </tr>
+                        `;
+                    }
+                    
                     // Monte Carlo view with seed breakdown
                     html = data.teams.map(team => {
                         const seeds = team.seed_pcts || {};
+                        const relegSeeds = team.relegation_seed_pcts || {};
+                        
+                        let relegCells = '';
+                        if (hasReleg) {
+                            relegCells = `
+                                <td class="releg-cell ${team.relegation_pct > 0 ? 'has-chance' : ''}">${team.relegation_pct > 0 ? team.relegation_pct + '%' : '-'}</td>
+                                <td class="seed-cell releg-cell ${relegSeeds['1'] > 0 ? 'has-chance' : ''}">${relegSeeds['1'] > 0 ? relegSeeds['1'] + '%' : '-'}</td>
+                                <td class="seed-cell releg-cell ${relegSeeds['2'] > 0 ? 'has-chance' : ''}">${relegSeeds['2'] > 0 ? relegSeeds['2'] + '%' : '-'}</td>
+                                <td class="seed-cell releg-cell ${relegSeeds['3'] > 0 ? 'has-chance' : ''}">${relegSeeds['3'] > 0 ? relegSeeds['3'] + '%' : '-'}</td>
+                                <td class="seed-cell releg-cell ${relegSeeds['4'] > 0 ? 'has-chance' : ''}">${relegSeeds['4'] > 0 ? relegSeeds['4'] + '%' : '-'}</td>
+                            `;
+                        }
+                        
                         return `
                         <tr>
                             <td>
@@ -896,6 +940,7 @@
                             <td class="seed-cell ${seeds['4'] > 0 ? 'has-chance' : ''}">${seeds['4'] > 0 ? seeds['4'] + '%' : '-'}</td>
                             <td class="seed-cell ${seeds['5'] > 0 ? 'has-chance' : ''}">${seeds['5'] > 0 ? seeds['5'] + '%' : '-'}</td>
                             <td class="seed-cell ${seeds['6'] > 0 ? 'has-chance' : ''}">${seeds['6'] > 0 ? seeds['6'] + '%' : '-'}</td>
+                            ${relegCells}
                         </tr>
                     `}).join('');
                 } else {

@@ -233,12 +233,13 @@ def run_monte_carlo(league_name, n_simulations=10000, seed=None):
         - distributions: team distribution data
     """
     # Import playoff determination from app
-    from app import determine_playoff_teams
+    from app import determine_playoff_teams, determine_relegation_teams
     
     league_data = ALL_LEAGUES[league_name]
     teams = league_data['teams']
     divisions = league_data['divisions']
     stats = league_data['stats']
+    has_relegation = league_data.get('has_relegation', False)
     
     # Step 1: Calculate home/away adjustments
     adjustments = calculate_home_away_advantage(league_name)
@@ -263,6 +264,10 @@ def run_monte_carlo(league_name, n_simulations=10000, seed=None):
     playoff_counts = {team: 0 for team in teams}
     seed_counts = {team: {i: 0 for i in range(1, 7)} for team in teams}
     
+    # Track relegation for leagues with it
+    relegation_counts = {team: 0 for team in teams}
+    relegation_seed_counts = {team: {i: 0 for i in range(1, 5)} for team in teams}  # Seeds 1-4
+    
     print(f"\n=== Running {n_simulations:,} simulations ===")
     
     for sim in range(n_simulations):
@@ -278,13 +283,23 @@ def run_monte_carlo(league_name, n_simulations=10000, seed=None):
         # Determine playoff teams
         playoff_teams = determine_playoff_teams(final_stats, teams, divisions)
         
-        # Record results
+        # Record playoff results
         for p in playoff_teams:
             team = p['team']
             seed = p['seed']
             playoff_counts[team] += 1
             if seed <= 6:
                 seed_counts[team][seed] += 1
+        
+        # Track relegation if applicable
+        if has_relegation:
+            relegation_teams = determine_relegation_teams(final_stats, playoff_teams, teams, divisions)
+            for r in relegation_teams:
+                team = r['team']
+                seed = r['seed']
+                relegation_counts[team] += 1
+                if seed <= 4:
+                    relegation_seed_counts[team][seed] += 1
     
     # Calculate percentages
     results = {}
@@ -294,12 +309,22 @@ def run_monte_carlo(league_name, n_simulations=10000, seed=None):
                      for seed, count in seed_counts[team].items()}
         bye_pct = seed_pcts[1] + seed_pcts[2]  # Seeds 1-2 get bye
         
-        results[team] = {
+        result = {
             'playoff_pct': round(playoff_pct, 1),
             'bye_pct': round(bye_pct, 1),
             'seed_pcts': {k: round(v, 1) for k, v in seed_pcts.items()},
         }
+        
+        if has_relegation:
+            relegation_pct = (relegation_counts[team] / n_simulations) * 100
+            releg_seed_pcts = {seed: (count / n_simulations) * 100 
+                              for seed, count in relegation_seed_counts[team].items()}
+            result['relegation_pct'] = round(relegation_pct, 1)
+            result['relegation_seed_pcts'] = {k: round(v, 1) for k, v in releg_seed_pcts.items()}
+        
+        results[team] = result
     
+    # Print results
     print(f"\n=== Playoff Probabilities ===")
     print(f"{'Team':35s} | {'Playoff':>7s} | {'Bye':>6s} | {'#1':>6s} | {'#2':>6s} | {'#3':>6s} | {'#4':>6s} | {'#5':>6s} | {'#6':>6s}")
     print("-" * 110)
@@ -309,22 +334,47 @@ def run_monte_carlo(league_name, n_simulations=10000, seed=None):
         seeds_str = ' | '.join([f"{r['seed_pcts'][i]:>5.1f}%" for i in range(1, 7)])
         print(f"{team:35s} | {r['playoff_pct']:>6.1f}% | {r['bye_pct']:>5.1f}% | {seeds_str}")
     
+    if has_relegation:
+        print(f"\n=== Relegation Probabilities ===")
+        print(f"{'Team':35s} | {'Releg':>7s} | {'#1':>6s} | {'#2':>6s} | {'#3':>6s} | {'#4':>6s}")
+        print("-" * 80)
+        sorted_by_releg = sorted(teams, key=lambda t: -results[t].get('relegation_pct', 0))
+        for team in sorted_by_releg:
+            r = results[team]
+            if r.get('relegation_pct', 0) > 0:
+                releg_seeds = r.get('relegation_seed_pcts', {})
+                seeds_str = ' | '.join([f"{releg_seeds.get(i, 0):>5.1f}%" for i in range(1, 5)])
+                print(f"{team:35s} | {r['relegation_pct']:>6.1f}% | {seeds_str}")
+    
     return {
         'team_results': results,
         'adjustments': adjustments,
         'distributions': {t: {'mean': d['mean'], 'sigma': d['sigma']} 
                           for t, d in distributions.items()},
         'n_simulations': n_simulations,
+        'has_relegation': has_relegation,
     }
 
 
-if __name__ == "__main__":
-    # Run for WFFL
-    results = run_monte_carlo('WFFL', n_simulations=10000, seed=42)
+def run_all_leagues(n_simulations=10000, seed=42):
+    """Run Monte Carlo for all leagues and save results."""
+    all_results = {}
     
-    # Save results
+    for league_name in ['WFFL', 'DFFL', 'FFPL']:
+        print(f"\n{'='*60}")
+        print(f"  Running Monte Carlo for {league_name}")
+        print(f"{'='*60}")
+        results = run_monte_carlo(league_name, n_simulations=n_simulations, seed=seed)
+        all_results[league_name] = results
+    
+    # Save all results
     with open('monte_carlo_results.json', 'w') as f:
-        json.dump(results, f, indent=2)
+        json.dump(all_results, f, indent=2)
     
-    print("\n✅ Results saved to monte_carlo_results.json")
+    print(f"\n✅ All results saved to monte_carlo_results.json")
+    return all_results
+
+
+if __name__ == "__main__":
+    run_all_leagues(n_simulations=10000, seed=42)
 
