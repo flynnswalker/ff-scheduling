@@ -1,0 +1,208 @@
+{
+  "team_results": {
+    "Karma Chameleons": {
+      "playoff_pct": 100.0,
+      "bye_pct": 100.0,
+      "seed_pcts": {
+        "1": 73.7,
+        "2": 26.4,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "Taco Bills": {
+      "playoff_pct": 100.0,
+      "bye_pct": 100.0,
+      "seed_pcts": {
+        "1": 26.4,
+        "2": 73.7,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "Royal Flush": {
+      "playoff_pct": 100.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 55.3,
+        "4": 0.0,
+        "5": 44.7,
+        "6": 0.0
+      }
+    },
+    "MindHunter": {
+      "playoff_pct": 74.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 74.0
+      }
+    },
+    "Ghost Legion": {
+      "playoff_pct": 11.6,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 11.6
+      }
+    },
+    "The Hack Attack": {
+      "playoff_pct": 100.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 44.7,
+        "4": 27.1,
+        "5": 28.2,
+        "6": 0.0
+      }
+    },
+    "Junkyard Dogs": {
+      "playoff_pct": 100.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 72.9,
+        "5": 27.1,
+        "6": 0.0
+      }
+    },
+    "Goldenberg's Peanut Chews": {
+      "playoff_pct": 14.4,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 14.4
+      }
+    },
+    "Ellis Islanders": {
+      "playoff_pct": 0.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "Olympus Mons": {
+      "playoff_pct": 0.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "THE Washington (university) FT": {
+      "playoff_pct": 0.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    },
+    "Plundering Herd": {
+      "playoff_pct": 0.0,
+      "bye_pct": 0.0,
+      "seed_pcts": {
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0,
+        "5": 0.0,
+        "6": 0.0
+      }
+    }
+  },
+  "adjustments": {
+    "home_avg": 31.833333333333332,
+    "away_avg": 31.192307692307693,
+    "neutral_avg": 31.51282051282051,
+    "home_to_neutral": 0.9899315344341522,
+    "away_to_neutral": 1.010275380189067,
+    "neutral_to_home": 1.0101708706265258,
+    "neutral_to_away": 0.9898291293734744
+  },
+  "distributions": {
+    "Karma Chameleons": {
+      "mean": 40.72390355527327,
+      "sigma": 11.88119897674398
+    },
+    "Taco Bills": {
+      "mean": 36.99835073128785,
+      "sigma": 8.672928810230415
+    },
+    "Royal Flush": {
+      "mean": 35.79405765904537,
+      "sigma": 12.756638921335865
+    },
+    "MindHunter": {
+      "mean": 32.58955767217968,
+      "sigma": 11.276381822329967
+    },
+    "Ghost Legion": {
+      "mean": 33.20081199155426,
+      "sigma": 12.39204783493223
+    },
+    "The Hack Attack": {
+      "mean": 33.88824618872495,
+      "sigma": 15.207999061764717
+    },
+    "Junkyard Dogs": {
+      "mean": 30.406788215574274,
+      "sigma": 11.769312787803408
+    },
+    "Goldenberg's Peanut Chews": {
+      "mean": 29.608276620581748,
+      "sigma": 12.512561628412973
+    },
+    "Ellis Islanders": {
+      "mean": 29.496667152947865,
+      "sigma": 12.333583186532563
+    },
+    "Olympus Mons": {
+      "mean": 27.508979528019974,
+      "sigma": 14.226946233827855
+    },
+    "THE Washington (university) FT": {
+      "mean": 25.567707169637533,
+      "sigma": 11.261837007543434
+    },
+    "Plundering Herd": {
+      "mean": 22.370499669019367,
+      "sigma": 10.40078773265728
+    }
+  },
+  "n_simulations": 10000
+}

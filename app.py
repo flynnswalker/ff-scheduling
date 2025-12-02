@@ -8,12 +8,20 @@ from flask import Flask, render_template, jsonify, request
 import json
 import copy
 from collections import defaultdict
+import os
 
 app = Flask(__name__)
 
 # Load all leagues data
 with open('all_leagues_data.json') as f:
     ALL_LEAGUES = json.load(f)
+
+# Load Monte Carlo results if available
+MONTE_CARLO_RESULTS = {}
+if os.path.exists('monte_carlo_results.json'):
+    with open('monte_carlo_results.json') as f:
+        # Currently just for WFFL
+        MONTE_CARLO_RESULTS['WFFL'] = json.load(f)
 
 
 def get_team_division(team, divisions):
@@ -720,19 +728,52 @@ def team_summary(league_name):
     if league_name not in ALL_LEAGUES:
         return jsonify({'error': 'Unknown league'}), 404
     
-    summary = get_team_summary_weighted(league_name)
     teams = ALL_LEAGUES[league_name]['teams']
+    stats = ALL_LEAGUES[league_name]['stats']
+    divisions = ALL_LEAGUES[league_name]['divisions']
     has_relegation = ALL_LEAGUES[league_name]['has_relegation']
+    
+    # Use Monte Carlo results if available for this league
+    if league_name in MONTE_CARLO_RESULTS:
+        mc_results = MONTE_CARLO_RESULTS[league_name]['team_results']
+        result = []
+        for team in teams:
+            mc = mc_results.get(team, {})
+            result.append({
+                'team': team,
+                'current_record': f"{stats[team]['wins']}-{stats[team]['losses']}",
+                'division': get_team_division(team, divisions),
+                'championship_pct': mc.get('playoff_pct', 0),
+                'bye_pct': mc.get('bye_pct', 0),
+                'relegation_pct': 0,  # No relegation in WFFL/DFFL
+                'safe_pct': 100 - mc.get('playoff_pct', 0),
+                'seed_pcts': mc.get('seed_pcts', {}),
+                'status': 'clinched_playoffs' if mc.get('playoff_pct', 0) >= 99.9 else 
+                          'playoff_contender' if mc.get('playoff_pct', 0) > 0 else 'safe',
+                'use_monte_carlo': True,
+            })
+        
+        result.sort(key=lambda t: (-t['championship_pct'], t['relegation_pct']))
+        return jsonify({
+            'teams': result,
+            'has_relegation': has_relegation,
+            'monte_carlo': True,
+            'n_simulations': MONTE_CARLO_RESULTS[league_name].get('n_simulations', 0),
+        })
+    
+    # Fall back to weighted probability calculation
+    summary = get_team_summary_weighted(league_name)
     
     sorted_teams = sorted(
         teams,
         key=lambda t: (-summary[t]['championship_pct'], summary[t]['relegation_pct'])
     )
     
-    result = [{**summary[team], 'team': team} for team in sorted_teams]
+    result = [{**summary[team], 'team': team, 'use_monte_carlo': False} for team in sorted_teams]
     return jsonify({
         'teams': result,
         'has_relegation': has_relegation,
+        'monte_carlo': False,
     })
 
 

@@ -537,6 +537,17 @@
         .pct-fill.gold { background: var(--accent-gold); }
         .pct-fill.red { background: var(--accent-red); }
 
+        .seed-cell {
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .seed-cell.has-chance {
+            color: var(--text-primary);
+            font-weight: 500;
+        }
+
         .loading {
             text-align: center;
             padding: 1.5rem;
@@ -677,10 +688,12 @@
                     <div class="card">
                         <div class="card-header">
                             <span class="card-icon">📊</span>
-                            <h2>Team Summary (Weighted by Win %)</h2>
+                            <h2>Team Summary</h2>
+                            <span id="summary-method-{{ league_name }}" style="margin-left: auto; font-size: 0.7rem; color: var(--text-muted);"></span>
                         </div>
-                        <table class="summary-table">
-                            <thead>
+                        <div style="overflow-x: auto;">
+                        <table class="summary-table" id="summary-table-{{ league_name }}">
+                            <thead id="summary-head-{{ league_name }}">
                                 <tr>
                                     <th>Team</th>
                                     <th>Record</th>
@@ -696,6 +709,7 @@
                                 <tr><td colspan="6" class="loading">Loading...</td></tr>
                             </tbody>
                         </table>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -830,33 +844,89 @@
                 };
                 
                 const hasReleg = data.has_relegation;
+                const isMonteCarlo = data.monte_carlo;
                 
-                const html = data.teams.map(team => `
-                    <tr>
-                        <td>
-                            <span class="summary-team-name">${team.team}</span>
-                            <span class="division-badge">Div ${team.division}</span>
-                        </td>
-                        <td>${team.current_record}</td>
-                        <td>
-                            ${team.championship_pct}%
-                            <div class="pct-bar"><div class="pct-fill green" style="width: ${team.championship_pct}%"></div></div>
-                        </td>
-                        <td>
-                            ${team.bye_pct > 0 ? team.bye_pct + '%' : '-'}
-                            ${team.bye_pct > 0 ? `<div class="pct-bar"><div class="pct-fill gold" style="width: ${team.bye_pct}%"></div></div>` : ''}
-                        </td>
-                        ${hasReleg ? `
-                        <td>
-                            ${team.relegation_pct > 0 ? team.relegation_pct + '%' : '-'}
-                            ${team.relegation_pct > 0 ? `<div class="pct-bar"><div class="pct-fill red" style="width: ${team.relegation_pct}%"></div></div>` : ''}
-                        </td>
-                        ` : ''}
-                        <td>
-                            <span class="status-pill status-${team.status}">${statusLabels[team.status] || team.status}</span>
-                        </td>
-                    </tr>
-                `).join('');
+                // Update method indicator
+                const methodEl = document.getElementById(`summary-method-${leagueName}`);
+                if (methodEl) {
+                    if (isMonteCarlo) {
+                        methodEl.innerHTML = `🎲 Monte Carlo (${data.n_simulations?.toLocaleString() || '10,000'} sims)`;
+                    } else {
+                        methodEl.innerHTML = `📊 Weighted by Win %`;
+                    }
+                }
+                
+                // Update table header for Monte Carlo (add seed columns)
+                const headEl = document.getElementById(`summary-head-${leagueName}`);
+                if (headEl && isMonteCarlo) {
+                    headEl.innerHTML = `
+                        <tr>
+                            <th>Team</th>
+                            <th>Record</th>
+                            <th>Playoffs</th>
+                            <th>#1</th>
+                            <th>#2</th>
+                            <th>#3</th>
+                            <th>#4</th>
+                            <th>#5</th>
+                            <th>#6</th>
+                        </tr>
+                    `;
+                }
+                
+                let html;
+                if (isMonteCarlo) {
+                    // Monte Carlo view with seed breakdown
+                    html = data.teams.map(team => {
+                        const seeds = team.seed_pcts || {};
+                        return `
+                        <tr>
+                            <td>
+                                <span class="summary-team-name">${team.team}</span>
+                                <span class="division-badge">Div ${team.division}</span>
+                            </td>
+                            <td>${team.current_record}</td>
+                            <td>
+                                <strong>${team.championship_pct}%</strong>
+                                <div class="pct-bar"><div class="pct-fill green" style="width: ${team.championship_pct}%"></div></div>
+                            </td>
+                            <td class="seed-cell ${seeds['1'] > 0 ? 'has-chance' : ''}">${seeds['1'] > 0 ? seeds['1'] + '%' : '-'}</td>
+                            <td class="seed-cell ${seeds['2'] > 0 ? 'has-chance' : ''}">${seeds['2'] > 0 ? seeds['2'] + '%' : '-'}</td>
+                            <td class="seed-cell ${seeds['3'] > 0 ? 'has-chance' : ''}">${seeds['3'] > 0 ? seeds['3'] + '%' : '-'}</td>
+                            <td class="seed-cell ${seeds['4'] > 0 ? 'has-chance' : ''}">${seeds['4'] > 0 ? seeds['4'] + '%' : '-'}</td>
+                            <td class="seed-cell ${seeds['5'] > 0 ? 'has-chance' : ''}">${seeds['5'] > 0 ? seeds['5'] + '%' : '-'}</td>
+                            <td class="seed-cell ${seeds['6'] > 0 ? 'has-chance' : ''}">${seeds['6'] > 0 ? seeds['6'] + '%' : '-'}</td>
+                        </tr>
+                    `}).join('');
+                } else {
+                    // Standard view
+                    html = data.teams.map(team => `
+                        <tr>
+                            <td>
+                                <span class="summary-team-name">${team.team}</span>
+                                <span class="division-badge">Div ${team.division}</span>
+                            </td>
+                            <td>${team.current_record}</td>
+                            <td>
+                                ${team.championship_pct}%
+                                <div class="pct-bar"><div class="pct-fill green" style="width: ${team.championship_pct}%"></div></div>
+                            </td>
+                            <td>
+                                ${team.bye_pct > 0 ? team.bye_pct + '%' : '-'}
+                                ${team.bye_pct > 0 ? `<div class="pct-bar"><div class="pct-fill gold" style="width: ${team.bye_pct}%"></div></div>` : ''}
+                            </td>
+                            ${hasReleg ? `
+                            <td>
+                                ${team.relegation_pct > 0 ? team.relegation_pct + '%' : '-'}
+                                ${team.relegation_pct > 0 ? `<div class="pct-bar"><div class="pct-fill red" style="width: ${team.relegation_pct}%"></div></div>` : ''}
+                            </td>
+                            ` : ''}
+                            <td>
+                                <span class="status-pill status-${team.status}">${statusLabels[team.status] || team.status}</span>
+                            </td>
+                        </tr>
+                    `).join('');
+                }
                 
                 document.getElementById(`summary-body-${leagueName}`).innerHTML = html;
             } catch (error) {
