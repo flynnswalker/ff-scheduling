@@ -658,13 +658,13 @@
                             </div>
                         </div>
 
-                        <div class="bracket-section">
-                            <div class="bracket-title">Safe (No Playoffs)</div>
-                            <div class="playoff-list" id="safe-teams-{{ league_name }}">
-                            </div>
+                    <div class="bracket-section">
+                        <div class="bracket-title">{% if league_data.has_relegation %}Safe (No Playoffs){% else %}No Playoffs{% endif %}</div>
+                        <div class="playoff-list" id="safe-teams-{{ league_name }}">
                         </div>
+                    </div>
 
-                        {% if league_data.has_relegation %}
+                    {% if league_data.has_relegation %}
                         <div class="bracket-section">
                             <div class="bracket-title">⚠️ Relegation Playoffs (4 Teams → 1 Relegated)</div>
                             <div class="bracket-subtitle">Bottom 4 play off; only the loser gets relegated</div>
@@ -785,10 +785,11 @@
                 `).join('');
                 document.getElementById(`playoff-teams-${leagueName}`).innerHTML = playoffHtml;
                 
-                // Render safe teams
+                // Render safe/non-playoff teams
+                const hasReleg = data.has_relegation;
                 const safeHtml = data.safe_teams.map(team => `
                     <div class="safe-team">
-                        <span>😌</span>
+                        <span>${hasReleg ? '😌' : '📉'}</span>
                         <span>${team.team}</span>
                         <span class="division-badge">Div ${team.division}</span>
                         <span style="color: var(--text-muted); margin-left: auto;">${team.record}</span>
