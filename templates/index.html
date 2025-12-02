@@ -388,6 +388,21 @@
             background: rgba(251, 191, 36, 0.05);
         }
 
+        .playoff-team.seed-3 {
+            border-color: var(--accent-green);
+            background: rgba(34, 197, 94, 0.05);
+        }
+
+        .playoff-team.seed-4 {
+            border-color: var(--accent-purple);
+            background: rgba(168, 85, 247, 0.05);
+        }
+
+        .playoff-team.seed-5, .playoff-team.seed-6 {
+            border-color: #92400e;
+            background: rgba(146, 64, 14, 0.05);
+        }
+
         .seed-badge {
             width: 22px;
             height: 22px;
@@ -403,6 +418,21 @@
         .seed-badge.gold {
             background: linear-gradient(135deg, var(--accent-gold), #f59e0b);
             color: var(--bg-dark);
+        }
+
+        .seed-badge.green {
+            background: linear-gradient(135deg, var(--accent-green), #16a34a);
+            color: var(--bg-dark);
+        }
+
+        .seed-badge.purple {
+            background: linear-gradient(135deg, var(--accent-purple), #9333ea);
+            color: white;
+        }
+
+        .seed-badge.brown {
+            background: linear-gradient(135deg, #92400e, #78350f);
+            color: white;
         }
 
         .playoff-team-info {
@@ -443,7 +473,7 @@
         }
 
         .releg-team {
-            border-left: 3px solid var(--accent-red);
+            /* No special highlighting for relegation teams */
         }
 
         .releg-team.danger {
@@ -569,8 +599,8 @@
         }
 
         .division-badge {
-            font-size: 0.6rem;
-            padding: 0.1rem 0.25rem;
+            font-size: 0.85rem;
+            padding: 0.05rem 0.15rem;
             border-radius: 3px;
             background: var(--border-color);
             color: var(--text-muted);
@@ -746,6 +776,45 @@
         });
         {% endfor %}
 
+        // Division emoji mapping for each league
+        const divisionEmojis = {
+            'WFFL': {
+                'D': '♦️',  // Diamonds
+                'S': '♠️',  // Spades
+                'H': '❤️',  // Hearts
+            },
+            'DFFL': {
+                'D': '♦️',  // Diamonds
+                'N': '🌙',  // Night/North
+                'M': '🔮',  // Mages/Magic
+            },
+            'FFPL': {
+                'O': '🦉',  // Owls
+                'W': '🧙',  // Wizards
+                'D': '♦️',  // Diamonds
+            }
+        };
+
+        function getDivisionEmoji(leagueName, division) {
+            return divisionEmojis[leagueName]?.[division] || division;
+        }
+
+        function getSeedClass(seed) {
+            if (seed <= 2) return 'has-bye';
+            if (seed === 3) return 'seed-3';
+            if (seed === 4) return 'seed-4';
+            if (seed === 5) return 'seed-5';
+            if (seed === 6) return 'seed-6';
+            return '';
+        }
+
+        function getSeedBadgeClass(seed) {
+            if (seed <= 2) return 'gold';
+            if (seed === 3) return 'green';
+            if (seed === 4) return 'purple';
+            return 'brown';
+        }
+
         function switchLeague(leagueName) {
             // Update tabs
             document.querySelectorAll('.league-tab').forEach(tab => {
@@ -797,12 +866,12 @@
                 
                 // Render playoff teams
                 const playoffHtml = data.playoff_teams.map(team => `
-                    <div class="playoff-team ${team.has_bye ? 'has-bye' : ''}">
-                        <div class="seed-badge ${team.seed <= 2 ? 'gold' : ''}">${team.seed}</div>
+                    <div class="playoff-team ${getSeedClass(team.seed)}">
+                        <div class="seed-badge ${getSeedBadgeClass(team.seed)}">${team.seed}</div>
                         <div class="playoff-team-info">
                             <div class="playoff-team-name">
                                 ${team.team}
-                                <span class="division-badge">Div ${team.division}</span>
+                                <span class="division-badge">${getDivisionEmoji(leagueName, team.division)}</span>
                             </div>
                             <div class="playoff-team-detail">
                                 ${team.record} • ${team.is_division_winner ? 'Division Winner' : 'Wild Card'}
@@ -819,7 +888,7 @@
                     <div class="safe-team">
                         <span>${hasReleg ? '😌' : '📉'}</span>
                         <span>${team.team}</span>
-                        <span class="division-badge">Div ${team.division}</span>
+                        <span class="division-badge">${getDivisionEmoji(leagueName, team.division)}</span>
                         <span style="color: var(--text-muted); margin-left: auto;">${team.record}</span>
                     </div>
                 `).join('');
@@ -829,10 +898,10 @@
                 const relegEl = document.getElementById(`relegation-teams-${leagueName}`);
                 if (relegEl && data.has_relegation) {
                     const relegHtml = data.relegation_teams.map(team => `
-                        <div class="releg-team ${team.seed === 1 ? 'danger' : ''}">
+                        <div class="releg-team">
                             <span>#${team.seed}</span>
                             <span>${team.team}</span>
-                            <span class="division-badge">Div ${team.division}</span>
+                            <span class="division-badge">${getDivisionEmoji(leagueName, team.division)}</span>
                             <span style="color: var(--text-muted); margin-left: auto;">${team.record}</span>
                         </div>
                     `).join('');
@@ -927,7 +996,7 @@
                         <tr>
                             <td>
                                 <span class="summary-team-name">${team.team}</span>
-                                <span class="division-badge">Div ${team.division}</span>
+                                <span class="division-badge">${getDivisionEmoji(leagueName, team.division)}</span>
                             </td>
                             <td>${team.current_record}</td>
                             <td>
@@ -949,7 +1018,7 @@
                         <tr>
                             <td>
                                 <span class="summary-team-name">${team.team}</span>
-                                <span class="division-badge">Div ${team.division}</span>
+                                <span class="division-badge">${getDivisionEmoji(leagueName, team.division)}</span>
                             </td>
                             <td>${team.current_record}</td>
                             <td>
