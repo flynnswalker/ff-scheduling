@@ -1,0 +1,172 @@
+{
+  "standings": [
+    {
+      "rank": 1,
+      "prev_rank": 1,
+      "team": "Boomie's Boys",
+      "division": "O",
+      "wins": 10,
+      "losses": 3,
+      "weekly_record": "10-3"
+    },
+    {
+      "rank": 2,
+      "prev_rank": 2,
+      "team": "Mobius Strippers",
+      "division": "O",
+      "wins": 8,
+      "losses": 5,
+      "weekly_record": "8-5"
+    },
+    {
+      "rank": 3,
+      "prev_rank": 3,
+      "team": "Los Pollos Hermanos",
+      "division": "W",
+      "wins": 9,
+      "losses": 4,
+      "weekly_record": "9-4"
+    },
+    {
+      "rank": 4,
+      "prev_rank": 4,
+      "team": "The ReBiggulators",
+      "division": "W",
+      "wins": 8,
+      "losses": 5,
+      "weekly_record": "8-5"
+    },
+    {
+      "rank": 5,
+      "prev_rank": 5,
+      "team": "The Original Series",
+      "division": "D",
+      "wins": 7,
+      "losses": 6,
+      "weekly_record": "7-6"
+    },
+    {
+      "rank": 6,
+      "prev_rank": 6,
+      "team": "Hampden Has-Beens",
+      "division": "O",
+      "wins": 5,
+      "losses": 8,
+      "weekly_record": "5-8"
+    },
+    {
+      "rank": 7,
+      "prev_rank": 7,
+      "team": "Free The Nip",
+      "division": "D",
+      "wins": 7,
+      "losses": 6,
+      "weekly_record": "7-6"
+    },
+    {
+      "rank": 8,
+      "prev_rank": 8,
+      "team": "One Direction Two",
+      "division": "O",
+      "wins": 4,
+      "losses": 9,
+      "weekly_record": "4-9"
+    },
+    {
+      "rank": 9,
+      "prev_rank": 9,
+      "team": "Lester Pearls",
+      "division": "D",
+      "wins": 5,
+      "losses": 8,
+      "weekly_record": "5-8"
+    },
+    {
+      "rank": 10,
+      "prev_rank": 10,
+      "team": "Gashouse Gorillas",
+      "division": "W",
+      "wins": 6,
+      "losses": 7,
+      "weekly_record": "6-7"
+    },
+    {
+      "rank": 11,
+      "prev_rank": 11,
+      "team": "East Shore Boys",
+      "division": "D",
+      "wins": 4,
+      "losses": 9,
+      "weekly_record": "4-9"
+    },
+    {
+      "rank": 12,
+      "prev_rank": 12,
+      "team": "Ytterby Yetis",
+      "division": "W",
+      "wins": 5,
+      "losses": 8,
+      "weekly_record": "5-8"
+    }
+  ],
+  "week14_matchups": [
+    {
+      "away": "The ReBiggulators",
+      "home": "Los Pollos Hermanos"
+    },
+    {
+      "away": "Gashouse Gorillas",
+      "home": "Ytterby Yetis"
+    },
+    {
+      "away": "Hampden Has-Beens",
+      "home": "One Direction Two"
+    },
+    {
+      "away": "Boomie's Boys",
+      "home": "Mobius Strippers"
+    },
+    {
+      "away": "The Original Series",
+      "home": "Free The Nip"
+    },
+    {
+      "away": "Lester Pearls",
+      "home": "East Shore Boys"
+    }
+  ],
+  "teams": [
+    "Boomie's Boys",
+    "Mobius Strippers",
+    "Los Pollos Hermanos",
+    "The ReBiggulators",
+    "The Original Series",
+    "Hampden Has-Beens",
+    "Free The Nip",
+    "One Direction Two",
+    "Lester Pearls",
+    "Gashouse Gorillas",
+    "East Shore Boys",
+    "Ytterby Yetis"
+  ],
+  "divisions": {
+    "O": [
+      "Boomie's Boys",
+      "Mobius Strippers",
+      "Hampden Has-Beens",
+      "One Direction Two"
+    ],
+    "W": [
+      "Los Pollos Hermanos",
+      "The ReBiggulators",
+      "Gashouse Gorillas",
+      "Ytterby Yetis"
+    ],
+    "D": [
+      "The Original Series",
+      "Free The Nip",
+      "Lester Pearls",
+      "East Shore Boys"
+    ]
+  }
+}

@@ -1,0 +1,1110 @@
+{
+  "weekly_scores": {
+    "Boomie's Boys": {
+      "1": 36,
+      "2": 47,
+      "3": 32,
+      "4": 35,
+      "5": 40,
+      "6": 42,
+      "7": 25,
+      "8": 43,
+      "9": 28,
+      "10": 41,
+      "11": 40,
+      "12": 19,
+      "13": 33
+    },
+    "Mobius Strippers": {
+      "1": 27,
+      "2": 36,
+      "3": 31,
+      "4": 23,
+      "5": 37,
+      "6": 30,
+      "7": 43,
+      "8": 42,
+      "9": 39,
+      "10": 32,
+      "11": 24,
+      "12": 38,
+      "13": 25
+    },
+    "Los Pollos Hermanos": {
+      "1": 28,
+      "2": 25,
+      "3": 32,
+      "4": 32,
+      "5": 26,
+      "6": 38,
+      "7": 31,
+      "8": 33,
+      "9": 32,
+      "10": 26,
+      "11": 21,
+      "12": 44,
+      "13": 37
+    },
+    "The ReBiggulators": {
+      "1": 26,
+      "2": 22,
+      "3": 35,
+      "4": 28,
+      "5": 35,
+      "6": 30,
+      "7": 37,
+      "8": 23,
+      "9": 40,
+      "10": 28,
+      "11": 29,
+      "12": 28,
+      "13": 26
+    },
+    "The Original Series": {
+      "1": 31,
+      "2": 36,
+      "3": 29,
+      "4": 28,
+      "5": 29,
+      "6": 28,
+      "7": 25,
+      "8": 29,
+      "9": 26,
+      "10": 39,
+      "11": 22,
+      "12": 35,
+      "13": 23
+    },
+    "Hampden Has-Beens": {
+      "1": 29,
+      "2": 32,
+      "3": 27,
+      "4": 24,
+      "5": 28,
+      "6": 29,
+      "7": 30,
+      "8": 19,
+      "9": 26,
+      "10": 43,
+      "11": 36,
+      "12": 7,
+      "13": 30
+    },
+    "Free The Nip": {
+      "1": 24,
+      "2": 26,
+      "3": 9,
+      "4": 35,
+      "5": 23,
+      "6": 24,
+      "7": 36,
+      "8": 30,
+      "9": 31,
+      "10": 15,
+      "11": 28,
+      "12": 19,
+      "13": 28
+    },
+    "One Direction Two": {
+      "1": 22,
+      "2": 19,
+      "3": 31,
+      "4": 28,
+      "5": 36,
+      "6": 13,
+      "7": 42,
+      "8": 10,
+      "9": 17,
+      "10": 28,
+      "11": 23,
+      "12": 40,
+      "13": 19
+    },
+    "Lester Pearls": {
+      "1": 31,
+      "2": 28,
+      "3": 18,
+      "4": 27,
+      "5": 40,
+      "6": 21,
+      "7": 23,
+      "8": 22,
+      "9": 29,
+      "10": 23,
+      "11": 19,
+      "12": 20,
+      "13": 21
+    },
+    "Gashouse Gorillas": {
+      "1": 33,
+      "2": 19,
+      "3": 26,
+      "4": 17,
+      "5": 21,
+      "6": 30,
+      "7": 20,
+      "8": 39,
+      "9": 20,
+      "10": 29,
+      "11": 23,
+      "12": 24,
+      "13": 26
+    },
+    "East Shore Boys": {
+      "1": 17,
+      "2": 15,
+      "3": 25,
+      "4": 18,
+      "5": 35,
+      "6": 39,
+      "7": 29,
+      "8": 18,
+      "9": 25,
+      "10": 24,
+      "11": 16,
+      "12": 21,
+      "13": 26
+    },
+    "Ytterby Yetis": {
+      "1": 11,
+      "2": 18,
+      "3": 44,
+      "4": 20,
+      "5": 23,
+      "6": 15,
+      "7": 15,
+      "8": 20,
+      "9": 28,
+      "10": 18,
+      "11": 23,
+      "12": 16,
+      "13": 10
+    }
+  },
+  "matrix": {
+    "Boomie's Boys__vs__Mobius Strippers": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Boomie's Boys__vs__Los Pollos Hermanos": {
+      "wins": 8,
+      "losses": 4,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Boomie's Boys__vs__The ReBiggulators": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Boomie's Boys__vs__The Original Series": {
+      "wins": 11,
+      "losses": 1,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Boomie's Boys__vs__Hampden Has-Beens": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Boomie's Boys__vs__Free The Nip": {
+      "wins": 9,
+      "losses": 2,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Boomie's Boys__vs__One Direction Two": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Boomie's Boys__vs__Lester Pearls": {
+      "wins": 10,
+      "losses": 2,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Boomie's Boys__vs__Gashouse Gorillas": {
+      "wins": 12,
+      "losses": 1,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.9230769230769231
+    },
+    "Boomie's Boys__vs__East Shore Boys": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Boomie's Boys__vs__Ytterby Yetis": {
+      "wins": 11,
+      "losses": 1,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Mobius Strippers__vs__Boomie's Boys": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Mobius Strippers__vs__Los Pollos Hermanos": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Mobius Strippers__vs__The ReBiggulators": {
+      "wins": 7,
+      "losses": 5,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Mobius Strippers__vs__The Original Series": {
+      "wins": 9,
+      "losses": 3,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Mobius Strippers__vs__Hampden Has-Beens": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Mobius Strippers__vs__Free The Nip": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Mobius Strippers__vs__One Direction Two": {
+      "wins": 10,
+      "losses": 2,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Mobius Strippers__vs__Lester Pearls": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Mobius Strippers__vs__Gashouse Gorillas": {
+      "wins": 10,
+      "losses": 2,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Mobius Strippers__vs__East Shore Boys": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Mobius Strippers__vs__Ytterby Yetis": {
+      "wins": 12,
+      "losses": 1,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.9230769230769231
+    },
+    "Los Pollos Hermanos__vs__Boomie's Boys": {
+      "wins": 4,
+      "losses": 8,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Los Pollos Hermanos__vs__Mobius Strippers": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "Los Pollos Hermanos__vs__The ReBiggulators": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Los Pollos Hermanos__vs__The Original Series": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Los Pollos Hermanos__vs__Hampden Has-Beens": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Los Pollos Hermanos__vs__Free The Nip": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Los Pollos Hermanos__vs__One Direction Two": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Los Pollos Hermanos__vs__Lester Pearls": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Los Pollos Hermanos__vs__Gashouse Gorillas": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Los Pollos Hermanos__vs__East Shore Boys": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Los Pollos Hermanos__vs__Ytterby Yetis": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "The ReBiggulators__vs__Boomie's Boys": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "The ReBiggulators__vs__Mobius Strippers": {
+      "wins": 5,
+      "losses": 7,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "The ReBiggulators__vs__Los Pollos Hermanos": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "The ReBiggulators__vs__The Original Series": {
+      "wins": 7,
+      "losses": 5,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "The ReBiggulators__vs__Hampden Has-Beens": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "The ReBiggulators__vs__Free The Nip": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "The ReBiggulators__vs__One Direction Two": {
+      "wins": 8,
+      "losses": 3,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "The ReBiggulators__vs__Lester Pearls": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "The ReBiggulators__vs__Gashouse Gorillas": {
+      "wins": 8,
+      "losses": 3,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "The ReBiggulators__vs__East Shore Boys": {
+      "wins": 10,
+      "losses": 1,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "The ReBiggulators__vs__Ytterby Yetis": {
+      "wins": 12,
+      "losses": 1,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.9230769230769231
+    },
+    "The Original Series__vs__Boomie's Boys": {
+      "wins": 1,
+      "losses": 11,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.07692307692307693
+    },
+    "The Original Series__vs__Mobius Strippers": {
+      "wins": 3,
+      "losses": 9,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "The Original Series__vs__Los Pollos Hermanos": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "The Original Series__vs__The ReBiggulators": {
+      "wins": 5,
+      "losses": 7,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "The Original Series__vs__Hampden Has-Beens": {
+      "wins": 7,
+      "losses": 5,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "The Original Series__vs__Free The Nip": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "The Original Series__vs__One Direction Two": {
+      "wins": 7,
+      "losses": 5,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "The Original Series__vs__Lester Pearls": {
+      "wins": 10,
+      "losses": 2,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "The Original Series__vs__Gashouse Gorillas": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "The Original Series__vs__East Shore Boys": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "The Original Series__vs__Ytterby Yetis": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Hampden Has-Beens__vs__Boomie's Boys": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Hampden Has-Beens__vs__Mobius Strippers": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Hampden Has-Beens__vs__Los Pollos Hermanos": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Hampden Has-Beens__vs__The ReBiggulators": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Hampden Has-Beens__vs__The Original Series": {
+      "wins": 5,
+      "losses": 7,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Hampden Has-Beens__vs__Free The Nip": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Hampden Has-Beens__vs__One Direction Two": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Hampden Has-Beens__vs__Lester Pearls": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Hampden Has-Beens__vs__Gashouse Gorillas": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Hampden Has-Beens__vs__East Shore Boys": {
+      "wins": 10,
+      "losses": 3,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "Hampden Has-Beens__vs__Ytterby Yetis": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "Free The Nip__vs__Boomie's Boys": {
+      "wins": 2,
+      "losses": 9,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Free The Nip__vs__Mobius Strippers": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Free The Nip__vs__Los Pollos Hermanos": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Free The Nip__vs__The ReBiggulators": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Free The Nip__vs__The Original Series": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "Free The Nip__vs__Hampden Has-Beens": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Free The Nip__vs__One Direction Two": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Free The Nip__vs__Lester Pearls": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Free The Nip__vs__Gashouse Gorillas": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Free The Nip__vs__East Shore Boys": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Free The Nip__vs__Ytterby Yetis": {
+      "wins": 10,
+      "losses": 2,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.7692307692307693
+    },
+    "One Direction Two__vs__Boomie's Boys": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "One Direction Two__vs__Mobius Strippers": {
+      "wins": 2,
+      "losses": 10,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "One Direction Two__vs__Los Pollos Hermanos": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "One Direction Two__vs__The ReBiggulators": {
+      "wins": 3,
+      "losses": 8,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "One Direction Two__vs__The Original Series": {
+      "wins": 5,
+      "losses": 7,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "One Direction Two__vs__Hampden Has-Beens": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "One Direction Two__vs__Free The Nip": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "One Direction Two__vs__Lester Pearls": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "One Direction Two__vs__Gashouse Gorillas": {
+      "wins": 5,
+      "losses": 6,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "One Direction Two__vs__East Shore Boys": {
+      "wins": 9,
+      "losses": 4,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6923076923076923
+    },
+    "One Direction Two__vs__Ytterby Yetis": {
+      "wins": 8,
+      "losses": 4,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Lester Pearls__vs__Boomie's Boys": {
+      "wins": 2,
+      "losses": 10,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Lester Pearls__vs__Mobius Strippers": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Lester Pearls__vs__Los Pollos Hermanos": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Lester Pearls__vs__The ReBiggulators": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Lester Pearls__vs__The Original Series": {
+      "wins": 2,
+      "losses": 10,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Lester Pearls__vs__Hampden Has-Beens": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "Lester Pearls__vs__Free The Nip": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "Lester Pearls__vs__One Direction Two": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Lester Pearls__vs__Gashouse Gorillas": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Lester Pearls__vs__East Shore Boys": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Lester Pearls__vs__Ytterby Yetis": {
+      "wins": 11,
+      "losses": 2,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.8461538461538461
+    },
+    "Gashouse Gorillas__vs__Boomie's Boys": {
+      "wins": 1,
+      "losses": 12,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.07692307692307693
+    },
+    "Gashouse Gorillas__vs__Mobius Strippers": {
+      "wins": 2,
+      "losses": 10,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Gashouse Gorillas__vs__Los Pollos Hermanos": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Gashouse Gorillas__vs__The ReBiggulators": {
+      "wins": 3,
+      "losses": 8,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Gashouse Gorillas__vs__The Original Series": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "Gashouse Gorillas__vs__Hampden Has-Beens": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Gashouse Gorillas__vs__Free The Nip": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "Gashouse Gorillas__vs__One Direction Two": {
+      "wins": 6,
+      "losses": 5,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "Gashouse Gorillas__vs__Lester Pearls": {
+      "wins": 8,
+      "losses": 5,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "Gashouse Gorillas__vs__East Shore Boys": {
+      "wins": 7,
+      "losses": 5,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Gashouse Gorillas__vs__Ytterby Yetis": {
+      "wins": 8,
+      "losses": 4,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.6153846153846154
+    },
+    "East Shore Boys__vs__Boomie's Boys": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "East Shore Boys__vs__Mobius Strippers": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "East Shore Boys__vs__Los Pollos Hermanos": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "East Shore Boys__vs__The ReBiggulators": {
+      "wins": 1,
+      "losses": 10,
+      "ties": 2,
+      "total": 13,
+      "win_pct": 0.07692307692307693
+    },
+    "East Shore Boys__vs__The Original Series": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "East Shore Boys__vs__Hampden Has-Beens": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "East Shore Boys__vs__Free The Nip": {
+      "wins": 5,
+      "losses": 8,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "East Shore Boys__vs__One Direction Two": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "East Shore Boys__vs__Lester Pearls": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    },
+    "East Shore Boys__vs__Gashouse Gorillas": {
+      "wins": 5,
+      "losses": 7,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.38461538461538464
+    },
+    "East Shore Boys__vs__Ytterby Yetis": {
+      "wins": 7,
+      "losses": 6,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.5384615384615384
+    },
+    "Ytterby Yetis__vs__Boomie's Boys": {
+      "wins": 1,
+      "losses": 11,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.07692307692307693
+    },
+    "Ytterby Yetis__vs__Mobius Strippers": {
+      "wins": 1,
+      "losses": 12,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.07692307692307693
+    },
+    "Ytterby Yetis__vs__Los Pollos Hermanos": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Ytterby Yetis__vs__The ReBiggulators": {
+      "wins": 1,
+      "losses": 12,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.07692307692307693
+    },
+    "Ytterby Yetis__vs__The Original Series": {
+      "wins": 3,
+      "losses": 10,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.23076923076923078
+    },
+    "Ytterby Yetis__vs__Hampden Has-Beens": {
+      "wins": 4,
+      "losses": 9,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Ytterby Yetis__vs__Free The Nip": {
+      "wins": 2,
+      "losses": 10,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Ytterby Yetis__vs__One Direction Two": {
+      "wins": 4,
+      "losses": 8,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Ytterby Yetis__vs__Lester Pearls": {
+      "wins": 2,
+      "losses": 11,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.15384615384615385
+    },
+    "Ytterby Yetis__vs__Gashouse Gorillas": {
+      "wins": 4,
+      "losses": 8,
+      "ties": 1,
+      "total": 13,
+      "win_pct": 0.3076923076923077
+    },
+    "Ytterby Yetis__vs__East Shore Boys": {
+      "wins": 6,
+      "losses": 7,
+      "ties": 0,
+      "total": 13,
+      "win_pct": 0.46153846153846156
+    }
+  }
+}

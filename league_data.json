@@ -1,0 +1,1726 @@
+{
+  "standings": [
+    {
+      "rank": 1,
+      "prev_rank": 1,
+      "team": "Boomie`s Boys",
+      "division": "O",
+      "power_record": "225-57-4",
+      "power_pct": 0.794,
+      "h2h_record": "10.6-3.4",
+      "h2h_pct": 0.757,
+      "weekly_record": "10-3",
+      "weekly_pct": 0.769
+    },
+    {
+      "rank": 2,
+      "prev_rank": 2,
+      "team": "Mobius Strippers",
+      "division": "O",
+      "power_record": "194-90-2",
+      "power_pct": 0.682,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 3,
+      "prev_rank": 3,
+      "team": "Los Pollos Hermanos",
+      "division": "W",
+      "power_record": "187-96-3",
+      "power_pct": 0.659,
+      "h2h_record": "9.6-4.4",
+      "h2h_pct": 0.686,
+      "weekly_record": "9-4",
+      "weekly_pct": 0.692
+    },
+    {
+      "rank": 4,
+      "prev_rank": 4,
+      "team": "The ReBiggulators",
+      "division": "W",
+      "power_record": "175-109-2",
+      "power_pct": 0.615,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 5,
+      "prev_rank": 5,
+      "team": "The Original Series",
+      "division": "D",
+      "power_record": "156-130",
+      "power_pct": 0.545,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 6,
+      "prev_rank": 6,
+      "team": "Hampden Has-Beens",
+      "division": "O",
+      "power_record": "146-140",
+      "power_pct": 0.51,
+      "h2h_record": "5.6-8.4",
+      "h2h_pct": 0.4,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 7,
+      "prev_rank": 7,
+      "team": "Free The Nip",
+      "division": "D",
+      "power_record": "135-151",
+      "power_pct": 0.472,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 8,
+      "prev_rank": 8,
+      "team": "One Direction Two",
+      "division": "O",
+      "power_record": "121-165",
+      "power_pct": 0.423,
+      "h2h_record": "4.4-9.6",
+      "h2h_pct": 0.314,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 9,
+      "prev_rank": 9,
+      "team": "Lester Pearls",
+      "division": "D",
+      "power_record": "110-172-4",
+      "power_pct": 0.392,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 10,
+      "prev_rank": 10,
+      "team": "Gashouse Gorillas",
+      "division": "W",
+      "power_record": "109-175-2",
+      "power_pct": 0.385,
+      "h2h_record": "6.5-7.5",
+      "h2h_pct": 0.464,
+      "weekly_record": "6-7",
+      "weekly_pct": 0.462
+    },
+    {
+      "rank": 11,
+      "prev_rank": 11,
+      "team": "East Shore Boys",
+      "division": "D",
+      "power_record": "91-194-1",
+      "power_pct": 0.32,
+      "h2h_record": "4.5-9.5",
+      "h2h_pct": 0.321,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 12,
+      "prev_rank": 12,
+      "team": "Ytterby Yetis",
+      "division": "W",
+      "power_record": "57-227-2",
+      "power_pct": 0.203,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 1,
+      "prev_rank": 1,
+      "team": "Boomie`s Boys",
+      "division": "O",
+      "power_record": "225-57-4",
+      "power_pct": 0.794,
+      "h2h_record": "10.6-3.4",
+      "h2h_pct": 0.757,
+      "weekly_record": "10-3",
+      "weekly_pct": 0.769
+    },
+    {
+      "rank": 2,
+      "prev_rank": 2,
+      "team": "Mobius Strippers",
+      "division": "O",
+      "power_record": "194-90-2",
+      "power_pct": 0.682,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 3,
+      "prev_rank": 3,
+      "team": "Los Pollos Hermanos",
+      "division": "W",
+      "power_record": "187-96-3",
+      "power_pct": 0.659,
+      "h2h_record": "9.6-4.4",
+      "h2h_pct": 0.686,
+      "weekly_record": "9-4",
+      "weekly_pct": 0.692
+    },
+    {
+      "rank": 4,
+      "prev_rank": 4,
+      "team": "The ReBiggulators",
+      "division": "W",
+      "power_record": "175-109-2",
+      "power_pct": 0.615,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 5,
+      "prev_rank": 5,
+      "team": "The Original Series",
+      "division": "D",
+      "power_record": "156-130",
+      "power_pct": 0.545,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 6,
+      "prev_rank": 6,
+      "team": "Hampden Has-Beens",
+      "division": "O",
+      "power_record": "146-140",
+      "power_pct": 0.51,
+      "h2h_record": "5.6-8.4",
+      "h2h_pct": 0.4,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 7,
+      "prev_rank": 7,
+      "team": "Free The Nip",
+      "division": "D",
+      "power_record": "135-151",
+      "power_pct": 0.472,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 8,
+      "prev_rank": 8,
+      "team": "One Direction Two",
+      "division": "O",
+      "power_record": "121-165",
+      "power_pct": 0.423,
+      "h2h_record": "4.4-9.6",
+      "h2h_pct": 0.314,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 9,
+      "prev_rank": 9,
+      "team": "Lester Pearls",
+      "division": "D",
+      "power_record": "110-172-4",
+      "power_pct": 0.392,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 10,
+      "prev_rank": 10,
+      "team": "Gashouse Gorillas",
+      "division": "W",
+      "power_record": "109-175-2",
+      "power_pct": 0.385,
+      "h2h_record": "6.5-7.5",
+      "h2h_pct": 0.464,
+      "weekly_record": "6-7",
+      "weekly_pct": 0.462
+    },
+    {
+      "rank": 11,
+      "prev_rank": 11,
+      "team": "East Shore Boys",
+      "division": "D",
+      "power_record": "91-194-1",
+      "power_pct": 0.32,
+      "h2h_record": "4.5-9.5",
+      "h2h_pct": 0.321,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 12,
+      "prev_rank": 12,
+      "team": "Ytterby Yetis",
+      "division": "W",
+      "power_record": "57-227-2",
+      "power_pct": 0.203,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 1,
+      "prev_rank": 1,
+      "team": "Boomie`s Boys",
+      "division": "O",
+      "power_record": "225-57-4",
+      "power_pct": 0.794,
+      "h2h_record": "10.6-3.4",
+      "h2h_pct": 0.757,
+      "weekly_record": "10-3",
+      "weekly_pct": 0.769
+    },
+    {
+      "rank": 2,
+      "prev_rank": 2,
+      "team": "Mobius Strippers",
+      "division": "O",
+      "power_record": "194-90-2",
+      "power_pct": 0.682,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 3,
+      "prev_rank": 3,
+      "team": "Los Pollos Hermanos",
+      "division": "W",
+      "power_record": "187-96-3",
+      "power_pct": 0.659,
+      "h2h_record": "9.6-4.4",
+      "h2h_pct": 0.686,
+      "weekly_record": "9-4",
+      "weekly_pct": 0.692
+    },
+    {
+      "rank": 4,
+      "prev_rank": 4,
+      "team": "The ReBiggulators",
+      "division": "W",
+      "power_record": "175-109-2",
+      "power_pct": 0.615,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 5,
+      "prev_rank": 5,
+      "team": "The Original Series",
+      "division": "D",
+      "power_record": "156-130",
+      "power_pct": 0.545,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 6,
+      "prev_rank": 6,
+      "team": "Hampden Has-Beens",
+      "division": "O",
+      "power_record": "146-140",
+      "power_pct": 0.51,
+      "h2h_record": "5.6-8.4",
+      "h2h_pct": 0.4,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 7,
+      "prev_rank": 7,
+      "team": "Free The Nip",
+      "division": "D",
+      "power_record": "135-151",
+      "power_pct": 0.472,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 8,
+      "prev_rank": 8,
+      "team": "One Direction Two",
+      "division": "O",
+      "power_record": "121-165",
+      "power_pct": 0.423,
+      "h2h_record": "4.4-9.6",
+      "h2h_pct": 0.314,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 9,
+      "prev_rank": 9,
+      "team": "Lester Pearls",
+      "division": "D",
+      "power_record": "110-172-4",
+      "power_pct": 0.392,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 10,
+      "prev_rank": 10,
+      "team": "Gashouse Gorillas",
+      "division": "W",
+      "power_record": "109-175-2",
+      "power_pct": 0.385,
+      "h2h_record": "6.5-7.5",
+      "h2h_pct": 0.464,
+      "weekly_record": "6-7",
+      "weekly_pct": 0.462
+    },
+    {
+      "rank": 11,
+      "prev_rank": 11,
+      "team": "East Shore Boys",
+      "division": "D",
+      "power_record": "91-194-1",
+      "power_pct": 0.32,
+      "h2h_record": "4.5-9.5",
+      "h2h_pct": 0.321,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 12,
+      "prev_rank": 12,
+      "team": "Ytterby Yetis",
+      "division": "W",
+      "power_record": "57-227-2",
+      "power_pct": 0.203,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 1,
+      "prev_rank": 1,
+      "team": "Boomie`s Boys",
+      "division": "O",
+      "power_record": "225-57-4",
+      "power_pct": 0.794,
+      "h2h_record": "10.6-3.4",
+      "h2h_pct": 0.757,
+      "weekly_record": "10-3",
+      "weekly_pct": 0.769
+    },
+    {
+      "rank": 2,
+      "prev_rank": 2,
+      "team": "Mobius Strippers",
+      "division": "O",
+      "power_record": "194-90-2",
+      "power_pct": 0.682,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 3,
+      "prev_rank": 3,
+      "team": "Los Pollos Hermanos",
+      "division": "W",
+      "power_record": "187-96-3",
+      "power_pct": 0.659,
+      "h2h_record": "9.6-4.4",
+      "h2h_pct": 0.686,
+      "weekly_record": "9-4",
+      "weekly_pct": 0.692
+    },
+    {
+      "rank": 4,
+      "prev_rank": 4,
+      "team": "The ReBiggulators",
+      "division": "W",
+      "power_record": "175-109-2",
+      "power_pct": 0.615,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 5,
+      "prev_rank": 5,
+      "team": "The Original Series",
+      "division": "D",
+      "power_record": "156-130",
+      "power_pct": 0.545,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 6,
+      "prev_rank": 6,
+      "team": "Hampden Has-Beens",
+      "division": "O",
+      "power_record": "146-140",
+      "power_pct": 0.51,
+      "h2h_record": "5.6-8.4",
+      "h2h_pct": 0.4,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 7,
+      "prev_rank": 7,
+      "team": "Free The Nip",
+      "division": "D",
+      "power_record": "135-151",
+      "power_pct": 0.472,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 8,
+      "prev_rank": 8,
+      "team": "One Direction Two",
+      "division": "O",
+      "power_record": "121-165",
+      "power_pct": 0.423,
+      "h2h_record": "4.4-9.6",
+      "h2h_pct": 0.314,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 9,
+      "prev_rank": 9,
+      "team": "Lester Pearls",
+      "division": "D",
+      "power_record": "110-172-4",
+      "power_pct": 0.392,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 10,
+      "prev_rank": 10,
+      "team": "Gashouse Gorillas",
+      "division": "W",
+      "power_record": "109-175-2",
+      "power_pct": 0.385,
+      "h2h_record": "6.5-7.5",
+      "h2h_pct": 0.464,
+      "weekly_record": "6-7",
+      "weekly_pct": 0.462
+    },
+    {
+      "rank": 11,
+      "prev_rank": 11,
+      "team": "East Shore Boys",
+      "division": "D",
+      "power_record": "91-194-1",
+      "power_pct": 0.32,
+      "h2h_record": "4.5-9.5",
+      "h2h_pct": 0.321,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 12,
+      "prev_rank": 12,
+      "team": "Ytterby Yetis",
+      "division": "W",
+      "power_record": "57-227-2",
+      "power_pct": 0.203,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 1,
+      "prev_rank": 1,
+      "team": "Boomie`s Boys",
+      "division": "O",
+      "power_record": "225-57-4",
+      "power_pct": 0.794,
+      "h2h_record": "10.6-3.4",
+      "h2h_pct": 0.757,
+      "weekly_record": "10-3",
+      "weekly_pct": 0.769
+    },
+    {
+      "rank": 2,
+      "prev_rank": 2,
+      "team": "Mobius Strippers",
+      "division": "O",
+      "power_record": "194-90-2",
+      "power_pct": 0.682,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 3,
+      "prev_rank": 3,
+      "team": "Los Pollos Hermanos",
+      "division": "W",
+      "power_record": "187-96-3",
+      "power_pct": 0.659,
+      "h2h_record": "9.6-4.4",
+      "h2h_pct": 0.686,
+      "weekly_record": "9-4",
+      "weekly_pct": 0.692
+    },
+    {
+      "rank": 4,
+      "prev_rank": 4,
+      "team": "The ReBiggulators",
+      "division": "W",
+      "power_record": "175-109-2",
+      "power_pct": 0.615,
+      "h2h_record": "8.4-5.6",
+      "h2h_pct": 0.6,
+      "weekly_record": "8-5",
+      "weekly_pct": 0.615
+    },
+    {
+      "rank": 5,
+      "prev_rank": 5,
+      "team": "The Original Series",
+      "division": "D",
+      "power_record": "156-130",
+      "power_pct": 0.545,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 6,
+      "prev_rank": 6,
+      "team": "Hampden Has-Beens",
+      "division": "O",
+      "power_record": "146-140",
+      "power_pct": 0.51,
+      "h2h_record": "5.6-8.4",
+      "h2h_pct": 0.4,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 7,
+      "prev_rank": 7,
+      "team": "Free The Nip",
+      "division": "D",
+      "power_record": "135-151",
+      "power_pct": 0.472,
+      "h2h_record": "7.5-6.5",
+      "h2h_pct": 0.536,
+      "weekly_record": "7-6",
+      "weekly_pct": 0.538
+    },
+    {
+      "rank": 8,
+      "prev_rank": 8,
+      "team": "One Direction Two",
+      "division": "O",
+      "power_record": "121-165",
+      "power_pct": 0.423,
+      "h2h_record": "4.4-9.6",
+      "h2h_pct": 0.314,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 9,
+      "prev_rank": 9,
+      "team": "Lester Pearls",
+      "division": "D",
+      "power_record": "110-172-4",
+      "power_pct": 0.392,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    },
+    {
+      "rank": 10,
+      "prev_rank": 10,
+      "team": "Gashouse Gorillas",
+      "division": "W",
+      "power_record": "109-175-2",
+      "power_pct": 0.385,
+      "h2h_record": "6.5-7.5",
+      "h2h_pct": 0.464,
+      "weekly_record": "6-7",
+      "weekly_pct": 0.462
+    },
+    {
+      "rank": 11,
+      "prev_rank": 11,
+      "team": "East Shore Boys",
+      "division": "D",
+      "power_record": "91-194-1",
+      "power_pct": 0.32,
+      "h2h_record": "4.5-9.5",
+      "h2h_pct": 0.321,
+      "weekly_record": "4-9",
+      "weekly_pct": 0.308
+    },
+    {
+      "rank": 12,
+      "prev_rank": 12,
+      "team": "Ytterby Yetis",
+      "division": "W",
+      "power_record": "57-227-2",
+      "power_pct": 0.203,
+      "h2h_record": "5.5-8.5",
+      "h2h_pct": 0.393,
+      "weekly_record": "5-8",
+      "weekly_pct": 0.385
+    }
+  ],
+  "schedule": {
+    "1": [
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 28,
+        "home": "The ReBiggulators",
+        "home_score": 26
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 11,
+        "home": "Gashouse Gorillas",
+        "home_score": 33
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 31,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 24,
+        "home": "One Direction Two",
+        "home_score": 22
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 31,
+        "home": "Boomie`s Boys",
+        "home_score": 36
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 17,
+        "home": "Mobius Strippers",
+        "home_score": 27
+      }
+    ],
+    "2": [
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 18,
+        "home": "East Shore Boys",
+        "home_score": 15
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 19,
+        "home": "Lester Pearls",
+        "home_score": 28
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 25,
+        "home": "Free The Nip",
+        "home_score": 26
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 22,
+        "home": "The Original Series",
+        "home_score": 36
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 36,
+        "home": "Boomie`s Boys",
+        "home_score": 47
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 19,
+        "home": "Hampden Has",
+        "home_score": null
+      }
+    ],
+    "3": [
+      {
+        "away": "East Shore Boys",
+        "away_score": 25,
+        "home": "Lester Pearls",
+        "home_score": 18
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 9,
+        "home": "The Original Series",
+        "home_score": 29
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 31,
+        "home": "Ytterby Yetis",
+        "home_score": 44
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 32,
+        "home": "Gashouse Gorillas",
+        "home_score": 26
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 31,
+        "home": "Los Pollos Hermanos",
+        "home_score": 32
+      },
+      {
+        "away": "Beens",
+        "away_score": 27,
+        "home": "The ReBiggulators",
+        "home_score": 35
+      }
+    ],
+    "4": [
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 20,
+        "home": "Free The Nip",
+        "home_score": 35
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 17,
+        "home": "The Original Series",
+        "home_score": 28
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 18,
+        "home": "One Direction Two",
+        "home_score": 28
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 27,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 23,
+        "home": "Los Pollos Hermanos",
+        "home_score": 32
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 35,
+        "home": "The ReBiggulators",
+        "home_score": 28
+      }
+    ],
+    "5": [
+      {
+        "away": "Free The Nip",
+        "away_score": 23,
+        "home": "East Shore Boys",
+        "home_score": 35
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 29,
+        "home": "Lester Pearls",
+        "home_score": 40
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 36,
+        "home": "Mobius Strippers",
+        "home_score": 37
+      },
+      {
+        "away": "Beens",
+        "away_score": 28,
+        "home": "Boomie`s Boys",
+        "home_score": 40
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 26,
+        "home": "Ytterby Yetis",
+        "home_score": 23
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 35,
+        "home": "Gashouse Gorillas",
+        "home_score": 21
+      }
+    ],
+    "6": [
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 38,
+        "home": "East Shore Boys",
+        "home_score": 39
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 30,
+        "home": "Lester Pearls",
+        "home_score": 21
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 24,
+        "home": "Mobius Strippers",
+        "home_score": 30
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 28,
+        "home": "Boomie`s Boys",
+        "home_score": 42
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 13,
+        "home": "Ytterby Yetis",
+        "home_score": 15
+      },
+      {
+        "away": "Beens",
+        "away_score": 29,
+        "home": "Gashouse Gorillas",
+        "home_score": 30
+      }
+    ],
+    "7": [
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 25,
+        "home": "Free The Nip",
+        "home_score": 36
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 43,
+        "home": "The Original Series",
+        "home_score": 25
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 20,
+        "home": "One Direction Two",
+        "home_score": 42
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 15,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 23,
+        "home": "Los Pollos Hermanos",
+        "home_score": 31
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 29,
+        "home": "The ReBiggulators",
+        "home_score": 37
+      }
+    ],
+    "8": [
+      {
+        "away": "The Original Series",
+        "away_score": 29,
+        "home": "East Shore Boys",
+        "home_score": 18
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 22,
+        "home": "Free The Nip",
+        "home_score": 30
+      },
+      {
+        "away": "Beens",
+        "away_score": 19,
+        "home": "Mobius Strippers",
+        "home_score": 42
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 10,
+        "home": "Boomie`s Boys",
+        "home_score": 43
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 23,
+        "home": "Ytterby Yetis",
+        "home_score": 20
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 39,
+        "home": "Los Pollos Hermanos",
+        "home_score": 33
+      }
+    ],
+    "9": [
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 28,
+        "home": "East Shore Boys",
+        "home_score": 25
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 39,
+        "home": "Lester Pearls",
+        "home_score": 29
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 40,
+        "home": "One Direction Two",
+        "home_score": 17
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 32,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 26,
+        "home": "Ytterby Yetis",
+        "home_score": 28
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 31,
+        "home": "Gashouse Gorillas",
+        "home_score": 20
+      }
+    ],
+    "10": [
+      {
+        "away": "East Shore Boys",
+        "away_score": 24,
+        "home": "Free The Nip",
+        "home_score": 15
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 23,
+        "home": "The Original Series",
+        "home_score": 39
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 32,
+        "home": "One Direction Two",
+        "home_score": 28
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 41,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 18,
+        "home": "Los Pollos Hermanos",
+        "home_score": 26
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 29,
+        "home": "The ReBiggulators",
+        "home_score": 28
+      }
+    ],
+    "11": [
+      {
+        "away": "Beens",
+        "away_score": 36,
+        "home": "Free The Nip",
+        "home_score": 28
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 23,
+        "home": "The Original Series",
+        "home_score": 22
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 29,
+        "home": "Mobius Strippers",
+        "home_score": 24
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 21,
+        "home": "Boomie`s Boys",
+        "home_score": 40
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 19,
+        "home": "Ytterby Yetis",
+        "home_score": 23
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 16,
+        "home": "Gashouse Gorillas",
+        "home_score": 23
+      }
+    ],
+    "12": [
+      {
+        "away": "Free The Nip",
+        "away_score": 19,
+        "home": "Lester Pearls",
+        "home_score": 20
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 21,
+        "home": "The Original Series",
+        "home_score": 35
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 19,
+        "home": "One Direction Two",
+        "home_score": 40
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 38,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 44,
+        "home": "Gashouse Gorillas",
+        "home_score": 24
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 16,
+        "home": "The ReBiggulators",
+        "home_score": 28
+      }
+    ],
+    "13": [
+      {
+        "away": "Beens",
+        "away_score": 30,
+        "home": "East Shore Boys",
+        "home_score": 26
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 19,
+        "home": "Lester Pearls",
+        "home_score": 21
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 26,
+        "home": "Mobius Strippers",
+        "home_score": 25
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 10,
+        "home": "Boomie`s Boys",
+        "home_score": 33
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 23,
+        "home": "Los Pollos Hermanos",
+        "home_score": 37
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 28,
+        "home": "The ReBiggulators",
+        "home_score": 26
+      }
+    ],
+    "14": [
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 28,
+        "home": "The ReBiggulators",
+        "home_score": 26
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 11,
+        "home": "Gashouse Gorillas",
+        "home_score": 33
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 31,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 24,
+        "home": "One Direction Two",
+        "home_score": 22
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 31,
+        "home": "Boomie`s Boys",
+        "home_score": 36
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 17,
+        "home": "Mobius Strippers",
+        "home_score": 27
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 18,
+        "home": "East Shore Boys",
+        "home_score": 15
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 19,
+        "home": "Lester Pearls",
+        "home_score": 28
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 25,
+        "home": "Free The Nip",
+        "home_score": 26
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 22,
+        "home": "The Original Series",
+        "home_score": 36
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 36,
+        "home": "Boomie`s Boys",
+        "home_score": 47
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 19,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 25,
+        "home": "Lester Pearls",
+        "home_score": 18
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 9,
+        "home": "The Original Series",
+        "home_score": 29
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 31,
+        "home": "Ytterby Yetis",
+        "home_score": 44
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 32,
+        "home": "Gashouse Gorillas",
+        "home_score": 26
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 31,
+        "home": "Los Pollos Hermanos",
+        "home_score": 32
+      },
+      {
+        "away": "Beens",
+        "away_score": 27,
+        "home": "The ReBiggulators",
+        "home_score": 35
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 20,
+        "home": "Free The Nip",
+        "home_score": 35
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 17,
+        "home": "The Original Series",
+        "home_score": 28
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 18,
+        "home": "One Direction Two",
+        "home_score": 28
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 27,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 23,
+        "home": "Los Pollos Hermanos",
+        "home_score": 32
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 35,
+        "home": "The ReBiggulators",
+        "home_score": 28
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 23,
+        "home": "East Shore Boys",
+        "home_score": 35
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 29,
+        "home": "Lester Pearls",
+        "home_score": 40
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 36,
+        "home": "Mobius Strippers",
+        "home_score": 37
+      },
+      {
+        "away": "Beens",
+        "away_score": 28,
+        "home": "Boomie`s Boys",
+        "home_score": 40
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 26,
+        "home": "Ytterby Yetis",
+        "home_score": 23
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 35,
+        "home": "Gashouse Gorillas",
+        "home_score": 21
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 38,
+        "home": "East Shore Boys",
+        "home_score": 39
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 30,
+        "home": "Lester Pearls",
+        "home_score": 21
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 24,
+        "home": "Mobius Strippers",
+        "home_score": 30
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 28,
+        "home": "Boomie`s Boys",
+        "home_score": 42
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 13,
+        "home": "Ytterby Yetis",
+        "home_score": 15
+      },
+      {
+        "away": "Beens",
+        "away_score": 29,
+        "home": "Gashouse Gorillas",
+        "home_score": 30
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 25,
+        "home": "Free The Nip",
+        "home_score": 36
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 43,
+        "home": "The Original Series",
+        "home_score": 25
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 20,
+        "home": "One Direction Two",
+        "home_score": 42
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 15,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 23,
+        "home": "Los Pollos Hermanos",
+        "home_score": 31
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 29,
+        "home": "The ReBiggulators",
+        "home_score": 37
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 29,
+        "home": "East Shore Boys",
+        "home_score": 18
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 22,
+        "home": "Free The Nip",
+        "home_score": 30
+      },
+      {
+        "away": "Beens",
+        "away_score": 19,
+        "home": "Mobius Strippers",
+        "home_score": 42
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 10,
+        "home": "Boomie`s Boys",
+        "home_score": 43
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 23,
+        "home": "Ytterby Yetis",
+        "home_score": 20
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 39,
+        "home": "Los Pollos Hermanos",
+        "home_score": 33
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 28,
+        "home": "East Shore Boys",
+        "home_score": 25
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 39,
+        "home": "Lester Pearls",
+        "home_score": 29
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 40,
+        "home": "One Direction Two",
+        "home_score": 17
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 32,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 26,
+        "home": "Ytterby Yetis",
+        "home_score": 28
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 31,
+        "home": "Gashouse Gorillas",
+        "home_score": 20
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 24,
+        "home": "Free The Nip",
+        "home_score": 15
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 23,
+        "home": "The Original Series",
+        "home_score": 39
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 32,
+        "home": "One Direction Two",
+        "home_score": 28
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 41,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 18,
+        "home": "Los Pollos Hermanos",
+        "home_score": 26
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 29,
+        "home": "The ReBiggulators",
+        "home_score": 28
+      },
+      {
+        "away": "Beens",
+        "away_score": 36,
+        "home": "Free The Nip",
+        "home_score": 28
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 23,
+        "home": "The Original Series",
+        "home_score": 22
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": 29,
+        "home": "Mobius Strippers",
+        "home_score": 24
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 21,
+        "home": "Boomie`s Boys",
+        "home_score": 40
+      },
+      {
+        "away": "Lester Pearls",
+        "away_score": 19,
+        "home": "Ytterby Yetis",
+        "home_score": 23
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 16,
+        "home": "Gashouse Gorillas",
+        "home_score": 23
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 19,
+        "home": "Lester Pearls",
+        "home_score": 20
+      },
+      {
+        "away": "East Shore Boys",
+        "away_score": 21,
+        "home": "The Original Series",
+        "home_score": 35
+      },
+      {
+        "away": "Boomie`s Boys",
+        "away_score": 19,
+        "home": "One Direction Two",
+        "home_score": 40
+      },
+      {
+        "away": "Mobius Strippers",
+        "away_score": 38,
+        "home": "Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Los Pollos Hermanos",
+        "away_score": 44,
+        "home": "Gashouse Gorillas",
+        "home_score": 24
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 16,
+        "home": "The ReBiggulators",
+        "home_score": 28
+      },
+      {
+        "away": "Beens",
+        "away_score": 30,
+        "home": "East Shore Boys",
+        "home_score": 26
+      },
+      {
+        "away": "One Direction Two",
+        "away_score": 19,
+        "home": "Lester Pearls",
+        "home_score": 21
+      },
+      {
+        "away": "Gashouse Gorillas",
+        "away_score": 26,
+        "home": "Mobius Strippers",
+        "home_score": 25
+      },
+      {
+        "away": "Ytterby Yetis",
+        "away_score": 10,
+        "home": "Boomie`s Boys",
+        "home_score": 33
+      },
+      {
+        "away": "The Original Series",
+        "away_score": 23,
+        "home": "Los Pollos Hermanos",
+        "home_score": 37
+      },
+      {
+        "away": "Free The Nip",
+        "away_score": 28,
+        "home": "The ReBiggulators",
+        "home_score": 26
+      },
+      {
+        "away": "The ReBiggulators",
+        "away_score": null,
+        "home": "Los Pollos Hermanos Gashouse Gorillas",
+        "home_score": null
+      },
+      {
+        "away": "Los Pollos Hermanos Gashouse Gorillas",
+        "away_score": null,
+        "home": "Ytterby Yetis Hampden Has",
+        "home_score": null
+      },
+      {
+        "away": "Beens",
+        "away_score": null,
+        "home": "One Direction Two Boomie`s Boys",
+        "home_score": null
+      },
+      {
+        "away": "One Direction Two Boomie`s Boys",
+        "away_score": null,
+        "home": "Mobius Strippers The Original Series",
+        "home_score": null
+      },
+      {
+        "away": "Mobius Strippers The Original Series",
+        "away_score": null,
+        "home": "Free The Nip Lester Pearls",
+        "home_score": null
+      },
+      {
+        "away": "Free The Nip Lester Pearls",
+        "away_score": null,
+        "home": "East Shore Boys",
+        "home_score": null
+      }
+    ]
+  }
+}

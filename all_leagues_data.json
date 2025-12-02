@@ -1,0 +1,5477 @@
+{
+  "WFFL": {
+    "teams": [
+      "Karma Chameleons",
+      "Taco Bills",
+      "Royal Flush",
+      "MindHunter",
+      "Ghost Legion",
+      "The Hack Attack",
+      "Junkyard Dogs",
+      "Goldenberg's Peanut Chews",
+      "Ellis Islanders",
+      "Olympus Mons",
+      "THE Washington (university) FT",
+      "Plundering Herd"
+    ],
+    "divisions": {
+      "D": [
+        "Karma Chameleons",
+        "Ghost Legion",
+        "Goldenberg's Peanut Chews",
+        "THE Washington (university) FT"
+      ],
+      "S": [
+        "Taco Bills",
+        "Junkyard Dogs",
+        "Ellis Islanders",
+        "Plundering Herd"
+      ],
+      "H": [
+        "Royal Flush",
+        "MindHunter",
+        "The Hack Attack",
+        "Olympus Mons"
+      ]
+    },
+    "stats": {
+      "Karma Chameleons": {
+        "wins": 11,
+        "losses": 2,
+        "ties": 0,
+        "division_wins": 5,
+        "division_losses": 0,
+        "division_ties": 0,
+        "points_for": 529,
+        "points_against": 369,
+        "matrix_rank": 1,
+        "h2h": {
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 44
+          },
+          "Royal Flush": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 41,
+            "points_against": 23
+          },
+          "MindHunter": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 26
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 21
+          },
+          "The Hack Attack": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 19
+          },
+          "Junkyard Dogs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 29
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 96,
+            "points_against": 50
+          },
+          "Ellis Islanders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 22,
+            "points_against": 28
+          },
+          "Olympus Mons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 20
+          },
+          "THE Washington (university) FT": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 118,
+            "points_against": 72
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 37
+          }
+        }
+      },
+      "Taco Bills": {
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 481,
+        "points_against": 363,
+        "matrix_rank": 2,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 30
+          },
+          "Royal Flush": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 48,
+            "points_against": 19
+          },
+          "MindHunter": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 43,
+            "points_against": 29
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 20
+          },
+          "The Hack Attack": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 46,
+            "points_against": 35
+          },
+          "Junkyard Dogs": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 61,
+            "points_against": 63
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 32
+          },
+          "Ellis Islanders": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 75,
+            "points_against": 63
+          },
+          "Olympus Mons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 50
+          },
+          "THE Washington (university) FT": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 8
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 41,
+            "points_against": 14
+          }
+        }
+      },
+      "Royal Flush": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 465,
+        "points_against": 438,
+        "matrix_rank": 3,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 41
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 48
+          },
+          "MindHunter": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 114,
+            "points_against": 70
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 29
+          },
+          "The Hack Attack": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 45,
+            "points_against": 57
+          },
+          "Junkyard Dogs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 48
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 17
+          },
+          "Ellis Islanders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 32
+          },
+          "Olympus Mons": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 75,
+            "points_against": 50
+          },
+          "THE Washington (university) FT": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 21
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 25
+          }
+        }
+      },
+      "MindHunter": {
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 423,
+        "points_against": 403,
+        "matrix_rank": 4,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 35
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 43
+          },
+          "Royal Flush": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 70,
+            "points_against": 114
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 20
+          },
+          "The Hack Attack": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 62,
+            "points_against": 57
+          },
+          "Junkyard Dogs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 20
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 53,
+            "points_against": 15
+          },
+          "Ellis Islanders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 34
+          },
+          "Olympus Mons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 45,
+            "points_against": 13
+          },
+          "THE Washington (university) FT": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 24
+          },
+          "Plundering Herd": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 28
+          }
+        }
+      },
+      "Ghost Legion": {
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 433,
+        "points_against": 395,
+        "matrix_rank": 5,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 24
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 26
+          },
+          "Royal Flush": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 44
+          },
+          "MindHunter": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 28
+          },
+          "The Hack Attack": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 66
+          },
+          "Junkyard Dogs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 35
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 61,
+            "points_against": 48
+          },
+          "Ellis Islanders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 53,
+            "points_against": 32
+          },
+          "Olympus Mons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 42
+          },
+          "THE Washington (university) FT": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 86,
+            "points_against": 31
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 19
+          }
+        }
+      },
+      "The Hack Attack": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 441,
+        "points_against": 392,
+        "matrix_rank": 6,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 42
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 46
+          },
+          "Royal Flush": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 57,
+            "points_against": 45
+          },
+          "MindHunter": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 57,
+            "points_against": 62
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 66,
+            "points_against": 35
+          },
+          "Junkyard Dogs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 0
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 39
+          },
+          "Ellis Islanders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 38,
+            "points_against": 34
+          },
+          "Olympus Mons": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 47
+          },
+          "THE Washington (university) FT": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 9
+          },
+          "Plundering Herd": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 33
+          }
+        }
+      },
+      "Junkyard Dogs": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 396,
+        "points_against": 318,
+        "matrix_rank": 7,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 33
+          },
+          "Taco Bills": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 63,
+            "points_against": 61
+          },
+          "Royal Flush": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 48,
+            "points_against": 29
+          },
+          "MindHunter": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 26
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 20
+          },
+          "The Hack Attack": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 0,
+            "points_against": 44
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 50
+          },
+          "Ellis Islanders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 41,
+            "points_against": 11
+          },
+          "Olympus Mons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 2
+          },
+          "THE Washington (university) FT": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 35
+          },
+          "Plundering Herd": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 62,
+            "points_against": 7
+          }
+        }
+      },
+      "Goldenberg's Peanut Chews": {
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 385,
+        "points_against": 461,
+        "matrix_rank": 8,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 96
+          },
+          "Taco Bills": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 21
+          },
+          "Royal Flush": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 23
+          },
+          "MindHunter": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 15,
+            "points_against": 53
+          },
+          "Ghost Legion": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 48,
+            "points_against": 61
+          },
+          "The Hack Attack": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 32
+          },
+          "Junkyard Dogs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 26
+          },
+          "Ellis Islanders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 43,
+            "points_against": 54
+          },
+          "Olympus Mons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 36
+          },
+          "THE Washington (university) FT": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 39
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 20
+          }
+        }
+      },
+      "Ellis Islanders": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 0,
+        "division_losses": 5,
+        "division_ties": 0,
+        "points_for": 383,
+        "points_against": 423,
+        "matrix_rank": 9,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 22
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 63,
+            "points_against": 75
+          },
+          "Royal Flush": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 23
+          },
+          "MindHunter": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 34,
+            "points_against": 17
+          },
+          "Ghost Legion": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 53
+          },
+          "The Hack Attack": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 34,
+            "points_against": 38
+          },
+          "Junkyard Dogs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 11,
+            "points_against": 41
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 54,
+            "points_against": 43
+          },
+          "Olympus Mons": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 46,
+            "points_against": 26
+          },
+          "THE Washington (university) FT": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 14,
+            "points_against": 32
+          },
+          "Plundering Herd": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 53
+          }
+        }
+      },
+      "Olympus Mons": {
+        "wins": 3,
+        "losses": 10,
+        "ties": 0,
+        "division_wins": 0,
+        "division_losses": 5,
+        "division_ties": 0,
+        "points_for": 357,
+        "points_against": 472,
+        "matrix_rank": 10,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 44
+          },
+          "Taco Bills": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 32
+          },
+          "Royal Flush": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 75
+          },
+          "MindHunter": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 13,
+            "points_against": 45
+          },
+          "Ghost Legion": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 44
+          },
+          "The Hack Attack": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 47,
+            "points_against": 50
+          },
+          "Junkyard Dogs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 2,
+            "points_against": 36
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 39
+          },
+          "Ellis Islanders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 46
+          },
+          "THE Washington (university) FT": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 31
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 30
+          }
+        }
+      },
+      "THE Washington (university) FT": {
+        "wins": 3,
+        "losses": 10,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 332,
+        "points_against": 508,
+        "matrix_rank": 11,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 72,
+            "points_against": 118
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 8,
+            "points_against": 44
+          },
+          "Royal Flush": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 39
+          },
+          "MindHunter": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 50
+          },
+          "Ghost Legion": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 86
+          },
+          "The Hack Attack": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 9,
+            "points_against": 26
+          },
+          "Junkyard Dogs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 36
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 31
+          },
+          "Ellis Islanders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 14
+          },
+          "Olympus Mons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 39
+          },
+          "Plundering Herd": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 25
+          }
+        }
+      },
+      "Plundering Herd": {
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 291,
+        "points_against": 374,
+        "matrix_rank": 12,
+        "h2h": {
+          "Karma Chameleons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 44
+          },
+          "Taco Bills": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 14,
+            "points_against": 41
+          },
+          "Royal Flush": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 31
+          },
+          "MindHunter": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 17
+          },
+          "Ghost Legion": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 44
+          },
+          "The Hack Attack": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 17
+          },
+          "Junkyard Dogs": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 7,
+            "points_against": 62
+          },
+          "Goldenberg's Peanut Chews": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 21
+          },
+          "Ellis Islanders": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 53,
+            "points_against": 35
+          },
+          "Olympus Mons": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 32
+          },
+          "THE Washington (university) FT": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 30
+          }
+        }
+      }
+    },
+    "week14_matchups": [
+      {
+        "away_team": "Ghost Legion",
+        "home_team": "Karma Chameleons",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Goldenberg's Peanut Chews",
+        "home_team": "THE Washington (university) FT",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Olympus Mons",
+        "home_team": "MindHunter",
+        "is_division_game": true
+      },
+      {
+        "away_team": "The Hack Attack",
+        "home_team": "Royal Flush",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Junkyard Dogs",
+        "home_team": "Ellis Islanders",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Taco Bills",
+        "home_team": "Plundering Herd",
+        "is_division_game": true
+      }
+    ],
+    "played_games": [
+      {
+        "week": 1,
+        "away_team": "Karma Chameleons",
+        "away_score": 24,
+        "home_team": "Ghost Legion",
+        "home_score": 21,
+        "is_division_game": true
+      },
+      {
+        "week": 1,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 39,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 31,
+        "is_division_game": true
+      },
+      {
+        "week": 1,
+        "away_team": "Junkyard Dogs",
+        "away_score": 36,
+        "home_team": "Olympus Mons",
+        "home_score": 2,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Ellis Islanders",
+        "away_score": 34,
+        "home_team": "MindHunter",
+        "home_score": 17,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Taco Bills",
+        "away_score": 46,
+        "home_team": "The Hack Attack",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Plundering Herd",
+        "away_score": 25,
+        "home_team": "Royal Flush",
+        "home_score": 31,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 30,
+        "home_team": "Plundering Herd",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Goldenberg's Peanut Chews",
+        "away_score": 32,
+        "home_team": "Taco Bills",
+        "home_score": 21,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Karma Chameleons",
+        "away_score": 22,
+        "home_team": "Ellis Islanders",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Ghost Legion",
+        "away_score": 20,
+        "home_team": "Junkyard Dogs",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Royal Flush",
+        "away_score": 45,
+        "home_team": "The Hack Attack",
+        "home_score": 57,
+        "is_division_game": true
+      },
+      {
+        "week": 2,
+        "away_team": "MindHunter",
+        "away_score": 45,
+        "home_team": "Olympus Mons",
+        "home_score": 13,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Plundering Herd",
+        "away_score": 14,
+        "home_team": "Taco Bills",
+        "home_score": 41,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Ellis Islanders",
+        "away_score": 11,
+        "home_team": "Junkyard Dogs",
+        "home_score": 41,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Royal Flush",
+        "away_score": 39,
+        "home_team": "THE Washington (university) FT",
+        "home_score": 21,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "The Hack Attack",
+        "away_score": 32,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 39,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "MindHunter",
+        "away_score": 26,
+        "home_team": "Karma Chameleons",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "Olympus Mons",
+        "away_score": 42,
+        "home_team": "Ghost Legion",
+        "home_score": 44,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 32,
+        "home_team": "Ellis Islanders",
+        "home_score": 14,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Goldenberg's Peanut Chews",
+        "away_score": 50,
+        "home_team": "Junkyard Dogs",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Plundering Herd",
+        "away_score": 28,
+        "home_team": "MindHunter",
+        "home_score": 17,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Taco Bills",
+        "away_score": 32,
+        "home_team": "Olympus Mons",
+        "home_score": 50,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Royal Flush",
+        "away_score": 23,
+        "home_team": "Karma Chameleons",
+        "home_score": 41,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "The Hack Attack",
+        "away_score": 66,
+        "home_team": "Ghost Legion",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 5,
+        "away_team": "Ellis Islanders",
+        "away_score": 17,
+        "home_team": "Plundering Herd",
+        "home_score": 31,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Junkyard Dogs",
+        "away_score": 25,
+        "home_team": "Taco Bills",
+        "home_score": 32,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "MindHunter",
+        "away_score": 33,
+        "home_team": "Royal Flush",
+        "home_score": 56,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Olympus Mons",
+        "away_score": 35,
+        "home_team": "The Hack Attack",
+        "home_score": 37,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Karma Chameleons",
+        "away_score": 62,
+        "home_team": "THE Washington (university) FT",
+        "home_score": 44,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Ghost Legion",
+        "away_score": 28,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 14,
+        "is_division_game": true
+      },
+      {
+        "week": 6,
+        "away_team": "Karma Chameleons",
+        "away_score": 44,
+        "home_team": "Plundering Herd",
+        "home_score": 37,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Ghost Legion",
+        "away_score": 20,
+        "home_team": "Taco Bills",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Ellis Islanders",
+        "away_score": 32,
+        "home_team": "Royal Flush",
+        "home_score": 23,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Junkyard Dogs",
+        "away_score": 0,
+        "home_team": "The Hack Attack",
+        "home_score": 44,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "MindHunter",
+        "away_score": 50,
+        "home_team": "THE Washington (university) FT",
+        "home_score": 24,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Olympus Mons",
+        "away_score": 36,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 39,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "The Hack Attack",
+        "away_score": 38,
+        "home_team": "Ellis Islanders",
+        "home_score": 34,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Royal Flush",
+        "away_score": 29,
+        "home_team": "Junkyard Dogs",
+        "home_score": 48,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Goldenberg's Peanut Chews",
+        "away_score": 15,
+        "home_team": "MindHunter",
+        "home_score": 53,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 31,
+        "home_team": "Olympus Mons",
+        "home_score": 39,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Taco Bills",
+        "away_score": 44,
+        "home_team": "Karma Chameleons",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Plundering Herd",
+        "away_score": 19,
+        "home_team": "Ghost Legion",
+        "home_score": 44,
+        "is_division_game": false
+      },
+      {
+        "week": 8,
+        "away_team": "Junkyard Dogs",
+        "away_score": 35,
+        "home_team": "Plundering Herd",
+        "home_score": 0,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Taco Bills",
+        "away_score": 42,
+        "home_team": "Ellis Islanders",
+        "home_score": 31,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Olympus Mons",
+        "away_score": 36,
+        "home_team": "Royal Flush",
+        "home_score": 42,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "MindHunter",
+        "away_score": 33,
+        "home_team": "The Hack Attack",
+        "home_score": 27,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Ghost Legion",
+        "away_score": 29,
+        "home_team": "THE Washington (university) FT",
+        "home_score": 17,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Goldenberg's Peanut Chews",
+        "away_score": 38,
+        "home_team": "Karma Chameleons",
+        "home_score": 52,
+        "is_division_game": true
+      },
+      {
+        "week": 9,
+        "away_team": "The Hack Attack",
+        "away_score": 17,
+        "home_team": "Plundering Herd",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Royal Flush",
+        "away_score": 19,
+        "home_team": "Taco Bills",
+        "home_score": 48,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Ghost Legion",
+        "away_score": 20,
+        "home_team": "MindHunter",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Karma Chameleons",
+        "away_score": 44,
+        "home_team": "Olympus Mons",
+        "home_score": 20,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Junkyard Dogs",
+        "away_score": 36,
+        "home_team": "THE Washington (university) FT",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Ellis Islanders",
+        "away_score": 54,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 43,
+        "is_division_game": false
+      },
+      {
+        "week": 10,
+        "away_team": "Plundering Herd",
+        "away_score": 22,
+        "home_team": "Ellis Islanders",
+        "home_score": 18,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Taco Bills",
+        "away_score": 29,
+        "home_team": "Junkyard Dogs",
+        "home_score": 38,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Royal Flush",
+        "away_score": 58,
+        "home_team": "MindHunter",
+        "home_score": 37,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "The Hack Attack",
+        "away_score": 13,
+        "home_team": "Olympus Mons",
+        "home_score": 12,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 28,
+        "home_team": "Karma Chameleons",
+        "home_score": 56,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Goldenberg's Peanut Chews",
+        "away_score": 34,
+        "home_team": "Ghost Legion",
+        "home_score": 33,
+        "is_division_game": true
+      },
+      {
+        "week": 11,
+        "away_team": "Olympus Mons",
+        "away_score": 26,
+        "home_team": "Ellis Islanders",
+        "home_score": 46,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "MindHunter",
+        "away_score": 26,
+        "home_team": "Junkyard Dogs",
+        "home_score": 20,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Ghost Legion",
+        "away_score": 29,
+        "home_team": "Royal Flush",
+        "home_score": 44,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Karma Chameleons",
+        "away_score": 42,
+        "home_team": "The Hack Attack",
+        "home_score": 19,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Taco Bills",
+        "away_score": 44,
+        "home_team": "THE Washington (university) FT",
+        "home_score": 8,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Plundering Herd",
+        "away_score": 20,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 21,
+        "is_division_game": false
+      },
+      {
+        "week": 12,
+        "away_team": "Ellis Islanders",
+        "away_score": 32,
+        "home_team": "Taco Bills",
+        "home_score": 33,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Plundering Herd",
+        "away_score": 7,
+        "home_team": "Junkyard Dogs",
+        "home_score": 27,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "The Hack Attack",
+        "away_score": 30,
+        "home_team": "MindHunter",
+        "home_score": 29,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Royal Flush",
+        "away_score": 33,
+        "home_team": "Olympus Mons",
+        "home_score": 14,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Karma Chameleons",
+        "away_score": 44,
+        "home_team": "Goldenberg's Peanut Chews",
+        "home_score": 12,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 14,
+        "home_team": "Ghost Legion",
+        "home_score": 57,
+        "is_division_game": true
+      },
+      {
+        "week": 13,
+        "away_team": "Olympus Mons",
+        "away_score": 32,
+        "home_team": "Plundering Herd",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "MindHunter",
+        "away_score": 29,
+        "home_team": "Taco Bills",
+        "home_score": 43,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Goldenberg's Peanut Chews",
+        "away_score": 17,
+        "home_team": "Royal Flush",
+        "home_score": 23,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "THE Washington (university) FT",
+        "away_score": 9,
+        "home_team": "The Hack Attack",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Junkyard Dogs",
+        "away_score": 29,
+        "home_team": "Karma Chameleons",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Ellis Islanders",
+        "away_score": 32,
+        "home_team": "Ghost Legion",
+        "home_score": 53,
+        "is_division_game": false
+      }
+    ],
+    "matrix_ranks": {
+      "Karma Chameleons": 1,
+      "Taco Bills": 2,
+      "Royal Flush": 3,
+      "MindHunter": 4,
+      "Ghost Legion": 5,
+      "The Hack Attack": 6,
+      "Junkyard Dogs": 7,
+      "Goldenberg's Peanut Chews": 8,
+      "Ellis Islanders": 9,
+      "Olympus Mons": 10,
+      "THE Washington (university) FT": 11,
+      "Plundering Herd": 12
+    },
+    "has_relegation": false,
+    "league_id": 1,
+    "league_name": "WFFL",
+    "matchup_probs": {
+      "Ghost Legion__at__Karma Chameleons": {
+        "away_win_pct": 0.3076923076923077,
+        "home_win_pct": 0.6923076923076923,
+        "home_record": "9-4"
+      },
+      "Goldenberg's Peanut Chews__at__THE Washington (university) FT": {
+        "away_win_pct": 0.6153846153846154,
+        "home_win_pct": 0.38461538461538464,
+        "home_record": "5-8"
+      },
+      "Olympus Mons__at__MindHunter": {
+        "away_win_pct": 0.19230769230769232,
+        "home_win_pct": 0.8076923076923077,
+        "home_record": "10-2-1"
+      },
+      "The Hack Attack__at__Royal Flush": {
+        "away_win_pct": 0.46153846153846156,
+        "home_win_pct": 0.5384615384615384,
+        "home_record": "7-6"
+      },
+      "Junkyard Dogs__at__Ellis Islanders": {
+        "away_win_pct": 0.5384615384615384,
+        "home_win_pct": 0.46153846153846156,
+        "home_record": "6-7"
+      },
+      "Taco Bills__at__Plundering Herd": {
+        "away_win_pct": 0.7692307692307693,
+        "home_win_pct": 0.23076923076923078,
+        "home_record": "3-10"
+      }
+    }
+  },
+  "DFFL": {
+    "teams": [
+      "Boston Stranglers",
+      "Hopewell Hitters",
+      "Air Nomad",
+      "Sac-Busters",
+      "Vanilla Thunder",
+      "Kona Heads",
+      "Al's Offenders",
+      "St. Paul Soaks",
+      "Novato Dawgs",
+      "The Next Generation",
+      "Pat's Lads",
+      "Rockville Reavers"
+    ],
+    "divisions": {
+      "D": [
+        "Boston Stranglers",
+        "Kona Heads",
+        "The Next Generation",
+        "Rockville Reavers"
+      ],
+      "N": [
+        "Hopewell Hitters",
+        "Vanilla Thunder",
+        "St. Paul Soaks",
+        "Pat's Lads"
+      ],
+      "M": [
+        "Air Nomad",
+        "Sac-Busters",
+        "Al's Offenders",
+        "Novato Dawgs"
+      ]
+    },
+    "stats": {
+      "Boston Stranglers": {
+        "wins": 13,
+        "losses": 0,
+        "ties": 0,
+        "division_wins": 5,
+        "division_losses": 0,
+        "division_ties": 0,
+        "points_for": 647,
+        "points_against": 441,
+        "matrix_rank": 1,
+        "h2h": {
+          "Hopewell Hitters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 49,
+            "points_against": 32
+          },
+          "Air Nomad": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 58,
+            "points_against": 42
+          },
+          "Sac-Busters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 43,
+            "points_against": 25
+          },
+          "Vanilla Thunder": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 47,
+            "points_against": 26
+          },
+          "Kona Heads": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 91,
+            "points_against": 77
+          },
+          "Al's Offenders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 49,
+            "points_against": 48
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 41,
+            "points_against": 31
+          },
+          "Novato Dawgs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 53,
+            "points_against": 42
+          },
+          "The Next Generation": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 109,
+            "points_against": 66
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 56,
+            "points_against": 25
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 51,
+            "points_against": 27
+          }
+        }
+      },
+      "Hopewell Hitters": {
+        "wins": 9,
+        "losses": 4,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 510,
+        "points_against": 412,
+        "matrix_rank": 2,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 49
+          },
+          "Air Nomad": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 38
+          },
+          "Sac-Busters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 46,
+            "points_against": 33
+          },
+          "Vanilla Thunder": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 63,
+            "points_against": 68
+          },
+          "Kona Heads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 43,
+            "points_against": 40
+          },
+          "Al's Offenders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 20
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 84,
+            "points_against": 59
+          },
+          "Novato Dawgs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 57,
+            "points_against": 31
+          },
+          "The Next Generation": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 49,
+            "points_against": 28
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 20
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 26
+          }
+        }
+      },
+      "Air Nomad": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 476,
+        "points_against": 416,
+        "matrix_rank": 3,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 58
+          },
+          "Hopewell Hitters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 38,
+            "points_against": 31
+          },
+          "Sac-Busters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 34
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 35
+          },
+          "Kona Heads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 49,
+            "points_against": 30
+          },
+          "Al's Offenders": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 79,
+            "points_against": 74
+          },
+          "St. Paul Soaks": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 34
+          },
+          "Novato Dawgs": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 66,
+            "points_against": 55
+          },
+          "The Next Generation": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 29
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 12
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 47,
+            "points_against": 24
+          }
+        }
+      },
+      "Sac-Busters": {
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 460,
+        "points_against": 413,
+        "matrix_rank": 4,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 43
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 46
+          },
+          "Air Nomad": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 34,
+            "points_against": 36
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 29
+          },
+          "Kona Heads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 56,
+            "points_against": 26
+          },
+          "Al's Offenders": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 79,
+            "points_against": 71
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 38,
+            "points_against": 27
+          },
+          "Novato Dawgs": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 75,
+            "points_against": 52
+          },
+          "The Next Generation": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 27
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 24
+          },
+          "Rockville Reavers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 32
+          }
+        }
+      },
+      "Vanilla Thunder": {
+        "wins": 9,
+        "losses": 4,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 423,
+        "points_against": 382,
+        "matrix_rank": 5,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 47
+          },
+          "Hopewell Hitters": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 68,
+            "points_against": 63
+          },
+          "Air Nomad": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 30
+          },
+          "Sac-Busters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 28
+          },
+          "Kona Heads": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 40
+          },
+          "Al's Offenders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 27
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 46,
+            "points_against": 10
+          },
+          "Novato Dawgs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 23
+          },
+          "The Next Generation": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 32
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 59,
+            "points_against": 53
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 29
+          }
+        }
+      },
+      "Kona Heads": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 415,
+        "points_against": 446,
+        "matrix_rank": 6,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 77,
+            "points_against": 91
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 40,
+            "points_against": 43
+          },
+          "Air Nomad": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 49
+          },
+          "Sac-Busters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 56
+          },
+          "Vanilla Thunder": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 40,
+            "points_against": 25
+          },
+          "Al's Offenders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 18
+          },
+          "St. Paul Soaks": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 27
+          },
+          "Novato Dawgs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 20
+          },
+          "The Next Generation": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 40
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 25
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 60,
+            "points_against": 52
+          }
+        }
+      },
+      "Al's Offenders": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 404,
+        "points_against": 439,
+        "matrix_rank": 7,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 48,
+            "points_against": 49
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 36
+          },
+          "Air Nomad": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 74,
+            "points_against": 79
+          },
+          "Sac-Busters": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 71,
+            "points_against": 79
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 29
+          },
+          "Kona Heads": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 18,
+            "points_against": 26
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 34,
+            "points_against": 33
+          },
+          "Novato Dawgs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 22,
+            "points_against": 37
+          },
+          "The Next Generation": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 24
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 24
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 23
+          }
+        }
+      },
+      "St. Paul Soaks": {
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 397,
+        "points_against": 421,
+        "matrix_rank": 8,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 41
+          },
+          "Hopewell Hitters": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 59,
+            "points_against": 84
+          },
+          "Air Nomad": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 34,
+            "points_against": 31
+          },
+          "Sac-Busters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 38
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 10,
+            "points_against": 46
+          },
+          "Kona Heads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 19
+          },
+          "Al's Offenders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 34
+          },
+          "Novato Dawgs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 25
+          },
+          "The Next Generation": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 55,
+            "points_against": 23
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 65,
+            "points_against": 57
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 23
+          }
+        }
+      },
+      "Novato Dawgs": {
+        "wins": 3,
+        "losses": 10,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 394,
+        "points_against": 493,
+        "matrix_rank": 9,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 53
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 57
+          },
+          "Air Nomad": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 55,
+            "points_against": 66
+          },
+          "Sac-Busters": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 52,
+            "points_against": 75
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 33
+          },
+          "Kona Heads": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 39
+          },
+          "Al's Offenders": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 22
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 19
+          },
+          "The Next Generation": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 41
+          },
+          "Pat's Lads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 34
+          },
+          "Rockville Reavers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 54
+          }
+        }
+      },
+      "The Next Generation": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 383,
+        "points_against": 458,
+        "matrix_rank": 10,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 66,
+            "points_against": 109
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 49
+          },
+          "Air Nomad": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 25
+          },
+          "Sac-Busters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 26
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 37
+          },
+          "Kona Heads": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 40,
+            "points_against": 25
+          },
+          "Al's Offenders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 33
+          },
+          "St. Paul Soaks": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 55
+          },
+          "Novato Dawgs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 41,
+            "points_against": 27
+          },
+          "Pat's Lads": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 29
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 53,
+            "points_against": 43
+          }
+        }
+      },
+      "Pat's Lads": {
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 338,
+        "points_against": 448,
+        "matrix_rank": 11,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 56
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 37
+          },
+          "Air Nomad": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 12,
+            "points_against": 33
+          },
+          "Sac-Busters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 42
+          },
+          "Vanilla Thunder": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 53,
+            "points_against": 59
+          },
+          "Kona Heads": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 33
+          },
+          "Al's Offenders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 29
+          },
+          "St. Paul Soaks": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 57,
+            "points_against": 65
+          },
+          "Novato Dawgs": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 34,
+            "points_against": 50
+          },
+          "The Next Generation": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 20
+          },
+          "Rockville Reavers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 24
+          }
+        }
+      },
+      "Rockville Reavers": {
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 357,
+        "points_against": 435,
+        "matrix_rank": 12,
+        "h2h": {
+          "Boston Stranglers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 51
+          },
+          "Hopewell Hitters": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 32
+          },
+          "Air Nomad": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 47
+          },
+          "Sac-Busters": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 24
+          },
+          "Vanilla Thunder": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 36
+          },
+          "Kona Heads": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 52,
+            "points_against": 60
+          },
+          "Al's Offenders": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 28
+          },
+          "St. Paul Soaks": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 37
+          },
+          "Novato Dawgs": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 54,
+            "points_against": 32
+          },
+          "The Next Generation": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 43,
+            "points_against": 53
+          },
+          "Pat's Lads": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 35
+          }
+        }
+      }
+    },
+    "week14_matchups": [
+      {
+        "away_team": "Air Nomad",
+        "home_team": "Sac-Busters",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Al's Offenders",
+        "home_team": "Novato Dawgs",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Vanilla Thunder",
+        "home_team": "St. Paul Soaks",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Hopewell Hitters",
+        "home_team": "Pat's Lads",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Boston Stranglers",
+        "home_team": "Rockville Reavers",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Kona Heads",
+        "home_team": "The Next Generation",
+        "is_division_game": true
+      }
+    ],
+    "played_games": [
+      {
+        "week": 1,
+        "away_team": "Sac-Busters",
+        "away_score": 34,
+        "home_team": "Air Nomad",
+        "home_score": 36,
+        "is_division_game": true
+      },
+      {
+        "week": 1,
+        "away_team": "Novato Dawgs",
+        "away_score": 37,
+        "home_team": "Al's Offenders",
+        "home_score": 22,
+        "is_division_game": true
+      },
+      {
+        "week": 1,
+        "away_team": "Boston Stranglers",
+        "away_score": 47,
+        "home_team": "Vanilla Thunder",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Rockville Reavers",
+        "away_score": 23,
+        "home_team": "St. Paul Soaks",
+        "home_score": 37,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Kona Heads",
+        "away_score": 40,
+        "home_team": "Hopewell Hitters",
+        "home_score": 43,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "The Next Generation",
+        "away_score": 20,
+        "home_team": "Pat's Lads",
+        "home_score": 29,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Novato Dawgs",
+        "away_score": 27,
+        "home_team": "The Next Generation",
+        "home_score": 41,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Al's Offenders",
+        "away_score": 18,
+        "home_team": "Kona Heads",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Sac-Busters",
+        "away_score": 24,
+        "home_team": "Rockville Reavers",
+        "home_score": 32,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Air Nomad",
+        "away_score": 42,
+        "home_team": "Boston Stranglers",
+        "home_score": 58,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Pat's Lads",
+        "away_score": 20,
+        "home_team": "Hopewell Hitters",
+        "home_score": 37,
+        "is_division_game": true
+      },
+      {
+        "week": 2,
+        "away_team": "St. Paul Soaks",
+        "away_score": 10,
+        "home_team": "Vanilla Thunder",
+        "home_score": 46,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "The Next Generation",
+        "away_score": 40,
+        "home_team": "Kona Heads",
+        "home_score": 25,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Rockville Reavers",
+        "away_score": 27,
+        "home_team": "Boston Stranglers",
+        "home_score": 51,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Pat's Lads",
+        "away_score": 34,
+        "home_team": "Novato Dawgs",
+        "home_score": 50,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "Hopewell Hitters",
+        "away_score": 36,
+        "home_team": "Al's Offenders",
+        "home_score": 20,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "St. Paul Soaks",
+        "away_score": 27,
+        "home_team": "Sac-Busters",
+        "home_score": 38,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "Vanilla Thunder",
+        "away_score": 35,
+        "home_team": "Air Nomad",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Novato Dawgs",
+        "away_score": 32,
+        "home_team": "Rockville Reavers",
+        "home_score": 54,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Al's Offenders",
+        "away_score": 48,
+        "home_team": "Boston Stranglers",
+        "home_score": 49,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "The Next Generation",
+        "away_score": 23,
+        "home_team": "St. Paul Soaks",
+        "home_score": 55,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Kona Heads",
+        "away_score": 40,
+        "home_team": "Vanilla Thunder",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Pat's Lads",
+        "away_score": 24,
+        "home_team": "Sac-Busters",
+        "home_score": 42,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Hopewell Hitters",
+        "away_score": 31,
+        "home_team": "Air Nomad",
+        "home_score": 38,
+        "is_division_game": false
+      },
+      {
+        "week": 5,
+        "away_team": "Rockville Reavers",
+        "away_score": 19,
+        "home_team": "The Next Generation",
+        "home_score": 37,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Boston Stranglers",
+        "away_score": 46,
+        "home_team": "Kona Heads",
+        "home_score": 40,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "St. Paul Soaks",
+        "away_score": 43,
+        "home_team": "Pat's Lads",
+        "home_score": 30,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Vanilla Thunder",
+        "away_score": 19,
+        "home_team": "Hopewell Hitters",
+        "home_score": 22,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Sac-Busters",
+        "away_score": 34,
+        "home_team": "Novato Dawgs",
+        "home_score": 23,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Air Nomad",
+        "away_score": 36,
+        "home_team": "Al's Offenders",
+        "home_score": 47,
+        "is_division_game": true
+      },
+      {
+        "week": 6,
+        "away_team": "Sac-Busters",
+        "away_score": 26,
+        "home_team": "The Next Generation",
+        "home_score": 27,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Air Nomad",
+        "away_score": 49,
+        "home_team": "Kona Heads",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Rockville Reavers",
+        "away_score": 24,
+        "home_team": "Pat's Lads",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Boston Stranglers",
+        "away_score": 49,
+        "home_team": "Hopewell Hitters",
+        "home_score": 32,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "St. Paul Soaks",
+        "away_score": 19,
+        "home_team": "Novato Dawgs",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Vanilla Thunder",
+        "away_score": 29,
+        "home_team": "Al's Offenders",
+        "home_score": 27,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Hopewell Hitters",
+        "away_score": 32,
+        "home_team": "Rockville Reavers",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Pat's Lads",
+        "away_score": 25,
+        "home_team": "Boston Stranglers",
+        "home_score": 56,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Al's Offenders",
+        "away_score": 34,
+        "home_team": "St. Paul Soaks",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Novato Dawgs",
+        "away_score": 23,
+        "home_team": "Vanilla Thunder",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Kona Heads",
+        "away_score": 26,
+        "home_team": "Sac-Busters",
+        "home_score": 56,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "The Next Generation",
+        "away_score": 29,
+        "home_team": "Air Nomad",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 8,
+        "away_team": "Boston Stranglers",
+        "away_score": 62,
+        "home_team": "The Next Generation",
+        "home_score": 33,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Kona Heads",
+        "away_score": 26,
+        "home_team": "Rockville Reavers",
+        "home_score": 34,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Vanilla Thunder",
+        "away_score": 24,
+        "home_team": "Pat's Lads",
+        "home_score": 33,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "St. Paul Soaks",
+        "away_score": 23,
+        "home_team": "Hopewell Hitters",
+        "home_score": 57,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Air Nomad",
+        "away_score": 29,
+        "home_team": "Novato Dawgs",
+        "home_score": 28,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Al's Offenders",
+        "away_score": 30,
+        "home_team": "Sac-Busters",
+        "home_score": 35,
+        "is_division_game": true
+      },
+      {
+        "week": 9,
+        "away_team": "Hopewell Hitters",
+        "away_score": 49,
+        "home_team": "The Next Generation",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Pat's Lads",
+        "away_score": 25,
+        "home_team": "Kona Heads",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Air Nomad",
+        "away_score": 31,
+        "home_team": "St. Paul Soaks",
+        "home_score": 34,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Sac-Busters",
+        "away_score": 28,
+        "home_team": "Vanilla Thunder",
+        "home_score": 29,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Boston Stranglers",
+        "away_score": 53,
+        "home_team": "Novato Dawgs",
+        "home_score": 42,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Rockville Reavers",
+        "away_score": 23,
+        "home_team": "Al's Offenders",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 10,
+        "away_team": "The Next Generation",
+        "away_score": 16,
+        "home_team": "Rockville Reavers",
+        "home_score": 24,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Kona Heads",
+        "away_score": 37,
+        "home_team": "Boston Stranglers",
+        "home_score": 45,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Pat's Lads",
+        "away_score": 27,
+        "home_team": "St. Paul Soaks",
+        "home_score": 22,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Hopewell Hitters",
+        "away_score": 41,
+        "home_team": "Vanilla Thunder",
+        "home_score": 49,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Novato Dawgs",
+        "away_score": 29,
+        "home_team": "Sac-Busters",
+        "home_score": 41,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Al's Offenders",
+        "away_score": 27,
+        "home_team": "Air Nomad",
+        "home_score": 43,
+        "is_division_game": true
+      },
+      {
+        "week": 11,
+        "away_team": "Vanilla Thunder",
+        "away_score": 36,
+        "home_team": "Rockville Reavers",
+        "home_score": 29,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "St. Paul Soaks",
+        "away_score": 31,
+        "home_team": "Boston Stranglers",
+        "home_score": 41,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Air Nomad",
+        "away_score": 33,
+        "home_team": "Pat's Lads",
+        "home_score": 12,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Sac-Busters",
+        "away_score": 33,
+        "home_team": "Hopewell Hitters",
+        "home_score": 46,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Kona Heads",
+        "away_score": 39,
+        "home_team": "Novato Dawgs",
+        "home_score": 20,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "The Next Generation",
+        "away_score": 24,
+        "home_team": "Al's Offenders",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 12,
+        "away_team": "Rockville Reavers",
+        "away_score": 18,
+        "home_team": "Kona Heads",
+        "home_score": 34,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "The Next Generation",
+        "away_score": 33,
+        "home_team": "Boston Stranglers",
+        "home_score": 47,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Hopewell Hitters",
+        "away_score": 27,
+        "home_team": "St. Paul Soaks",
+        "home_score": 36,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Pat's Lads",
+        "away_score": 20,
+        "home_team": "Vanilla Thunder",
+        "home_score": 35,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Sac-Busters",
+        "away_score": 44,
+        "home_team": "Al's Offenders",
+        "home_score": 41,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Novato Dawgs",
+        "away_score": 27,
+        "home_team": "Air Nomad",
+        "home_score": 37,
+        "is_division_game": true
+      },
+      {
+        "week": 13,
+        "away_team": "Vanilla Thunder",
+        "away_score": 37,
+        "home_team": "The Next Generation",
+        "home_score": 32,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "St. Paul Soaks",
+        "away_score": 27,
+        "home_team": "Kona Heads",
+        "home_score": 19,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Al's Offenders",
+        "away_score": 29,
+        "home_team": "Pat's Lads",
+        "home_score": 24,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Novato Dawgs",
+        "away_score": 31,
+        "home_team": "Hopewell Hitters",
+        "home_score": 57,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Boston Stranglers",
+        "away_score": 43,
+        "home_team": "Sac-Busters",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Rockville Reavers",
+        "away_score": 24,
+        "home_team": "Air Nomad",
+        "home_score": 47,
+        "is_division_game": false
+      }
+    ],
+    "matrix_ranks": {
+      "Boston Stranglers": 1,
+      "Hopewell Hitters": 2,
+      "Air Nomad": 3,
+      "Sac-Busters": 4,
+      "Vanilla Thunder": 5,
+      "Kona Heads": 6,
+      "Al's Offenders": 7,
+      "St. Paul Soaks": 8,
+      "Novato Dawgs": 9,
+      "The Next Generation": 10,
+      "Pat's Lads": 11,
+      "Rockville Reavers": 12
+    },
+    "has_relegation": false,
+    "league_id": 2,
+    "league_name": "DFFL",
+    "matchup_probs": {
+      "Air Nomad__at__Sac-Busters": {
+        "away_win_pct": 0.23076923076923078,
+        "home_win_pct": 0.7692307692307693,
+        "home_record": "10-3"
+      },
+      "Al's Offenders__at__Novato Dawgs": {
+        "away_win_pct": 0.46153846153846156,
+        "home_win_pct": 0.5384615384615384,
+        "home_record": "7-6"
+      },
+      "Vanilla Thunder__at__St. Paul Soaks": {
+        "away_win_pct": 0.46153846153846156,
+        "home_win_pct": 0.5384615384615384,
+        "home_record": "7-6"
+      },
+      "Hopewell Hitters__at__Pat's Lads": {
+        "away_win_pct": 0.7692307692307693,
+        "home_win_pct": 0.23076923076923078,
+        "home_record": "3-10"
+      },
+      "Boston Stranglers__at__Rockville Reavers": {
+        "away_win_pct": 0.9230769230769231,
+        "home_win_pct": 0.07692307692307693,
+        "home_record": "1-12"
+      },
+      "Kona Heads__at__The Next Generation": {
+        "away_win_pct": 0.38461538461538464,
+        "home_win_pct": 0.6153846153846154,
+        "home_record": "8-5"
+      }
+    }
+  },
+  "FFPL": {
+    "teams": [
+      "Boomie's Boys",
+      "Mobius Strippers",
+      "Los Pollos Hermanos",
+      "The ReBiggulators",
+      "The Original Series",
+      "Hampden Has-Beens",
+      "Free The Nip",
+      "One Direction Two",
+      "Lester Pearls",
+      "Gashouse Gorillas",
+      "East Shore Boys",
+      "Ytterby Yetis"
+    ],
+    "divisions": {
+      "O": [
+        "Boomie's Boys",
+        "Mobius Strippers",
+        "Hampden Has-Beens",
+        "One Direction Two"
+      ],
+      "W": [
+        "Los Pollos Hermanos",
+        "The ReBiggulators",
+        "Gashouse Gorillas",
+        "Ytterby Yetis"
+      ],
+      "D": [
+        "The Original Series",
+        "Free The Nip",
+        "Lester Pearls",
+        "East Shore Boys"
+      ]
+    },
+    "stats": {
+      "Boomie's Boys": {
+        "wins": 10,
+        "losses": 3,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 461,
+        "points_against": 362,
+        "matrix_rank": 1,
+        "h2h": {
+          "Mobius Strippers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 47,
+            "points_against": 36
+          },
+          "Los Pollos Hermanos": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 40,
+            "points_against": 21
+          },
+          "The ReBiggulators": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 28
+          },
+          "The Original Series": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 28
+          },
+          "Hampden Has-Beens": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 81,
+            "points_against": 71
+          },
+          "Free The Nip": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 36
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 62,
+            "points_against": 50
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 31
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 26
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 25
+          },
+          "Ytterby Yetis": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 10
+          }
+        }
+      },
+      "Mobius Strippers": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 427,
+        "points_against": 363,
+        "matrix_rank": 2,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 47
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 32
+          },
+          "The ReBiggulators": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 29
+          },
+          "The Original Series": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 43,
+            "points_against": 25
+          },
+          "Hampden Has-Beens": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 80,
+            "points_against": 26
+          },
+          "Free The Nip": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 24
+          },
+          "One Direction Two": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 69,
+            "points_against": 64
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 29
+          },
+          "Gashouse Gorillas": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 26
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 17
+          },
+          "Ytterby Yetis": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 44
+          }
+        }
+      },
+      "Los Pollos Hermanos": {
+        "wins": 9,
+        "losses": 4,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 405,
+        "points_against": 361,
+        "matrix_rank": 3,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 40
+          },
+          "Mobius Strippers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 23
+          },
+          "The ReBiggulators": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 26
+          },
+          "The Original Series": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 23
+          },
+          "Hampden Has-Beens": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 26
+          },
+          "Free The Nip": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 26
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 31
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 23
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 77,
+            "points_against": 63
+          },
+          "East Shore Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 38,
+            "points_against": 39
+          },
+          "Ytterby Yetis": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 52,
+            "points_against": 41
+          }
+        }
+      },
+      "The ReBiggulators": {
+        "wins": 8,
+        "losses": 5,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 387,
+        "points_against": 331,
+        "matrix_rank": 4,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 35
+          },
+          "Mobius Strippers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 24
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 28
+          },
+          "The Original Series": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 22,
+            "points_against": 36
+          },
+          "Hampden Has-Beens": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 27
+          },
+          "Free The Nip": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 28
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 40,
+            "points_against": 17
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 21
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 63,
+            "points_against": 50
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 37,
+            "points_against": 29
+          },
+          "Ytterby Yetis": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 51,
+            "points_against": 36
+          }
+        }
+      },
+      "The Original Series": {
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "division_wins": 4,
+        "division_losses": 1,
+        "division_ties": 0,
+        "points_for": 380,
+        "points_against": 352,
+        "matrix_rank": 5,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 42
+          },
+          "Mobius Strippers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 43
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 37
+          },
+          "The ReBiggulators": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 22
+          },
+          "Hampden Has-Beens": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 29
+          },
+          "Free The Nip": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 9
+          },
+          "One Direction Two": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 22,
+            "points_against": 23
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 68,
+            "points_against": 63
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 17
+          },
+          "East Shore Boys": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 64,
+            "points_against": 39
+          },
+          "Ytterby Yetis": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 28
+          }
+        }
+      },
+      "Hampden Has-Beens": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 360,
+        "points_against": 404,
+        "matrix_rank": 6,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 71,
+            "points_against": 81
+          },
+          "Mobius Strippers": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 80
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 32
+          },
+          "The ReBiggulators": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 35
+          },
+          "The Original Series": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 31
+          },
+          "Free The Nip": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 28
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 32,
+            "points_against": 19
+          },
+          "Lester Pearls": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 27
+          },
+          "Gashouse Gorillas": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 30
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 26
+          },
+          "Ytterby Yetis": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 15
+          }
+        }
+      },
+      "Free The Nip": {
+        "wins": 7,
+        "losses": 6,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 328,
+        "points_against": 334,
+        "matrix_rank": 7,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 25
+          },
+          "Mobius Strippers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 30
+          },
+          "Los Pollos Hermanos": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 25
+          },
+          "The ReBiggulators": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 26
+          },
+          "The Original Series": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 9,
+            "points_against": 29
+          },
+          "Hampden Has-Beens": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 36
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 24,
+            "points_against": 22
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 49,
+            "points_against": 42
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 20
+          },
+          "East Shore Boys": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 38,
+            "points_against": 59
+          },
+          "Ytterby Yetis": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 35,
+            "points_against": 20
+          }
+        }
+      },
+      "One Direction Two": {
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "division_wins": 1,
+        "division_losses": 4,
+        "division_ties": 0,
+        "points_for": 328,
+        "points_against": 355,
+        "matrix_rank": 8,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 62
+          },
+          "Mobius Strippers": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 64,
+            "points_against": 69
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 32
+          },
+          "The ReBiggulators": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 40
+          },
+          "The Original Series": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 22
+          },
+          "Hampden Has-Beens": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 32
+          },
+          "Free The Nip": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 22,
+            "points_against": 24
+          },
+          "Lester Pearls": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 21
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 20
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 18
+          },
+          "Ytterby Yetis": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 13,
+            "points_against": 15
+          }
+        }
+      },
+      "Lester Pearls": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 2,
+        "division_losses": 3,
+        "division_ties": 0,
+        "points_for": 322,
+        "points_against": 363,
+        "matrix_rank": 9,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 31,
+            "points_against": 36
+          },
+          "Mobius Strippers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 39
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 31
+          },
+          "The ReBiggulators": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 30
+          },
+          "The Original Series": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 63,
+            "points_against": 68
+          },
+          "Hampden Has-Beens": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 27,
+            "points_against": 24
+          },
+          "Free The Nip": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 42,
+            "points_against": 49
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 21,
+            "points_against": 19
+          },
+          "Gashouse Gorillas": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 19
+          },
+          "East Shore Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 18,
+            "points_against": 25
+          },
+          "Ytterby Yetis": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 23
+          }
+        }
+      },
+      "Gashouse Gorillas": {
+        "wins": 6,
+        "losses": 7,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 327,
+        "points_against": 382,
+        "matrix_rank": 10,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 32
+          },
+          "Mobius Strippers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 25
+          },
+          "Los Pollos Hermanos": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 63,
+            "points_against": 77
+          },
+          "The ReBiggulators": {
+            "wins": 1,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 50,
+            "points_against": 63
+          },
+          "The Original Series": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 28
+          },
+          "Hampden Has-Beens": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 30,
+            "points_against": 29
+          },
+          "Free The Nip": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 31
+          },
+          "One Direction Two": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 42
+          },
+          "Lester Pearls": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 19,
+            "points_against": 28
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 16
+          },
+          "Ytterby Yetis": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 33,
+            "points_against": 11
+          }
+        }
+      },
+      "East Shore Boys": {
+        "wins": 4,
+        "losses": 9,
+        "ties": 0,
+        "division_wins": 3,
+        "division_losses": 2,
+        "division_ties": 0,
+        "points_for": 308,
+        "points_against": 349,
+        "matrix_rank": 11,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 28
+          },
+          "Mobius Strippers": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 17,
+            "points_against": 27
+          },
+          "Los Pollos Hermanos": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 38
+          },
+          "The ReBiggulators": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 29,
+            "points_against": 37
+          },
+          "The Original Series": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 39,
+            "points_against": 64
+          },
+          "Hampden Has-Beens": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 26,
+            "points_against": 30
+          },
+          "Free The Nip": {
+            "wins": 2,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 59,
+            "points_against": 38
+          },
+          "One Direction Two": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 18,
+            "points_against": 28
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 25,
+            "points_against": 18
+          },
+          "Gashouse Gorillas": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 16,
+            "points_against": 23
+          },
+          "Ytterby Yetis": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 15,
+            "points_against": 18
+          }
+        }
+      },
+      "Ytterby Yetis": {
+        "wins": 5,
+        "losses": 8,
+        "ties": 0,
+        "division_wins": 0,
+        "division_losses": 5,
+        "division_ties": 0,
+        "points_for": 261,
+        "points_against": 338,
+        "matrix_rank": 12,
+        "h2h": {
+          "Boomie's Boys": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 10,
+            "points_against": 33
+          },
+          "Mobius Strippers": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 44,
+            "points_against": 31
+          },
+          "Los Pollos Hermanos": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 41,
+            "points_against": 52
+          },
+          "The ReBiggulators": {
+            "wins": 0,
+            "losses": 2,
+            "ties": 0,
+            "points_for": 36,
+            "points_against": 51
+          },
+          "The Original Series": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 28,
+            "points_against": 26
+          },
+          "Hampden Has-Beens": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 15,
+            "points_against": 30
+          },
+          "Free The Nip": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 20,
+            "points_against": 35
+          },
+          "One Direction Two": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 15,
+            "points_against": 13
+          },
+          "Lester Pearls": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 23,
+            "points_against": 19
+          },
+          "Gashouse Gorillas": {
+            "wins": 0,
+            "losses": 1,
+            "ties": 0,
+            "points_for": 11,
+            "points_against": 33
+          },
+          "East Shore Boys": {
+            "wins": 1,
+            "losses": 0,
+            "ties": 0,
+            "points_for": 18,
+            "points_against": 15
+          }
+        }
+      }
+    },
+    "week14_matchups": [
+      {
+        "away_team": "The ReBiggulators",
+        "home_team": "Los Pollos Hermanos",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Gashouse Gorillas",
+        "home_team": "Ytterby Yetis",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Hampden Has-Beens",
+        "home_team": "One Direction Two",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Boomie's Boys",
+        "home_team": "Mobius Strippers",
+        "is_division_game": true
+      },
+      {
+        "away_team": "The Original Series",
+        "home_team": "Free The Nip",
+        "is_division_game": true
+      },
+      {
+        "away_team": "Lester Pearls",
+        "home_team": "East Shore Boys",
+        "is_division_game": true
+      }
+    ],
+    "played_games": [
+      {
+        "week": 1,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 28,
+        "home_team": "The ReBiggulators",
+        "home_score": 26,
+        "is_division_game": true
+      },
+      {
+        "week": 1,
+        "away_team": "Ytterby Yetis",
+        "away_score": 11,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 33,
+        "is_division_game": true
+      },
+      {
+        "week": 1,
+        "away_team": "The Original Series",
+        "away_score": 31,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 29,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Free The Nip",
+        "away_score": 24,
+        "home_team": "One Direction Two",
+        "home_score": 22,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "Lester Pearls",
+        "away_score": 31,
+        "home_team": "Boomie's Boys",
+        "home_score": 36,
+        "is_division_game": false
+      },
+      {
+        "week": 1,
+        "away_team": "East Shore Boys",
+        "away_score": 17,
+        "home_team": "Mobius Strippers",
+        "home_score": 27,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Ytterby Yetis",
+        "away_score": 18,
+        "home_team": "East Shore Boys",
+        "home_score": 15,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Gashouse Gorillas",
+        "away_score": 19,
+        "home_team": "Lester Pearls",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 25,
+        "home_team": "Free The Nip",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "The ReBiggulators",
+        "away_score": 22,
+        "home_team": "The Original Series",
+        "home_score": 36,
+        "is_division_game": false
+      },
+      {
+        "week": 2,
+        "away_team": "Mobius Strippers",
+        "away_score": 36,
+        "home_team": "Boomie's Boys",
+        "home_score": 47,
+        "is_division_game": true
+      },
+      {
+        "week": 2,
+        "away_team": "One Direction Two",
+        "away_score": 19,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 32,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "East Shore Boys",
+        "away_score": 25,
+        "home_team": "Lester Pearls",
+        "home_score": 18,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Free The Nip",
+        "away_score": 9,
+        "home_team": "The Original Series",
+        "home_score": 29,
+        "is_division_game": true
+      },
+      {
+        "week": 3,
+        "away_team": "Mobius Strippers",
+        "away_score": 31,
+        "home_team": "Ytterby Yetis",
+        "home_score": 44,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "Boomie's Boys",
+        "away_score": 32,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "One Direction Two",
+        "away_score": 31,
+        "home_team": "Los Pollos Hermanos",
+        "home_score": 32,
+        "is_division_game": false
+      },
+      {
+        "week": 3,
+        "away_team": "Hampden Has-Beens",
+        "away_score": 27,
+        "home_team": "The ReBiggulators",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Ytterby Yetis",
+        "away_score": 20,
+        "home_team": "Free The Nip",
+        "home_score": 35,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Gashouse Gorillas",
+        "away_score": 17,
+        "home_team": "The Original Series",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "East Shore Boys",
+        "away_score": 18,
+        "home_team": "One Direction Two",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Lester Pearls",
+        "away_score": 27,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 24,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Mobius Strippers",
+        "away_score": 23,
+        "home_team": "Los Pollos Hermanos",
+        "home_score": 32,
+        "is_division_game": false
+      },
+      {
+        "week": 4,
+        "away_team": "Boomie's Boys",
+        "away_score": 35,
+        "home_team": "The ReBiggulators",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 5,
+        "away_team": "Free The Nip",
+        "away_score": 23,
+        "home_team": "East Shore Boys",
+        "home_score": 35,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "The Original Series",
+        "away_score": 29,
+        "home_team": "Lester Pearls",
+        "home_score": 40,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "One Direction Two",
+        "away_score": 36,
+        "home_team": "Mobius Strippers",
+        "home_score": 37,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Hampden Has-Beens",
+        "away_score": 28,
+        "home_team": "Boomie's Boys",
+        "home_score": 40,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 26,
+        "home_team": "Ytterby Yetis",
+        "home_score": 23,
+        "is_division_game": true
+      },
+      {
+        "week": 5,
+        "away_team": "The ReBiggulators",
+        "away_score": 35,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 21,
+        "is_division_game": true
+      },
+      {
+        "week": 6,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 38,
+        "home_team": "East Shore Boys",
+        "home_score": 39,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "The ReBiggulators",
+        "away_score": 30,
+        "home_team": "Lester Pearls",
+        "home_score": 21,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Free The Nip",
+        "away_score": 24,
+        "home_team": "Mobius Strippers",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "The Original Series",
+        "away_score": 28,
+        "home_team": "Boomie's Boys",
+        "home_score": 42,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "One Direction Two",
+        "away_score": 13,
+        "home_team": "Ytterby Yetis",
+        "home_score": 15,
+        "is_division_game": false
+      },
+      {
+        "week": 6,
+        "away_team": "Hampden Has-Beens",
+        "away_score": 29,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Boomie's Boys",
+        "away_score": 25,
+        "home_team": "Free The Nip",
+        "home_score": 36,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Mobius Strippers",
+        "away_score": 43,
+        "home_team": "The Original Series",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Gashouse Gorillas",
+        "away_score": 20,
+        "home_team": "One Direction Two",
+        "home_score": 42,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Ytterby Yetis",
+        "away_score": 15,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 30,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "Lester Pearls",
+        "away_score": 23,
+        "home_team": "Los Pollos Hermanos",
+        "home_score": 31,
+        "is_division_game": false
+      },
+      {
+        "week": 7,
+        "away_team": "East Shore Boys",
+        "away_score": 29,
+        "home_team": "The ReBiggulators",
+        "home_score": 37,
+        "is_division_game": false
+      },
+      {
+        "week": 8,
+        "away_team": "The Original Series",
+        "away_score": 29,
+        "home_team": "East Shore Boys",
+        "home_score": 18,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Lester Pearls",
+        "away_score": 22,
+        "home_team": "Free The Nip",
+        "home_score": 30,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Hampden Has-Beens",
+        "away_score": 19,
+        "home_team": "Mobius Strippers",
+        "home_score": 42,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "One Direction Two",
+        "away_score": 10,
+        "home_team": "Boomie's Boys",
+        "home_score": 43,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "The ReBiggulators",
+        "away_score": 23,
+        "home_team": "Ytterby Yetis",
+        "home_score": 20,
+        "is_division_game": true
+      },
+      {
+        "week": 8,
+        "away_team": "Gashouse Gorillas",
+        "away_score": 39,
+        "home_team": "Los Pollos Hermanos",
+        "home_score": 33,
+        "is_division_game": true
+      },
+      {
+        "week": 9,
+        "away_team": "Boomie's Boys",
+        "away_score": 28,
+        "home_team": "East Shore Boys",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Mobius Strippers",
+        "away_score": 39,
+        "home_team": "Lester Pearls",
+        "home_score": 29,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "The ReBiggulators",
+        "away_score": 40,
+        "home_team": "One Direction Two",
+        "home_score": 17,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 32,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "The Original Series",
+        "away_score": 26,
+        "home_team": "Ytterby Yetis",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 9,
+        "away_team": "Free The Nip",
+        "away_score": 31,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 20,
+        "is_division_game": false
+      },
+      {
+        "week": 10,
+        "away_team": "East Shore Boys",
+        "away_score": 24,
+        "home_team": "Free The Nip",
+        "home_score": 15,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Lester Pearls",
+        "away_score": 23,
+        "home_team": "The Original Series",
+        "home_score": 39,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Mobius Strippers",
+        "away_score": 32,
+        "home_team": "One Direction Two",
+        "home_score": 28,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Boomie's Boys",
+        "away_score": 41,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 43,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Ytterby Yetis",
+        "away_score": 18,
+        "home_team": "Los Pollos Hermanos",
+        "home_score": 26,
+        "is_division_game": true
+      },
+      {
+        "week": 10,
+        "away_team": "Gashouse Gorillas",
+        "away_score": 29,
+        "home_team": "The ReBiggulators",
+        "home_score": 28,
+        "is_division_game": true
+      },
+      {
+        "week": 11,
+        "away_team": "Hampden Has-Beens",
+        "away_score": 36,
+        "home_team": "Free The Nip",
+        "home_score": 28,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "One Direction Two",
+        "away_score": 23,
+        "home_team": "The Original Series",
+        "home_score": 22,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "The ReBiggulators",
+        "away_score": 29,
+        "home_team": "Mobius Strippers",
+        "home_score": 24,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 21,
+        "home_team": "Boomie's Boys",
+        "home_score": 40,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "Lester Pearls",
+        "away_score": 19,
+        "home_team": "Ytterby Yetis",
+        "home_score": 23,
+        "is_division_game": false
+      },
+      {
+        "week": 11,
+        "away_team": "East Shore Boys",
+        "away_score": 16,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 23,
+        "is_division_game": false
+      },
+      {
+        "week": 12,
+        "away_team": "Free The Nip",
+        "away_score": 19,
+        "home_team": "Lester Pearls",
+        "home_score": 20,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "East Shore Boys",
+        "away_score": 21,
+        "home_team": "The Original Series",
+        "home_score": 35,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Boomie's Boys",
+        "away_score": 19,
+        "home_team": "One Direction Two",
+        "home_score": 40,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Mobius Strippers",
+        "away_score": 38,
+        "home_team": "Hampden Has-Beens",
+        "home_score": 7,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Los Pollos Hermanos",
+        "away_score": 44,
+        "home_team": "Gashouse Gorillas",
+        "home_score": 24,
+        "is_division_game": true
+      },
+      {
+        "week": 12,
+        "away_team": "Ytterby Yetis",
+        "away_score": 16,
+        "home_team": "The ReBiggulators",
+        "home_score": 28,
+        "is_division_game": true
+      },
+      {
+        "week": 13,
+        "away_team": "Hampden Has-Beens",
+        "away_score": 30,
+        "home_team": "East Shore Boys",
+        "home_score": 26,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "One Direction Two",
+        "away_score": 19,
+        "home_team": "Lester Pearls",
+        "home_score": 21,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Gashouse Gorillas",
+        "away_score": 26,
+        "home_team": "Mobius Strippers",
+        "home_score": 25,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Ytterby Yetis",
+        "away_score": 10,
+        "home_team": "Boomie's Boys",
+        "home_score": 33,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "The Original Series",
+        "away_score": 23,
+        "home_team": "Los Pollos Hermanos",
+        "home_score": 37,
+        "is_division_game": false
+      },
+      {
+        "week": 13,
+        "away_team": "Free The Nip",
+        "away_score": 28,
+        "home_team": "The ReBiggulators",
+        "home_score": 26,
+        "is_division_game": false
+      }
+    ],
+    "matrix_ranks": {
+      "Boomie's Boys": 1,
+      "Mobius Strippers": 2,
+      "Los Pollos Hermanos": 3,
+      "The ReBiggulators": 4,
+      "The Original Series": 5,
+      "Hampden Has-Beens": 6,
+      "Free The Nip": 7,
+      "One Direction Two": 8,
+      "Lester Pearls": 9,
+      "Gashouse Gorillas": 10,
+      "East Shore Boys": 11,
+      "Ytterby Yetis": 12
+    },
+    "has_relegation": true,
+    "league_id": 3,
+    "league_name": "FFPL",
+    "matchup_probs": {
+      "The ReBiggulators__at__Los Pollos Hermanos": {
+        "away_win_pct": 0.4230769230769231,
+        "home_win_pct": 0.5769230769230769,
+        "home_record": "7-5-1"
+      },
+      "Gashouse Gorillas__at__Ytterby Yetis": {
+        "away_win_pct": 0.5384615384615384,
+        "home_win_pct": 0.46153846153846156,
+        "home_record": "6-7"
+      },
+      "Hampden Has-Beens__at__One Direction Two": {
+        "away_win_pct": 0.6153846153846154,
+        "home_win_pct": 0.38461538461538464,
+        "home_record": "5-8"
+      },
+      "Boomie's Boys__at__Mobius Strippers": {
+        "away_win_pct": 0.5769230769230769,
+        "home_win_pct": 0.4230769230769231,
+        "home_record": "5-7-1"
+      },
+      "The Original Series__at__Free The Nip": {
+        "away_win_pct": 0.5384615384615384,
+        "home_win_pct": 0.46153846153846156,
+        "home_record": "6-7"
+      },
+      "Lester Pearls__at__East Shore Boys": {
+        "away_win_pct": 0.5384615384615384,
+        "home_win_pct": 0.46153846153846156,
+        "home_record": "6-7"
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "by_team": {
+    "Boomie's Boys": {
+      "championship_playoffs": 64,
+      "bye": 64,
+      "division_winner": 64,
+      "relegation_playoffs": 0,
+      "safe": 0
+    },
+    "Mobius Strippers": {
+      "championship_playoffs": 64,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 0,
+      "safe": 0
+    },
+    "Los Pollos Hermanos": {
+      "championship_playoffs": 64,
+      "bye": 64,
+      "division_winner": 64,
+      "relegation_playoffs": 0,
+      "safe": 0
+    },
+    "The ReBiggulators": {
+      "championship_playoffs": 64,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 0,
+      "safe": 0
+    },
+    "The Original Series": {
+      "championship_playoffs": 64,
+      "bye": 0,
+      "division_winner": 32,
+      "relegation_playoffs": 0,
+      "safe": 0
+    },
+    "Hampden Has-Beens": {
+      "championship_playoffs": 0,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 40,
+      "safe": 24
+    },
+    "Free The Nip": {
+      "championship_playoffs": 64,
+      "bye": 0,
+      "division_winner": 32,
+      "relegation_playoffs": 0,
+      "safe": 0
+    },
+    "One Direction Two": {
+      "championship_playoffs": 0,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 64,
+      "safe": 0
+    },
+    "Lester Pearls": {
+      "championship_playoffs": 0,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 32,
+      "safe": 32
+    },
+    "Gashouse Gorillas": {
+      "championship_playoffs": 0,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 0,
+      "safe": 64
+    },
+    "East Shore Boys": {
+      "championship_playoffs": 0,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 64,
+      "safe": 0
+    },
+    "Ytterby Yetis": {
+      "championship_playoffs": 0,
+      "bye": 0,
+      "division_winner": 0,
+      "relegation_playoffs": 56,
+      "safe": 8
+    }
+  }
+}

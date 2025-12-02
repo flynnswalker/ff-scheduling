@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walker FFL Playoff Scenario Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0e17;
+            --bg-card: #151c2c;
+            --bg-card-hover: #1a2236;
+            --accent-gold: #fbbf24;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border-color: #2d3a52;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(ellipse at 20% 0%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 100%, rgba(168, 85, 247, 0.1) 0%, transparent 50%);
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 1.5rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 0.05em;
+            background: linear-gradient(135deg, var(--accent-gold), #f59e0b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        /* League Tabs */
+        .league-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .league-tab {
+            padding: 0.75rem 2rem;
+            background: var(--bg-card);
+            border: 2px solid var(--border-color);
+            border-radius: 10px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .league-tab:hover {
+            border-color: var(--accent-blue);
+            color: var(--text-primary);
+        }
+
+        .league-tab.active {
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            border-color: transparent;
+            color: white;
+        }
+
+        .league-content {
+            display: none;
+        }
+
+        .league-content.active {
+            display: block;
+        }
+
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 1200px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.25rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .card-header h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 1.3rem;
+            letter-spacing: 0.05em;
+            color: var(--text-primary);
+        }
+
+        .card-icon {
+            font-size: 1.25rem;
+        }
+
+        /* Game Selector Styles */
+        .game-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .game-item {
+            background: var(--bg-dark);
+            border-radius: 10px;
+            padding: 0.85rem;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .game-item:hover {
+            border-color: var(--accent-blue);
+        }
+
+        .game-item.division-game {
+            border-left: 3px solid var(--accent-purple);
+        }
+
+        .game-matchup {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-side {
+            display: flex;
+            flex-direction: column;
+            gap: 0.15rem;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .team-side.away { align-items: flex-start; }
+        .team-side.home { align-items: flex-end; }
+
+        .team-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+
+        .team-record {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .vs-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 0.75rem;
+        }
+
+        .vs-badge {
+            background: var(--border-color);
+            color: var(--text-secondary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 15px;
+            font-size: 0.65rem;
+            font-weight: 600;
+        }
+
+        .prob-bar-container {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .prob-label {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            min-width: 32px;
+            text-align: center;
+        }
+
+        .prob-label.away { color: var(--accent-blue); }
+        .prob-label.home { color: var(--accent-green); }
+
+        .prob-bar {
+            flex: 1;
+            height: 6px;
+            background: var(--border-color);
+            border-radius: 3px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .prob-fill-away {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent-blue), #60a5fa);
+        }
+
+        .prob-fill-home {
+            height: 100%;
+            background: linear-gradient(90deg, #4ade80, var(--accent-green));
+        }
+
+        .game-controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: stretch;
+        }
+
+        .winner-btn {
+            flex: 1;
+            padding: 0.5rem 0.5rem;
+            border: 2px solid var(--border-color);
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.75rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.15rem;
+        }
+
+        .winner-btn:hover {
+            border-color: var(--text-muted);
+            color: var(--text-primary);
+        }
+
+        .winner-btn.selected.away {
+            border-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.1);
+            color: var(--accent-blue);
+        }
+
+        .winner-btn.selected.home {
+            border-color: var(--accent-green);
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--accent-green);
+        }
+
+        .btn-team-name {
+            font-weight: 600;
+            font-size: 0.75rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+        }
+
+        .btn-label {
+            font-size: 0.6rem;
+            opacity: 0.8;
+        }
+
+        .margin-control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.15rem;
+            padding: 0.4rem 0.5rem;
+            background: var(--bg-card);
+            border-radius: 6px;
+            min-width: 60px;
+        }
+
+        .margin-label {
+            font-size: 0.55rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        .margin-input {
+            width: 40px;
+            padding: 0.2rem;
+            border: 1px solid var(--border-color);
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            border-radius: 4px;
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .margin-input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        .margin-note {
+            font-size: 0.65rem;
+            color: var(--accent-gold);
+            text-align: center;
+            margin-top: 0.4rem;
+        }
+
+        /* Playoff Bracket Styles */
+        .bracket-section {
+            margin-bottom: 1.25rem;
+        }
+
+        .bracket-title {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.2rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .bracket-subtitle {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .playoff-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .playoff-team {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0.6rem;
+            background: var(--bg-dark);
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        .playoff-team.has-bye {
+            border-color: var(--accent-gold);
+            background: rgba(251, 191, 36, 0.05);
+        }
+
+        .seed-badge {
+            width: 22px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--border-color);
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+
+        .seed-badge.gold {
+            background: linear-gradient(135deg, var(--accent-gold), #f59e0b);
+            color: var(--bg-dark);
+        }
+
+        .playoff-team-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .playoff-team-name {
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .playoff-team-detail {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+        }
+
+        .bye-badge {
+            background: rgba(251, 191, 36, 0.2);
+            color: var(--accent-gold);
+            padding: 0.15rem 0.35rem;
+            border-radius: 3px;
+            font-size: 0.6rem;
+            font-weight: 600;
+        }
+
+        .safe-team, .releg-team {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.5rem;
+            background: var(--bg-dark);
+            border-radius: 5px;
+            font-size: 0.8rem;
+        }
+
+        .releg-team {
+            border-left: 3px solid var(--accent-red);
+        }
+
+        .releg-team.danger {
+            background: rgba(239, 68, 68, 0.1);
+        }
+
+        /* Summary Table */
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.8rem;
+        }
+
+        .summary-table th {
+            text-align: left;
+            padding: 0.5rem;
+            font-size: 0.65rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-table td {
+            padding: 0.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .summary-table tr:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .summary-team-name {
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+
+        .status-pill {
+            display: inline-block;
+            padding: 0.15rem 0.35rem;
+            border-radius: 3px;
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-clinched_playoffs {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--accent-green);
+        }
+
+        .status-clinched_relegation {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+        }
+
+        .status-safe {
+            background: rgba(59, 130, 246, 0.2);
+            color: var(--accent-blue);
+        }
+
+        .status-relegation_danger {
+            background: rgba(239, 68, 68, 0.1);
+            color: #fca5a5;
+        }
+
+        .status-playoff_contender {
+            background: rgba(168, 85, 247, 0.2);
+            color: var(--accent-purple);
+        }
+
+        .pct-bar {
+            height: 4px;
+            background: var(--border-color);
+            border-radius: 2px;
+            overflow: hidden;
+            margin-top: 0.15rem;
+        }
+
+        .pct-fill {
+            height: 100%;
+            border-radius: 2px;
+        }
+
+        .pct-fill.green { background: var(--accent-green); }
+        .pct-fill.gold { background: var(--accent-gold); }
+        .pct-fill.red { background: var(--accent-red); }
+
+        .loading {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .division-badge {
+            font-size: 0.6rem;
+            padding: 0.1rem 0.25rem;
+            border-radius: 3px;
+            background: var(--border-color);
+            color: var(--text-muted);
+            margin-left: 0.4rem;
+        }
+
+        .no-games {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏈 WALKER FFL PLAYOFF SCENARIOS</h1>
+            <p class="subtitle">Week 14 Scenario Analyzer — Win % from Power Matrix</p>
+        </header>
+
+        <!-- League Tabs -->
+        <div class="league-tabs">
+            {% for league_name in leagues.keys() %}
+            <button class="league-tab {% if loop.first %}active{% endif %}" data-league="{{ league_name }}" onclick="switchLeague('{{ league_name }}')">
+                {{ league_name }}
+            </button>
+            {% endfor %}
+        </div>
+
+        <!-- League Content -->
+        {% for league_name, league_data in leagues.items() %}
+        <div class="league-content {% if loop.first %}active{% endif %}" id="league-{{ league_name }}">
+            <div class="main-grid">
+                <!-- Left Column: Game Selector -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon">📅</span>
+                        <h2>Week 14 Games</h2>
+                    </div>
+                    {% if league_data.matchups %}
+                    <div class="game-list" data-league="{{ league_name }}">
+                        {% for game in league_data.matchups %}
+                        <div class="game-item {% if game.is_division_game %}division-game{% endif %}" data-game-id="{{ game.game_id }}" data-league="{{ league_name }}">
+                            <div class="game-matchup">
+                                <div class="team-side away">
+                                    <span class="team-name">{{ game.away_team }}</span>
+                                    <span class="team-record">{{ game.away_record }}</span>
+                                </div>
+                                <div class="vs-section">
+                                    <span class="vs-badge">@</span>
+                                </div>
+                                <div class="team-side home">
+                                    <span class="team-name">{{ game.home_team }}</span>
+                                    <span class="team-record">{{ game.home_record }}</span>
+                                </div>
+                            </div>
+                            
+                            <div class="prob-bar-container">
+                                <span class="prob-label away">{{ game.away_win_pct }}%</span>
+                                <div class="prob-bar">
+                                    <div class="prob-fill-away" style="width: {{ game.away_win_pct }}%"></div>
+                                    <div class="prob-fill-home" style="width: {{ game.home_win_pct }}%"></div>
+                                </div>
+                                <span class="prob-label home">{{ game.home_win_pct }}%</span>
+                            </div>
+                            
+                            <div class="game-controls">
+                                <button class="winner-btn away {% if game.favored == 'away' %}selected{% endif %}" data-side="away" onclick="selectWinner('{{ league_name }}', '{{ game.game_id }}', 'away')">
+                                    <span class="btn-team-name">{{ game.away_team }}</span>
+                                    <span class="btn-label">wins</span>
+                                </button>
+                                
+                                <div class="margin-control">
+                                    <span class="margin-label">Margin</span>
+                                    <input type="number" class="margin-input" value="5" min="1" max="50" 
+                                           data-game-id="{{ game.game_id }}" data-league="{{ league_name }}"
+                                           onchange="updateMargin('{{ league_name }}', '{{ game.game_id }}', this.value)">
+                                </div>
+                                
+                                <button class="winner-btn home {% if game.favored == 'home' %}selected{% endif %}" data-side="home" onclick="selectWinner('{{ league_name }}', '{{ game.game_id }}', 'home')">
+                                    <span class="btn-team-name">{{ game.home_team }}</span>
+                                    <span class="btn-label">wins</span>
+                                </button>
+                            </div>
+                            
+                            {% if game.has_margin_impact %}
+                            <div class="margin-note">⚠️ {{ game.margin_note }}</div>
+                            {% endif %}
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="no-games">No Week 14 games scheduled yet</div>
+                    {% endif %}
+                </div>
+
+                <!-- Right Column: Results -->
+                <div>
+                    <div class="card" style="margin-bottom: 1rem;">
+                        <div class="card-header">
+                            <span class="card-icon">🏆</span>
+                            <h2>Playoff Picture</h2>
+                        </div>
+                        
+                        <div class="bracket-section">
+                            <div class="bracket-title">Championship Playoffs (6 Teams)</div>
+                            <div class="playoff-list" id="playoff-teams-{{ league_name }}">
+                                <div class="loading">Select game outcomes...</div>
+                            </div>
+                        </div>
+
+                        <div class="bracket-section">
+                            <div class="bracket-title">Safe (No Playoffs)</div>
+                            <div class="playoff-list" id="safe-teams-{{ league_name }}">
+                            </div>
+                        </div>
+
+                        {% if league_data.has_relegation %}
+                        <div class="bracket-section">
+                            <div class="bracket-title">⚠️ Relegation Playoffs (4 Teams → 1 Relegated)</div>
+                            <div class="bracket-subtitle">Bottom 4 play off; only the loser gets relegated</div>
+                            <div class="playoff-list" id="relegation-teams-{{ league_name }}">
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📊</span>
+                            <h2>Team Summary (Weighted by Win %)</h2>
+                        </div>
+                        <table class="summary-table">
+                            <thead>
+                                <tr>
+                                    <th>Team</th>
+                                    <th>Record</th>
+                                    <th>Playoffs</th>
+                                    <th>Bye</th>
+                                    {% if league_data.has_relegation %}
+                                    <th>Releg. PO</th>
+                                    {% endif %}
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="summary-body-{{ league_name }}">
+                                <tr><td colspan="6" class="loading">Loading...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <script>
+        // Store selections per league
+        const leagueSelections = {};
+
+        // Initialize selections for each league
+        {% for league_name, league_data in leagues.items() %}
+        leagueSelections['{{ league_name }}'] = {};
+        document.querySelectorAll('[data-league="{{ league_name }}"].game-item').forEach(item => {
+            const gameId = item.dataset.gameId;
+            const selectedBtn = item.querySelector('.winner-btn.selected');
+            const winner = selectedBtn ? selectedBtn.dataset.side : 'home';
+            leagueSelections['{{ league_name }}'][gameId] = { winner: winner, margin: 5 };
+        });
+        {% endfor %}
+
+        function switchLeague(leagueName) {
+            // Update tabs
+            document.querySelectorAll('.league-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.league === leagueName) {
+                    tab.classList.add('active');
+                }
+            });
+            
+            // Update content
+            document.querySelectorAll('.league-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            document.getElementById(`league-${leagueName}`).classList.add('active');
+        }
+
+        function selectWinner(leagueName, gameId, side) {
+            leagueSelections[leagueName][gameId].winner = side;
+            
+            const gameItem = document.querySelector(`[data-league="${leagueName}"][data-game-id="${gameId}"]`);
+            gameItem.querySelectorAll('.winner-btn').forEach(btn => {
+                btn.classList.remove('selected');
+                if (btn.dataset.side === side) {
+                    btn.classList.add('selected');
+                }
+            });
+            
+            updatePlayoffPicture(leagueName);
+        }
+
+        function updateMargin(leagueName, gameId, value) {
+            const margin = Math.max(1, Math.min(50, parseInt(value) || 5));
+            leagueSelections[leagueName][gameId].margin = margin;
+            
+            const input = document.querySelector(`input[data-league="${leagueName}"][data-game-id="${gameId}"]`);
+            if (input) input.value = margin;
+            
+            updatePlayoffPicture(leagueName);
+        }
+
+        async function updatePlayoffPicture(leagueName) {
+            try {
+                const response = await fetch(`/api/scenario/${leagueName}`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ selections: leagueSelections[leagueName] })
+                });
+                const data = await response.json();
+                
+                // Render playoff teams
+                const playoffHtml = data.playoff_teams.map(team => `
+                    <div class="playoff-team ${team.has_bye ? 'has-bye' : ''}">
+                        <div class="seed-badge ${team.seed <= 2 ? 'gold' : ''}">${team.seed}</div>
+                        <div class="playoff-team-info">
+                            <div class="playoff-team-name">
+                                ${team.team}
+                                <span class="division-badge">Div ${team.division}</span>
+                            </div>
+                            <div class="playoff-team-detail">
+                                ${team.record} • ${team.is_division_winner ? 'Division Winner' : 'Wild Card'}
+                            </div>
+                        </div>
+                        ${team.has_bye ? '<span class="bye-badge">BYE</span>' : ''}
+                    </div>
+                `).join('');
+                document.getElementById(`playoff-teams-${leagueName}`).innerHTML = playoffHtml;
+                
+                // Render safe teams
+                const safeHtml = data.safe_teams.map(team => `
+                    <div class="safe-team">
+                        <span>😌</span>
+                        <span>${team.team}</span>
+                        <span class="division-badge">Div ${team.division}</span>
+                        <span style="color: var(--text-muted); margin-left: auto;">${team.record}</span>
+                    </div>
+                `).join('');
+                document.getElementById(`safe-teams-${leagueName}`).innerHTML = safeHtml || '<div style="color: var(--text-muted); padding: 0.5rem;">None</div>';
+                
+                // Render relegation teams (if applicable)
+                const relegEl = document.getElementById(`relegation-teams-${leagueName}`);
+                if (relegEl && data.has_relegation) {
+                    const relegHtml = data.relegation_teams.map(team => `
+                        <div class="releg-team ${team.seed === 1 ? 'danger' : ''}">
+                            <span>#${team.seed}</span>
+                            <span>${team.team}</span>
+                            <span class="division-badge">Div ${team.division}</span>
+                            <span style="color: var(--text-muted); margin-left: auto;">${team.record}</span>
+                        </div>
+                    `).join('');
+                    relegEl.innerHTML = relegHtml;
+                }
+                
+            } catch (error) {
+                console.error('Error updating playoff picture:', error);
+            }
+        }
+
+        async function loadSummary(leagueName) {
+            try {
+                const response = await fetch(`/api/summary/${leagueName}`);
+                const data = await response.json();
+                
+                const statusLabels = {
+                    'clinched_playoffs': 'Playoffs',
+                    'clinched_relegation': 'Releg. PO',
+                    'safe': 'Safe',
+                    'relegation_danger': 'At Risk',
+                    'playoff_contender': 'Contender'
+                };
+                
+                const hasReleg = data.has_relegation;
+                
+                const html = data.teams.map(team => `
+                    <tr>
+                        <td>
+                            <span class="summary-team-name">${team.team}</span>
+                            <span class="division-badge">Div ${team.division}</span>
+                        </td>
+                        <td>${team.current_record}</td>
+                        <td>
+                            ${team.championship_pct}%
+                            <div class="pct-bar"><div class="pct-fill green" style="width: ${team.championship_pct}%"></div></div>
+                        </td>
+                        <td>
+                            ${team.bye_pct > 0 ? team.bye_pct + '%' : '-'}
+                            ${team.bye_pct > 0 ? `<div class="pct-bar"><div class="pct-fill gold" style="width: ${team.bye_pct}%"></div></div>` : ''}
+                        </td>
+                        ${hasReleg ? `
+                        <td>
+                            ${team.relegation_pct > 0 ? team.relegation_pct + '%' : '-'}
+                            ${team.relegation_pct > 0 ? `<div class="pct-bar"><div class="pct-fill red" style="width: ${team.relegation_pct}%"></div></div>` : ''}
+                        </td>
+                        ` : ''}
+                        <td>
+                            <span class="status-pill status-${team.status}">${statusLabels[team.status] || team.status}</span>
+                        </td>
+                    </tr>
+                `).join('');
+                
+                document.getElementById(`summary-body-${leagueName}`).innerHTML = html;
+            } catch (error) {
+                console.error('Error loading summary:', error);
+            }
+        }
+
+        // Initialize all leagues on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            {% for league_name in leagues.keys() %}
+            updatePlayoffPicture('{{ league_name }}');
+            loadSummary('{{ league_name }}');
+            {% endfor %}
+        });
+    </script>
+</body>
+</html>
