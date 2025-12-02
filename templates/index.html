@@ -741,12 +741,13 @@
         {% for league_name, league_data in leagues.items() %}
         <div class="league-content {% if loop.first %}active{% endif %}" id="league-{{ league_name }}">
             <div class="main-grid">
-                <!-- Left Column: Game Selector -->
-                <div class="card">
-                    <div class="card-header">
-                        <span class="card-icon">📅</span>
-                        <h2>Week 14 Games</h2>
-                    </div>
+                <!-- Left Column: Game Selector + Scenarios -->
+                <div>
+                    <div class="card" style="margin-bottom: 1rem;">
+                        <div class="card-header">
+                            <span class="card-icon">📅</span>
+                            <h2>Week 14 Games</h2>
+                        </div>
                     {% if league_data.matchups %}
                     <div class="game-list" data-league="{{ league_name }}">
                         {% for game in league_data.matchups %}
@@ -802,6 +803,18 @@
                     {% else %}
                     <div class="no-games">No Week 14 games scheduled yet</div>
                     {% endif %}
+                    </div>
+
+                    <!-- Team Scenario Summaries -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📝</span>
+                            <h2>Team Scenario Analysis</h2>
+                        </div>
+                        <div id="team-summaries-{{ league_name }}" class="team-summaries">
+                            <div class="summaries-loading">Loading summaries...</div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Right Column: Results -->
@@ -862,16 +875,6 @@
                         </div>
                     </div>
 
-                    <!-- Team Scenario Summaries -->
-                    <div class="card">
-                        <div class="card-header">
-                            <span class="card-icon">📝</span>
-                            <h2>Team Scenario Analysis</h2>
-                        </div>
-                        <div id="team-summaries-{{ league_name }}" class="team-summaries">
-                            <div class="summaries-loading">Loading summaries...</div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
