@@ -592,6 +592,137 @@
             font-weight: 500;
         }
 
+        /* Team Summaries */
+        .load-summaries-btn {
+            margin-left: auto;
+            padding: 0.5rem 1rem;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+            border: none;
+            border-radius: 6px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .load-summaries-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .load-summaries-btn:disabled {
+            background: var(--bg-card-hover);
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .team-summaries {
+            padding: 1rem;
+        }
+
+        .summaries-placeholder {
+            color: var(--text-muted);
+            text-align: center;
+            padding: 2rem;
+            font-style: italic;
+        }
+
+        .team-summary-item {
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            background: var(--bg-card-hover);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-blue);
+        }
+
+        .team-summary-item.playoffs-clinched {
+            border-left-color: var(--accent-green);
+        }
+
+        .team-summary-item.playoffs-contender {
+            border-left-color: var(--accent-gold);
+        }
+
+        .team-summary-item.relegated {
+            border-left-color: var(--accent-red);
+        }
+
+        .team-summary-item.safe {
+            border-left-color: var(--text-muted);
+        }
+
+        .team-summary-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-summary-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .team-summary-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-left: auto;
+        }
+
+        .team-summary-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .team-summary-badge.playoff {
+            background: rgba(34, 197, 94, 0.2);
+            color: var(--accent-green);
+        }
+
+        .team-summary-badge.releg {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--accent-red);
+        }
+
+        .team-summary-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .summaries-loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+        }
+
+        .summaries-loading .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--border-color);
+            border-top-color: var(--accent-blue);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 0.5rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .summaries-error {
+            text-align: center;
+            padding: 1.5rem;
+            color: var(--accent-red);
+            background: rgba(239, 68, 68, 0.1);
+            border-radius: 8px;
+        }
+
         .loading {
             text-align: center;
             padding: 1.5rem;
@@ -753,6 +884,22 @@
                                 <tr><td colspan="6" class="loading">Loading...</td></tr>
                             </tbody>
                         </table>
+                        </div>
+                    </div>
+
+                    <!-- Team Scenario Summaries -->
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">📝</span>
+                            <h2>Team Scenario Analysis</h2>
+                            <button class="load-summaries-btn" onclick="loadTeamSummaries('{{ league_name }}')" id="load-summaries-btn-{{ league_name }}">
+                                Generate Summaries
+                            </button>
+                        </div>
+                        <div id="team-summaries-{{ league_name }}" class="team-summaries">
+                            <div class="summaries-placeholder">
+                                Click "Generate Summaries" to get AI-powered analysis of each team's playoff scenarios.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1045,6 +1192,71 @@
                 document.getElementById(`summary-body-${leagueName}`).innerHTML = html;
             } catch (error) {
                 console.error('Error loading summary:', error);
+            }
+        }
+
+        async function loadTeamSummaries(leagueName) {
+            const container = document.getElementById(`team-summaries-${leagueName}`);
+            const btn = document.getElementById(`load-summaries-btn-${leagueName}`);
+            
+            // Show loading state
+            btn.disabled = true;
+            btn.textContent = 'Generating...';
+            container.innerHTML = `
+                <div class="summaries-loading">
+                    <span class="spinner"></span>
+                    Generating AI-powered summaries...
+                </div>
+            `;
+            
+            try {
+                const response = await fetch(`/api/team-summaries/${leagueName}`);
+                const data = await response.json();
+                
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+                
+                const html = data.summaries.map(team => {
+                    let statusClass = 'safe';
+                    if (team.playoff_pct >= 99.9) statusClass = 'playoffs-clinched';
+                    else if (team.playoff_pct > 0) statusClass = 'playoffs-contender';
+                    else if (team.relegation_pct >= 99.9) statusClass = 'relegated';
+                    else if (team.relegation_pct > 0) statusClass = 'relegated';
+                    
+                    let badges = '';
+                    if (team.playoff_pct > 0) {
+                        badges += `<span class="team-summary-badge playoff">${team.playoff_pct}% Playoffs</span>`;
+                    }
+                    if (team.relegation_pct > 0) {
+                        badges += `<span class="team-summary-badge releg">${team.relegation_pct}% Releg</span>`;
+                    }
+                    
+                    return `
+                        <div class="team-summary-item ${statusClass}">
+                            <div class="team-summary-header">
+                                <span class="team-summary-name">${team.team}</span>
+                                <div class="team-summary-badges">${badges}</div>
+                            </div>
+                            <div class="team-summary-text">${team.summary}</div>
+                        </div>
+                    `;
+                }).join('');
+                
+                container.innerHTML = html;
+                btn.textContent = 'Regenerate';
+                btn.disabled = false;
+                
+            } catch (error) {
+                console.error('Error loading summaries:', error);
+                container.innerHTML = `
+                    <div class="summaries-error">
+                        <strong>Error:</strong> ${error.message}<br>
+                        <small>Make sure OPENAI_API_KEY environment variable is set.</small>
+                    </div>
+                `;
+                btn.textContent = 'Retry';
+                btn.disabled = false;
             }
         }
 
