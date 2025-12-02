@@ -215,18 +215,42 @@ def apply_simulation_results(base_stats, game_results, divisions):
         away = game['away_team']
         home = game['home_team']
         is_div = game['is_division_game']
+        away_score = game['away_score']
+        home_score = game['home_score']
+        
+        # Ensure h2h dicts exist
+        if 'h2h' not in new_stats[away]:
+            new_stats[away]['h2h'] = {}
+        if 'h2h' not in new_stats[home]:
+            new_stats[home]['h2h'] = {}
+        if home not in new_stats[away]['h2h']:
+            new_stats[away]['h2h'][home] = {'wins': 0, 'losses': 0, 'ties': 0, 'points_for': 0, 'points_against': 0}
+        if away not in new_stats[home]['h2h']:
+            new_stats[home]['h2h'][away] = {'wins': 0, 'losses': 0, 'ties': 0, 'points_for': 0, 'points_against': 0}
+        
+        # Update points for/against
+        new_stats[away]['points_for'] = new_stats[away].get('points_for', 0) + away_score
+        new_stats[home]['points_for'] = new_stats[home].get('points_for', 0) + home_score
+        new_stats[away]['h2h'][home]['points_for'] += away_score
+        new_stats[away]['h2h'][home]['points_against'] += home_score
+        new_stats[home]['h2h'][away]['points_for'] += home_score
+        new_stats[home]['h2h'][away]['points_against'] += away_score
         
         if game.get('is_tie', False):
             # Tie - both teams get a tie
             new_stats[away]['ties'] = new_stats[away].get('ties', 0) + 1
             new_stats[home]['ties'] = new_stats[home].get('ties', 0) + 1
+            new_stats[away]['h2h'][home]['ties'] += 1
+            new_stats[home]['h2h'][away]['ties'] += 1
             if is_div:
                 new_stats[away]['division_ties'] = new_stats[away].get('division_ties', 0) + 1
                 new_stats[home]['division_ties'] = new_stats[home].get('division_ties', 0) + 1
-        elif game['away_score'] > game['home_score']:
+        elif away_score > home_score:
             # Away team wins
             new_stats[away]['wins'] += 1
             new_stats[home]['losses'] += 1
+            new_stats[away]['h2h'][home]['wins'] += 1
+            new_stats[home]['h2h'][away]['losses'] += 1
             if is_div:
                 new_stats[away]['division_wins'] += 1
                 new_stats[home]['division_losses'] += 1
@@ -234,6 +258,8 @@ def apply_simulation_results(base_stats, game_results, divisions):
             # Home team wins
             new_stats[home]['wins'] += 1
             new_stats[away]['losses'] += 1
+            new_stats[home]['h2h'][away]['wins'] += 1
+            new_stats[away]['h2h'][home]['losses'] += 1
             if is_div:
                 new_stats[home]['division_wins'] += 1
                 new_stats[away]['division_losses'] += 1
