@@ -593,31 +593,6 @@
         }
 
         /* Team Summaries */
-        .load-summaries-btn {
-            margin-left: auto;
-            padding: 0.5rem 1rem;
-            background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
-            border: none;
-            border-radius: 6px;
-            color: white;
-            font-weight: 600;
-            font-size: 0.8rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .load-summaries-btn:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-        }
-
-        .load-summaries-btn:disabled {
-            background: var(--bg-card-hover);
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
-        }
-
         .team-summaries {
             padding: 1rem;
         }
@@ -892,14 +867,9 @@
                         <div class="card-header">
                             <span class="card-icon">📝</span>
                             <h2>Team Scenario Analysis</h2>
-                            <button class="load-summaries-btn" onclick="loadTeamSummaries('{{ league_name }}')" id="load-summaries-btn-{{ league_name }}">
-                                Generate Summaries
-                            </button>
                         </div>
                         <div id="team-summaries-{{ league_name }}" class="team-summaries">
-                            <div class="summaries-placeholder">
-                                Click "Generate Summaries" to get AI-powered analysis of each team's playoff scenarios.
-                            </div>
+                            <div class="summaries-loading">Loading summaries...</div>
                         </div>
                     </div>
                 </div>
@@ -1197,17 +1167,6 @@
 
         async function loadTeamSummaries(leagueName) {
             const container = document.getElementById(`team-summaries-${leagueName}`);
-            const btn = document.getElementById(`load-summaries-btn-${leagueName}`);
-            
-            // Show loading state
-            btn.disabled = true;
-            btn.textContent = 'Generating...';
-            container.innerHTML = `
-                <div class="summaries-loading">
-                    <span class="spinner"></span>
-                    Generating AI-powered summaries...
-                </div>
-            `;
             
             try {
                 const response = await fetch(`/api/team-summaries/${leagueName}`);
@@ -1244,19 +1203,14 @@
                 }).join('');
                 
                 container.innerHTML = html;
-                btn.textContent = 'Regenerate';
-                btn.disabled = false;
                 
             } catch (error) {
                 console.error('Error loading summaries:', error);
                 container.innerHTML = `
                     <div class="summaries-error">
-                        <strong>Error:</strong> ${error.message}<br>
-                        <small>Make sure OPENAI_API_KEY environment variable is set.</small>
+                        <strong>Error:</strong> ${error.message}
                     </div>
                 `;
-                btn.textContent = 'Retry';
-                btn.disabled = false;
             }
         }
 
@@ -1265,6 +1219,7 @@
             {% for league_name in leagues.keys() %}
             updatePlayoffPicture('{{ league_name }}');
             loadSummary('{{ league_name }}');
+            loadTeamSummaries('{{ league_name }}');
             {% endfor %}
         });
     </script>

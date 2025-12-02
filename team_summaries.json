@@ -1,0 +1,45 @@
+{
+  "WFFL": {
+    "Karma Chameleons": "The Chameleons have locked up a first-round bye and are the heavy favorite for the #1 seed at 73.7%. Their dominant 11-2 record has them cruising into the playoffs as the team to beat.",
+    "Taco Bills": "Taco Bills have clinched a bye week and will likely slot in at #2 (73.7%), though they still have an outside shot at stealing the top seed if things break their way.",
+    "Royal Flush": "Playoffs are secured for Royal Flush. They're battling for seeding between #3 (55.3%) and #5 (44.7%) - a win this week could mean home field advantage in Round 1.",
+    "The Hack Attack": "The Hack Attack is playoff-bound with the most variable seeding outlook - they could land anywhere from #3 to #5. Their Week 14 result will be crucial for bracket positioning.",
+    "Junkyard Dogs": "The Dogs have punched their playoff ticket and are most likely headed for the #4 seed (72.9%), setting up a first-round matchup against a division winner.",
+    "MindHunter": "MindHunter controls their playoff destiny with a 74% chance to grab the final spot. A win should seal the deal; a loss opens the door for the teams below.",
+    "Goldenberg's Peanut Chews": "The Peanut Chews are alive but need help - only a 14.4% playoff chance. They'll need to win and have MindHunter lose to sneak into the postseason.",
+    "Ghost Legion": "Ghost Legion's playoff hopes are fading at 11.6%. They need a win plus losses from both MindHunter and Goldenberg's to have any shot at the 6-seed.",
+    "Ellis Islanders": "Mathematically eliminated from playoff contention. The Islanders' season is over with no path to the postseason regardless of Week 14 results.",
+    "Olympus Mons": "Eliminated from the playoffs. Olympus Mons will be watching from the sidelines as the postseason unfolds.",
+    "THE Washington (university) FT": "Season over for THE Washington FT - no playoff scenarios remain. Time to start thinking about next year.",
+    "Plundering Herd": "The Herd has been eliminated and will finish at the bottom of the standings. A tough season comes to a close without postseason action."
+  },
+  "DFFL": {
+    "Boston Stranglers": "Complete dominance. The Stranglers have locked up the #1 seed and a first-round bye in all 10,000 simulations. They'll be rested and ready for the semifinals.",
+    "Hopewell Hitters": "Playoffs secured with a coin-flip for seeding - 43.6% chance at #2 seed (bye) vs 56.4% at #4. Their Week 14 matchup could determine whether they get rest or have to play Round 1.",
+    "Vanilla Thunder": "Thunder has clinched and is the slight favorite for the #2 seed and bye (56.4%). A win likely locks up the bye; a loss could drop them to the 4-seed.",
+    "Air Nomad": "Locked into the #3 seed in every simulation. Air Nomad knows exactly where they'll be - hosting a Wild Card team in Round 1.",
+    "Sac-Busters": "The Sac-Busters have clinched but are locked into the #5 seed. They'll be on the road in Round 1 regardless of this week's outcome.",
+    "St. Paul Soaks": "Strong position for the final playoff spot at 83.2%. A win clinches; a loss still likely gets them in, but they'd be sweating out the other results.",
+    "Al's Offenders": "Longshot playoff hopes at 9.2%. Al's Offenders need to win and have St. Paul Soaks lose to have any realistic chance at sneaking in.",
+    "Kona Heads": "Barely alive at 7.6% playoff probability. Would need a win plus multiple results to break their way - an unlikely but not impossible scenario.",
+    "Novato Dawgs": "Eliminated from playoff contention. The Dawgs' season ends without a trip to the postseason.",
+    "The Next Generation": "No path to the playoffs remains. The Next Generation will be spectators for the championship run.",
+    "Pat's Lads": "Mathematically eliminated. Pat's Lads finish outside the playoff picture regardless of Week 14 outcomes.",
+    "Rockville Reavers": "Season over - eliminated from playoff contention. The Reavers will look to build for next year."
+  },
+  "FFPL": {
+    "Boomie's Boys": "The Boys have dominated and locked up the #1 seed with a bye. They'll watch Round 1 from the couch before entering the playoffs fully rested.",
+    "Los Pollos Hermanos": "Los Pollos has clinched the #2 seed and first-round bye in every simulation. They'll be waiting to face the winner of the 3/6 matchup.",
+    "Mobius Strippers": "Playoffs secured, battling between #4 (43.6%) and #5 (56.4%) seeds. Either way, they're in the Wild Card round with a chance to make a run.",
+    "The ReBiggulators": "The ReBiggulators are playoff-bound, likely as the #4 seed (56.4%). They're jockeying with Mobius for positioning in the first round.",
+    "The Original Series": "Clinched playoffs with a fascinating split - 52.1% at #3 (hosting Round 1) vs 47.9% at #6 (road game). Week 14 is huge for their seeding.",
+    "Free The Nip": "Mirror image of Original Series - 47.9% at #3 vs 52.1% at #6. These two are essentially in a head-to-head battle for the better seed.",
+    "Gashouse Gorillas": "Safe! The Gorillas have avoided both playoffs and relegation. They'll finish in the middle of the pack with nothing on the line Week 14.",
+    "Hampden Has-Beens": "In danger territory with 54% relegation playoff probability. A win this week could be the difference between safety and fighting for survival.",
+    "Lester Pearls": "Facing 59.1% chance of relegation playoffs. The Pearls need a win and some help to avoid the bottom-four battle.",
+    "Ytterby Yetis": "Deep trouble at 86.9% relegation probability. The Yetis are very likely headed to the relegation playoffs and will need to win there to stay up.",
+    "One Direction Two": "Locked into relegation playoffs (100%). One Direction Two's only question now is seeding - they'll be fighting for survival in the loser bracket.",
+    "East Shore Boys": "Confirmed for relegation playoffs (100%). Like One Direction Two, the Boys know their fate - win in the relegation bracket or face the drop."
+  }
+}
+

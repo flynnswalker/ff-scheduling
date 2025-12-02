@@ -9,7 +9,6 @@ import json
 import copy
 from collections import defaultdict
 import os
-from openai import OpenAI
 
 app = Flask(__name__)
 
@@ -22,6 +21,12 @@ MONTE_CARLO_RESULTS = {}
 if os.path.exists('monte_carlo_results.json'):
     with open('monte_carlo_results.json') as f:
         MONTE_CARLO_RESULTS = json.load(f)
+
+# Load pre-written team summaries
+TEAM_SUMMARIES = {}
+if os.path.exists('team_summaries.json'):
+    with open('team_summaries.json') as f:
+        TEAM_SUMMARIES = json.load(f)
 
 
 def get_team_division(team, divisions):
@@ -793,189 +798,40 @@ def team_summary(league_name):
     })
 
 
-# Division name mappings for summaries
-DIVISION_NAMES = {
-    'WFFL': {'D': 'Diamonds', 'S': 'Spades', 'H': 'Hearts'},
-    'DFFL': {'M': 'Mirage', 'D': 'Dream', 'N': 'Nightmare'},
-    'FFPL': {'O': 'Orc', 'W': 'Wizard', 'D': 'Dragon'},
-}
-
-
-def generate_team_summary_prompt(team_data, league_name, has_relegation):
-    """Generate prompt for LLM to create team summary."""
-    team = team_data['team']
-    record = team_data['current_record']
-    div_letter = team_data['division']
-    div_name = DIVISION_NAMES.get(league_name, {}).get(div_letter, div_letter)
-    
-    playoff_pct = team_data['championship_pct']
-    bye_pct = team_data.get('bye_pct', 0)
-    seed_pcts = team_data.get('seed_pcts', {})
-    releg_pct = team_data.get('relegation_pct', 0)
-    releg_seed_pcts = team_data.get('relegation_seed_pcts', {})
-    
-    # Build seed breakdown string
-    seed_breakdown = []
-    for seed in range(1, 7):
-        pct = seed_pcts.get(str(seed), 0)
-        if pct > 0:
-            seed_breakdown.append(f"#{seed}: {pct}%")
-    
-    releg_breakdown = []
-    if has_relegation:
-        for seed in range(1, 5):
-            pct = releg_seed_pcts.get(str(seed), 0)
-            if pct > 0:
-                releg_breakdown.append(f"R{seed}: {pct}%")
-    
-    prompt = f"""Write a brief 2-3 sentence playoff scenario summary for {team} ({record}, {div_name} Division) in the {league_name} fantasy football league.
-
-Monte Carlo simulation results (10,000 simulations):
-- Playoff probability: {playoff_pct}%
-- Bye probability (seeds 1-2): {bye_pct}%
-- Seed breakdown: {', '.join(seed_breakdown) if seed_breakdown else 'N/A'}
-"""
-    
-    if has_relegation:
-        prompt += f"""- Relegation playoff probability: {releg_pct}%
-- Relegation seed breakdown: {', '.join(releg_breakdown) if releg_breakdown else 'N/A'}
-
-Note: Only the loser of the relegation playoffs gets relegated."""
-    
-    prompt += """
-
-Be concise, direct, and focus on the most likely outcomes and key scenarios. Use active voice. Don't repeat the exact percentages - interpret them (e.g., "locked in", "strong favorite", "fighting for", "longshot", "eliminated")."""
-    
-    return prompt
-
-
-def generate_all_summaries_prompt(teams_data, league_name, has_relegation):
-    """Generate a single prompt for all team summaries."""
-    
-    teams_info = []
-    for t in teams_data:
-        team = t['team']
-        record = t['current_record']
-        div_letter = t['division']
-        div_name = DIVISION_NAMES.get(league_name, {}).get(div_letter, div_letter)
-        
-        playoff_pct = t['championship_pct']
-        bye_pct = t.get('bye_pct', 0)
-        seed_pcts = t.get('seed_pcts', {})
-        releg_pct = t.get('relegation_pct', 0)
-        releg_seed_pcts = t.get('relegation_seed_pcts', {})
-        
-        seed_str = ', '.join([f"#{s}:{seed_pcts.get(str(s),0)}%" for s in range(1,7) if seed_pcts.get(str(s),0) > 0])
-        
-        info = f"- {team} ({record}, {div_name}): Playoff {playoff_pct}%, Bye {bye_pct}%"
-        if seed_str:
-            info += f", Seeds: {seed_str}"
-        if has_relegation and releg_pct > 0:
-            releg_str = ', '.join([f"R{s}:{releg_seed_pcts.get(str(s),0)}%" for s in range(1,5) if releg_seed_pcts.get(str(s),0) > 0])
-            info += f", Relegation {releg_pct}% ({releg_str})"
-        teams_info.append(info)
-    
-    prompt = f"""Write brief playoff scenario summaries for each team in the {league_name} fantasy football league based on 10,000 Monte Carlo simulations.
-
-Team data:
-{chr(10).join(teams_info)}
-
-{"Note: Only the loser of the relegation playoffs gets relegated." if has_relegation else ""}
-
-For each team, write 2-3 sentences about their playoff situation. Be concise and interpret the numbers (use terms like "locked in", "clinched", "strong favorite", "fighting for the last spot", "longshot", "mathematically eliminated", etc.).
-
-Format your response as JSON with team names as keys:
-{{"Team Name 1": "Summary text...", "Team Name 2": "Summary text...", ...}}
-
-Only output the JSON, nothing else."""
-    
-    return prompt
-
-
 @app.route('/api/team-summaries/<league_name>')
 def get_team_summaries(league_name):
-    """Generate LLM-powered team playoff scenario summaries."""
+    """Return pre-written team playoff scenario summaries."""
     if league_name not in ALL_LEAGUES:
         return jsonify({'error': 'Unknown league'}), 404
     
-    if league_name not in MONTE_CARLO_RESULTS:
-        return jsonify({'error': 'No Monte Carlo results available'}), 404
+    if league_name not in TEAM_SUMMARIES:
+        return jsonify({'error': 'No summaries available for this league'}), 404
     
-    # Check for OpenAI API key
-    api_key = os.environ.get('OPENAI_API_KEY')
-    if not api_key:
-        return jsonify({'error': 'OPENAI_API_KEY not set'}), 500
-    
-    # Get team data
-    mc_data = MONTE_CARLO_RESULTS[league_name]
-    mc_results = mc_data['team_results']
+    # Get team data for ordering and stats
+    mc_data = MONTE_CARLO_RESULTS.get(league_name, {})
+    mc_results = mc_data.get('team_results', {})
     stats = ALL_LEAGUES[league_name]['stats']
     teams = ALL_LEAGUES[league_name]['teams']
-    divisions = ALL_LEAGUES[league_name]['divisions']
-    has_relegation = ALL_LEAGUES[league_name].get('has_relegation', False)
+    summaries = TEAM_SUMMARIES[league_name]
     
-    # Build team data list
-    teams_data = []
+    # Build result list
+    result = []
     for team in teams:
         mc = mc_results.get(team, {})
-        teams_data.append({
+        result.append({
             'team': team,
-            'current_record': f"{stats[team]['wins']}-{stats[team]['losses']}",
-            'division': get_team_division(team, divisions),
-            'championship_pct': mc.get('playoff_pct', 0),
-            'bye_pct': mc.get('bye_pct', 0),
-            'seed_pcts': mc.get('seed_pcts', {}),
+            'summary': summaries.get(team, 'Summary not available.'),
+            'playoff_pct': mc.get('playoff_pct', 0),
             'relegation_pct': mc.get('relegation_pct', 0),
-            'relegation_seed_pcts': mc.get('relegation_seed_pcts', {}),
         })
     
-    # Sort by playoff probability
-    teams_data.sort(key=lambda t: (-t['championship_pct'], t.get('relegation_pct', 0)))
+    # Sort by playoff probability descending, then relegation ascending
+    result.sort(key=lambda t: (-t['playoff_pct'], t['relegation_pct']))
     
-    # Generate prompt and call OpenAI
-    prompt = generate_all_summaries_prompt(teams_data, league_name, has_relegation)
-    
-    try:
-        client = OpenAI(api_key=api_key)
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {"role": "system", "content": "You are a sports analyst writing brief playoff scenario summaries for fantasy football teams."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0.7,
-            max_tokens=2000,
-        )
-        
-        content = response.choices[0].message.content.strip()
-        
-        # Parse JSON response
-        # Handle potential markdown code blocks
-        if content.startswith('```'):
-            content = content.split('```')[1]
-            if content.startswith('json'):
-                content = content[4:]
-        
-        summaries = json.loads(content)
-        
-        # Return as ordered list
-        result = []
-        for t in teams_data:
-            team_name = t['team']
-            result.append({
-                'team': team_name,
-                'summary': summaries.get(team_name, 'Summary not available.'),
-                'playoff_pct': t['championship_pct'],
-                'relegation_pct': t.get('relegation_pct', 0),
-            })
-        
-        return jsonify({
-            'summaries': result,
-            'league': league_name,
-        })
-        
-    except Exception as e:
-        return jsonify({'error': str(e)}), 500
+    return jsonify({
+        'summaries': result,
+        'league': league_name,
+    })
 
 
 if __name__ == '__main__':
