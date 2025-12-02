@@ -166,12 +166,24 @@ def simulate_week14(league_name, distributions, adjustments, rng):
         
         away_score, home_score = simulate_game(away_dist, home_dist, adjustments, rng)
         
+        # Determine winner or tie
+        if away_score > home_score:
+            winner = away_team
+            is_tie = False
+        elif home_score > away_score:
+            winner = home_team
+            is_tie = False
+        else:
+            winner = None  # Tie
+            is_tie = True
+        
         results.append({
             'away_team': away_team,
             'home_team': home_team,
             'away_score': away_score,
             'home_score': home_score,
-            'winner': away_team if away_score > home_score else home_team,
+            'winner': winner,
+            'is_tie': is_tie,
             'is_division_game': matchup['is_division_game'],
         })
     
@@ -204,7 +216,14 @@ def apply_simulation_results(base_stats, game_results, divisions):
         home = game['home_team']
         is_div = game['is_division_game']
         
-        if game['away_score'] > game['home_score']:
+        if game.get('is_tie', False):
+            # Tie - both teams get a tie
+            new_stats[away]['ties'] = new_stats[away].get('ties', 0) + 1
+            new_stats[home]['ties'] = new_stats[home].get('ties', 0) + 1
+            if is_div:
+                new_stats[away]['division_ties'] = new_stats[away].get('division_ties', 0) + 1
+                new_stats[home]['division_ties'] = new_stats[home].get('division_ties', 0) + 1
+        elif game['away_score'] > game['home_score']:
             # Away team wins
             new_stats[away]['wins'] += 1
             new_stats[home]['losses'] += 1
@@ -212,7 +231,7 @@ def apply_simulation_results(base_stats, game_results, divisions):
                 new_stats[away]['division_wins'] += 1
                 new_stats[home]['division_losses'] += 1
         else:
-            # Home team wins (ties go to home in this simple model)
+            # Home team wins
             new_stats[home]['wins'] += 1
             new_stats[away]['losses'] += 1
             if is_div:
@@ -271,7 +290,9 @@ def run_monte_carlo(league_name, n_simulations=10000, seed=None):
     print(f"\n=== Running {n_simulations:,} simulations ===")
     
     for sim in range(n_simulations):
-        if (sim + 1) % 2000 == 0:
+        if n_simulations >= 100000 and (sim + 1) % 100000 == 0:
+            print(f"  Completed {sim + 1:,} simulations...")
+        elif n_simulations < 100000 and (sim + 1) % 2000 == 0:
             print(f"  Completed {sim + 1:,} simulations...")
         
         # Simulate Week 14
@@ -376,5 +397,9 @@ def run_all_leagues(n_simulations=10000, seed=42):
 
 
 if __name__ == "__main__":
-    run_all_leagues(n_simulations=10000, seed=42)
+    import time
+    start = time.time()
+    run_all_leagues(n_simulations=100000, seed=42)
+    elapsed = time.time() - start
+    print(f"\n⏱️  Total time: {elapsed:.1f} seconds ({elapsed/60:.1f} minutes)")
 
