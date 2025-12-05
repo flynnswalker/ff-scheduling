@@ -86,6 +86,135 @@ def break_tie_division(stats, tied_teams, divisions, h2h_points_override=None):
     return _break_tie_division_multi(stats, tied_teams, divisions, h2h_points_override)
 
 
+def break_tie_division_for_relegation(stats, tied_teams):
+    """
+    For relegation: Division record is PRIMARY tiebreaker for same-division teams.
+    When division records are tied, fall back to H2H, then points for.
+    Returns teams ordered from BEST (safe) to WORST (relegated first).
+    """
+    if len(tied_teams) == 1:
+        return tied_teams
+    
+    if len(tied_teams) == 2:
+        t1, t2 = tied_teams
+        # Primary: Division record
+        div1_pct = calculate_win_pct(stats[t1]['division_wins'], stats[t1]['division_losses'], stats[t1].get('division_ties', 0))
+        div2_pct = calculate_win_pct(stats[t2]['division_wins'], stats[t2]['division_losses'], stats[t2].get('division_ties', 0))
+        
+        if div1_pct > div2_pct:
+            return [t1, t2]
+        elif div2_pct > div1_pct:
+            return [t2, t1]
+        
+        # Secondary: H2H between the two
+        w1, l1, _ = get_h2h_record(stats, t1, t2)
+        w2, l2, _ = get_h2h_record(stats, t2, t1)
+        if w1 > w2:
+            return [t1, t2]
+        elif w2 > w1:
+            return [t2, t1]
+        
+        # Tertiary: Points for
+        if stats[t1]['points_for'] > stats[t2]['points_for']:
+            return [t1, t2]
+        elif stats[t2]['points_for'] > stats[t1]['points_for']:
+            return [t2, t1]
+        
+        return sorted([t1, t2])
+    
+    # For 3+ teams, sort by division record first, then use iterative H2H
+    # Group by division record
+    by_div_record = defaultdict(list)
+    for t in tied_teams:
+        pct = calculate_win_pct(stats[t]['division_wins'], stats[t]['division_losses'], stats[t].get('division_ties', 0))
+        by_div_record[pct].append(t)
+    
+    result = []
+    for pct in sorted(by_div_record.keys(), reverse=True):  # Best div record first
+        group = by_div_record[pct]
+        if len(group) == 1:
+            result.extend(group)
+        else:
+            # Within same div record, use H2H among group
+            remaining = list(group)
+            while remaining:
+                if len(remaining) == 1:
+                    result.append(remaining[0])
+                    break
+                # Find best H2H in remaining
+                h2h_records = {}
+                for team in remaining:
+                    w, l, t = get_h2h_record_vs_group(stats, team, remaining)
+                    h2h_records[team] = calculate_win_pct(w, l, t)
+                best_pct = max(h2h_records.values())
+                best_teams = [t for t in remaining if h2h_records[t] == best_pct]
+                if len(best_teams) == 1:
+                    result.append(best_teams[0])
+                    remaining.remove(best_teams[0])
+                else:
+                    # Still tied, use points for
+                    best = max(best_teams, key=lambda t: stats[t]['points_for'])
+                    result.append(best)
+                    remaining.remove(best)
+    
+    return result
+
+
+def break_tie_for_relegation(stats, tied_teams, all_teams, divisions):
+    """
+    Tiebreaker for relegation:
+    - Same division: Division record is primary (worse div record = relegated first)
+    - Cross division: H2H among tied teams, then SoS, then points for
+    
+    Returns teams ordered from BEST (safe) to WORST (relegated first).
+    """
+    if len(tied_teams) == 1:
+        return tied_teams
+    
+    # Group by division
+    by_division = defaultdict(list)
+    for team in tied_teams:
+        div = get_team_division(team, divisions)
+        by_division[div].append(team)
+    
+    # If all same division, use division record
+    if len(by_division) == 1:
+        return break_tie_division_for_relegation(stats, tied_teams)
+    
+    # Order within each division by division record (best first)
+    ordered_by_div = {}
+    for div, div_teams in by_division.items():
+        if len(div_teams) > 1:
+            ordered_by_div[div] = break_tie_division_for_relegation(stats, div_teams)
+        else:
+            ordered_by_div[div] = div_teams
+    
+    # Cross-division comparison: pick teams one at a time
+    result = []
+    remaining_by_div = {div: list(teams) for div, teams in ordered_by_div.items()}
+    
+    while sum(len(t) for t in remaining_by_div.values()) > 0:
+        # Get the front (best remaining) from each division
+        candidates = []
+        for div, div_teams in remaining_by_div.items():
+            if div_teams:
+                candidates.append(div_teams[0])
+        
+        if len(candidates) == 1:
+            team = candidates[0]
+            result.append(team)
+            div = get_team_division(team, divisions)
+            remaining_by_div[div].pop(0)
+        else:
+            # Cross-division: use H2H among candidates
+            best = _compare_cross_division(stats, candidates, all_teams, divisions)
+            result.append(best)
+            div = get_team_division(best, divisions)
+            remaining_by_div[div].pop(0)
+    
+    return result
+
+
 def _break_tie_division_two(stats, tied_teams, h2h_points_override=None):
     t1, t2 = tied_teams
     
@@ -419,47 +548,53 @@ def determine_playoff_teams(stats, teams, divisions, h2h_points_override=None):
 
 
 def determine_relegation_teams(stats, playoff_teams, teams, divisions):
+    """
+    Determine relegation teams using bottom-up approach:
+    1. Start from worst record
+    2. If tie, run tiebreaker - the team that LOSES goes to relegation
+       - Same division: division record is primary (worse div record = relegated)
+       - Cross division: H2H among tied teams
+    3. Add ONE team at a time, repeat until we have 4
+    """
     playoff_team_names = [p['team'] for p in playoff_teams]
     non_playoff_teams = [t for t in teams if t not in playoff_team_names]
     
-    by_record = defaultdict(list)
-    for team in non_playoff_teams:
-        record = (stats[team]['wins'], stats[team]['losses'], stats[team]['ties'])
-        by_record[record].append(team)
-    
-    sorted_records = sorted(by_record.keys(), key=lambda r: (r[0], -r[1], -r[2]))
-    
     relegation_teams = []
-    for record in sorted_records:
-        if len(relegation_teams) >= 4:
+    
+    # Pick relegation teams one at a time, from worst to better
+    while len(relegation_teams) < 4:
+        remaining = [t for t in non_playoff_teams if t not in relegation_teams]
+        if not remaining:
             break
-        tied_teams = by_record[record]
-        spots_remaining = 4 - len(relegation_teams)
-        if len(tied_teams) <= spots_remaining:
-            relegation_teams.extend(tied_teams)
+        
+        # Find worst record among remaining
+        worst_record = min(
+            (stats[t]['wins'], -stats[t]['losses'], -stats[t].get('ties', 0)) 
+            for t in remaining
+        )
+        
+        # Get teams with that record
+        worst_teams = [
+            t for t in remaining 
+            if (stats[t]['wins'], -stats[t]['losses'], -stats[t].get('ties', 0)) == worst_record
+        ]
+        
+        if len(worst_teams) == 1:
+            # Only one team with worst record, they're relegated
+            relegation_teams.append(worst_teams[0])
         else:
-            ordered = break_tie_wildcard(stats, tied_teams, teams, divisions)
-            losers = ordered[-(spots_remaining):]
-            relegation_teams.extend(losers)
+            # Multiple teams tied - use relegation tiebreaker, LOSER goes to relegation
+            # This uses division record for same-division, H2H for cross-division
+            ordered = break_tie_for_relegation(stats, worst_teams, teams, divisions)
+            loser = ordered[-1]  # The one who loses the tiebreaker
+            relegation_teams.append(loser)
     
-    rel_by_record = defaultdict(list)
-    for team in relegation_teams:
-        record = (stats[team]['wins'], stats[team]['losses'], stats[team]['ties'])
-        rel_by_record[record].append(team)
-    
-    sorted_rel_records = sorted(rel_by_record.keys(), key=lambda r: (r[0], -r[1], -r[2]))
-    
-    seeded_relegation = []
-    for record in sorted_rel_records:
-        tied = rel_by_record[record]
-        if len(tied) == 1:
-            seeded_relegation.extend(tied)
-        else:
-            ordered = break_tie_wildcard(stats, tied, teams, divisions)
-            seeded_relegation.extend(reversed(ordered))
-    
+    # Seed the relegation bracket
+    # First added = worst (lost tiebreaker first) = #1 seed
+    # Last added = least bad = #4 seed
+    # So we DON'T reverse - the order of addition IS the seeding order
     result = []
-    for i, team in enumerate(seeded_relegation):
+    for i, team in enumerate(relegation_teams):
         result.append({
             'seed': i + 1,
             'team': team,
